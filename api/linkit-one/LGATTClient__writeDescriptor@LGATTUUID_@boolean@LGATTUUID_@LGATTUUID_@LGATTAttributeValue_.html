@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/LGATTClient__writeDescriptor@LGATTUUID_@boolean@LGATTUUID_@LGATTUUID_@LGATTAttributeValue_.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:44:24 GMT -->
+<head>
+<title>LGATTClient::writeDescriptor Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'LGATTClient__writeDescriptor@LGATTUUID_@boolean@LGATTUUID_@LGATTUUID_@LGATTAttributeValue_.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00203">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100">boolean <strong><span style="color: #660000">writeDescriptor</span></strong>(
+    <strong><span style="color: #871F78">const</span></strong> <a href="LGATTUUID.html" target="topic">LGATTUUID</a>&amp; <strong><span style="color: #660000">serviceUUID</span></strong>, 
+    boolean <strong><span style="color: #660000">isPrimary</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <a href="LGATTUUID.html" target="topic">LGATTUUID</a>&amp; <strong><span style="color: #660000">characteristicUUID</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <a href="LGATTUUID.html" target="topic">LGATTUUID</a>&amp; <strong><span style="color: #660000">descriptorUUID</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <a href="LGATTAttributeValue.html" target="topic">LGATTAttributeValue</a>&amp; <strong><span style="color: #660000">attrValue</span></strong>
+);</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="LGATTClient__writeCharacteristic%40LGATTUUID_%40boolean%40LGATTUUID_%40LGATTAttributeValue_.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="LGATTClient.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="LGATTReadRequest.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+LGATTClient::writeDescriptor Method</div>
+<div class="Element7">
+<a href="LGATTClient.html" target="topic">LGATTClient Class</a> | <a href="_LGATTClient__writeDescriptor%40LGATTUUID_%40boolean%40LGATTUUID_%40LGATTUUID_%40LGATTAttributeValue__3_Example.html" target="topic">Example</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,4578616D706C65,46696C65,436C617373', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,4578616D706C65,46696C65,436C617373', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100">boolean <strong><span style="color: #660000">writeDescriptor</span></strong>(
+    <strong><span style="color: #871F78">const</span></strong> <a href="LGATTUUID.html" target="topic">LGATTUUID</a>&amp; <strong><span style="color: #660000">serviceUUID</span></strong>, 
+    boolean <strong><span style="color: #660000">isPrimary</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <a href="LGATTUUID.html" target="topic">LGATTUUID</a>&amp; <strong><span style="color: #660000">characteristicUUID</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <a href="LGATTUUID.html" target="topic">LGATTUUID</a>&amp; <strong><span style="color: #660000">descriptorUUID</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <a href="LGATTAttributeValue.html" target="topic">LGATTAttributeValue</a>&amp; <strong><span style="color: #660000">attrValue</span></strong>
+);</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+This function writes the descriptor to a service.</p></div>
+</div>
+</div>
+<a name="506172616D6574657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('506172616D6574657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img506172616D6574657273">Parameters</a></div>
+<div id="div506172616D6574657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="30%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="70%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+const LGATTUUID&amp; serviceUUID&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+The UUID of the service provided by a Bluetooth 4.0 device. <br>   &nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+boolean isPrimary&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+Specifies if this service is primary. <br>   &nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+const LGATTUUID&amp; characteristicUUID&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+The UUID of the characteristic. <br>   &nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+const LGATTUUID&amp; descriptorUUID&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+The UUID of the descriptor. <br>   &nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+const LGATTAttributeValue&amp; attrValue&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+The attribute value, which is written to the remote Bluetooth 4.0 device if it's successful.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="52657475726E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('52657475726E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img52657475726E73">Returns</a></div>
+<div id="div52657475726E73">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+   true:  Successful.&nbsp;</p>
+<p class="Element10">
+   false: Failed.</p></div>
+</div>
+</div>
+<a name="4578616D706C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4578616D706C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4578616D706C65">Example</a></div>
+<div id="div4578616D706C65">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12">   Please refer to the example from <a href="LGATTClient__begin%40LGATTUUID_.html" target="topic">begin</a>().</pre></div></div>
+</div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+LGATTClient.h</p></div>
+</div>
+</div>
+<a name="436C617373"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('436C617373');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img436C617373">Class</a></div>
+<div id="div436C617373">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="LGATTClient.html" target="topic">LGATTClient Class</a></p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/LGATTClient__writeDescriptor@LGATTUUID_@boolean@LGATTUUID_@LGATTUUID_@LGATTAttributeValue_.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:44:25 GMT -->
+</html>

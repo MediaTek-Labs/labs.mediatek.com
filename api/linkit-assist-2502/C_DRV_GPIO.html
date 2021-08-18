@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_DRV_GPIO.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:58:00 GMT -->
+<head>
+<title>GPIO</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_DRV_GPIO.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="vm_dcl_adc_measure_done_confirm_t.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_DRV.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="%21%21RECORDS_C_DRV_GPIO.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+GPIO</div>
+<div class="Element7">
+<a href="_C_DRV_GPIO_14_Topics.html" target="topic">Topics</a> | <a href="_C_DRV_GPIO_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,537472756374732C205265636F7264732C20456E756D73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,537472756374732C205265636F7264732C20456E756D73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Controls digital signal over GPIO pins.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+GPIO(General Purpose Input Output) module in the DCL module is one of the foundamental modules on LinkIt ONE; There are some other driver modules and middleware libraries that are implemented based on GPIO module. It is normally used for transmitting digital signals, which is different from analog signals. Digital signals have only two statuses, high and low, indicated as HIGH and LOW. The voltage of HIGH is different on each HDK, refer to the HDK documentation for details.&nbsp;</p>
+<p class="Element10">
+Each pin is identified by GPIO _pin numbers_. This pin number is different from the pin name of the HDK. Use the macro provided in vmboard.h to access the corresponding GPIO pin numbers for each pin of the HDK. For example, the pin D0 has GPIO pin number 10, denoted as GPIO10 in LinkIt ONE HDK documentations, e.g. pin-out diagrams and pin tables.&nbsp;</p>
+<p class="Element10">
+Before using a certain GPIO pin, you have to setup the pin mode of that pin first. The default mode is GPIO INPUT. In most cases, when you use GPIO pins, you have to combine many pins together, depending on the protocol that is used to communicate with peripheral devices.</p></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Although pin modes are controlled by GPIO APIs, not every GPIO pin can be configured as GPIO INPUT or OUTPUT. Refer to the HDK pin table for the possible pin mode of each pin. </p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_DRV.html" target="topic">Driver</a></p></div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_GPIO_CLOCK_DIVIDE.html" target="topic">VM_DCL_GPIO_CLOCK_DIVIDE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This enum is for VM_DCL_GPIO_COMMAND_SET_CLOCK_DIVIDE, used in <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a> as parameter. Please refer the introduction of <a href="vm_dcl_gpio_control_set_clock_division_t.html" target="topic">vm_dcl_gpio_control_set_clock_division_t</a> for more details.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_GPIO_CLOCK_MODE.html" target="topic">VM_DCL_GPIO_CLOCK_MODE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This enum defines the clock_mode of parameter <a href="vm_dcl_gpio_control_set_clock_out_t.html" target="topic">vm_dcl_gpio_control_set_clock_out_t</a> for command VM_DCL_GPIO_COMMAND_SET_CLOCK_OUT. Please refer to <a href="vm_dcl_gpio_control_set_clock_out_t.html" target="topic">vm_dcl_gpio_control_set_clock_out_t</a> for details.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_GPIO_CONTROL_COMMAND.html" target="topic">VM_DCL_GPIO_CONTROL_COMMAND</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GPIO commands that can be passed to GPIO devices with <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>. Refer to each command for the related GPIO functionality. Note that for clock-related commands VM_DCL_GPIO_COMMAND_SET_CLOCK_DIVIDE and VM_DCL_GPIO_COMMAND_SET_CLOCK_OUT, open a VM_DCL_GPIO_CLOCK device instead of VM_DCL_GPIO.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_gpio_control_direction_t.html" target="topic">vm_dcl_gpio_control_direction_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Output parameter for VM_DCL_GPIO_COMMAND_RETURN_DIRECTION command.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_gpio_control_level_status_t.html" target="topic">vm_dcl_gpio_control_level_status_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The output parameter for VM_DCL_GPIO_COMMAND_READ and VM_DCL_GPIO_COMMAND_RETURN_OUT commands.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_gpio_control_mode_t.html" target="topic">vm_dcl_gpio_control_mode_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The output parameter for GPIO_COMMAND_RETURN_MODE control command. With this command, you can get the current mode of a specified GPIOs. Please refer to the sample code in the description of <a href="VM_DCL_GPIO_CONTROL_COMMAND.html" target="topic">VM_DCL_GPIO_CONTROL_COMMAND</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_gpio_control_set_clock_division_t.html" target="topic">vm_dcl_gpio_control_set_clock_division_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Input parameter for command VM_DCL_GPIO_COMMAND_SET_CLOCK_DIVIDE. Certain GPIO pins can generate different clock waves by request. There are several clock numbers and divison values supported. Refer to the chipset datasheet for the available combinations of clock and division number.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_gpio_control_set_clock_out_t.html" target="topic">vm_dcl_gpio_control_set_clock_out_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Input parameter for command VM_DCL_GPIO_COMMAND_SET_CLOCK_OUT. Certain GPIO pins can generate different clock waves by request. There are several clock modes supported. Refer to the chipset datasheet for the available clock modes and numbers available to each pin.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_gpio_control_set_division_t.html" target="topic">vm_dcl_gpio_control_set_division_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Input parameter for command VM_DCL_GPIO_COMMAND_SET_INVERSION. When inversion is set to <a href="VM_TRUE.html" target="topic">VM_TRUE</a>, the definition of HIGH and LOW is reversed.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_gpio_control_set_register_status_r0_r1_t.html" target="topic">vm_dcl_gpio_control_set_register_status_r0_r1_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Input parameter for command VM_DCL_GPIO_COMMAND_SET_REGISTER_STATUS_R0_R1.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_GPIO_DEVICE.html" target="topic">VM_DCL_GPIO_DEVICE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+These enum defines the device for GPIO module that is passed to <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a> as a parameter. Before open the device, make sure the pin mode is configured to VM_DCL_PIN_MODE_GPIO with <a href="vm_dcl_config_pin_mode%40VMUINT%40VM_DCL_PIN_MODE.html" target="topic">vm_dcl_config_pin_mode</a>. There are two different device enums that can be opened on a GPIO pin. Use the VM_DCL_GPIO_CLOCK enum to <a href="send.html" target="topic">send</a> clock-related commands to the GPIO pin.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_GPIO_IO_LEVEL_STATUS.html" target="topic">VM_DCL_GPIO_IO_LEVEL_STATUS</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Defines the HIGH and LOW state in level_status field of parameter <a href="vm_dcl_gpio_control_level_status_t.html" target="topic">vm_dcl_gpio_control_level_status_t</a>.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_DRV_GPIO_14_Topics.html" target="topic">Topics</a>, <a href="_C_DRV_GPIO_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_DRV_GPIO.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:58:02 GMT -->
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_https_set_channel@VMUINT16@VMBOOL@VMUINT8@VMUINT16@VMSTR@VMUINT8@VMSTR@VMUINT8@VMSTR@VMUINT8@VMSTR@VMUINT8@VMSTR@VMUINT32.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:00:28 GMT -->
+<head>
+<title>vm_https_set_channel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'vm_https_set_channel@VMUINT16@VMBOOL@VMUINT8@VMUINT16@VMSTR@VMUINT8@VMSTR@VMUINT8@VMSTR@VMUINT8@VMSTR@VMUINT8@VMSTR@VMUINT32.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00498">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="VM_RESULT.html" target="topic">VM_RESULT</a> <strong><span style="color: #660000">vm_https_set_channel</span></strong>(
+    <a href="VMUINT16.html" target="topic">VMUINT16</a> <strong><span style="color: #660000">request_id</span></strong>, 
+    <a href="VMBOOL.html" target="topic">VMBOOL</a> <strong><span style="color: #660000">use_proxy</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">proxy_ip</span></strong>[4], 
+    <a href="VMUINT16.html" target="topic">VMUINT16</a> <strong><span style="color: #660000">proxy_port</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">username</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">username_length</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">password</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">password_length</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">server_authorize_username</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">server_authorize_username_length</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">server_authorize_password</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">server_authorize_password_length</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">static_header</span></strong>, 
+    <a href="VMUINT32.html" target="topic">VMUINT32</a> <strong><span style="color: #660000">static_header_length</span></strong>
+);</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="vm_https_send_request%40VMUINT16%40VM_HTTPS_METHOD%40VM_HTTPS_OPTION%40VM_HTTPS_DATA_TYPE%40VMUINT32%40VMSTR%40VMUINT32%40VMSTR%40VMUINT32%40VMSTR%40VMUINT32.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_NET_HTTPS.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="vm_https_unset_channel%40VMUINT8.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+vm_https_set_channel</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="VM_RESULT.html" target="topic">VM_RESULT</a> <strong><span style="color: #660000">vm_https_set_channel</span></strong>(
+    <a href="VMUINT16.html" target="topic">VMUINT16</a> <strong><span style="color: #660000">request_id</span></strong>, 
+    <a href="VMBOOL.html" target="topic">VMBOOL</a> <strong><span style="color: #660000">use_proxy</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">proxy_ip</span></strong>[4], 
+    <a href="VMUINT16.html" target="topic">VMUINT16</a> <strong><span style="color: #660000">proxy_port</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">username</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">username_length</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">password</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">password_length</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">server_authorize_username</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">server_authorize_username_length</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">server_authorize_password</span></strong>, 
+    <a href="VMUINT8.html" target="topic">VMUINT8</a> <strong><span style="color: #660000">server_authorize_password_length</span></strong>, 
+    <a href="VMSTR.html" target="topic">VMSTR</a> <strong><span style="color: #660000">static_header</span></strong>, 
+    <a href="VMUINT32.html" target="topic">VMUINT32</a> <strong><span style="color: #660000">static_header_length</span></strong>
+);</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Configure a dedicated channel for HTTP/WSP requests. An channel can be configured to use a proxy while use_proxy is true. When use_proxy is true, This function configures a dedicated channel for HTTP/WSP requests. A channel can be configured to use a proxy while use_proxy is true. When use_proxy is true, prx_ip, prx_port, username, and password will be used to communicate with the proxy server, thus prx_ip cannot be 0.0.0.0 and if the prx_port value is 0 it means the default proxy port is 8080. When the conn_type is HTTPS_CONN_TYPE_WSP_CO or HTTPS_CONN_TYPE_WSP_CL, the use_proxy is true by default. However, if the application simply wants to use the current setting used in WAP, then just set use_default as true and ignore all proxy server, thus prx_ip cannot be 0.0.0.0 and if the prx_port value is 0 it means the default proxy port is 8080.&nbsp;</p>
+<p class="Element10">
+When the conn_type is HTTPS_CONN_TYPE_WSP_CO or HTTPS_CONN_TYPE_WSP_CL, then by default use_proxy is true. However, if the application simply wants to use the current setting in WAP, then set use_default as true and ignore all other parameters. Static_header (if necessary) must be filled in WAP_PROF_CONN_TYPE_WSP_CO and the first WSP request of some dedicated channel with connection type WSP_CONN_TYPE_WSP_CL. If the application doesn't specify static_header, then HTTPS will use the value currently used by WAP.</p></div>
+</div>
+</div>
+<a name="506172616D6574657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('506172616D6574657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img506172616D6574657273">Parameters</a></div>
+<div id="div506172616D6574657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element240" valign="top" width="30%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="70%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMUINT16 request_id&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The request ID.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMBOOL use_proxy&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] This indicates whether it uses proxy or not.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMUINT8 proxy_ip[4]&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The proxy IP address.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMUINT16 proxy_port&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The proxy port number. 0 means default proxy 8080.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMSTR username&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The username for the proxy. Only ASCII is allowed and <a href="NULL.html" target="topic">NULL</a> terminated.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMUINT8 username_length&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The length should not exceed 40 characters excluding <a href="NULL.html" target="topic">NULL</a> character.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMSTR password&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The password for the proxy. Only ASCII is allowed and it is <a href="NULL.html" target="topic">NULL</a> terminated.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMUINT8 password_length&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The length should not exceed 40 character excluding <a href="NULL.html" target="topic">NULL</a> character.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMSTR server_authorize_username&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The username for the origin server. Only ASCII is allowed and it is <a href="NULL.html" target="topic">NULL</a> terminated.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMSTR server_authorize_password&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The length should not exceed 128 character excluding <a href="NULL.html" target="topic">NULL</a> character.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMSTR static_header&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The static header.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMUINT32 static_header_length&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The length of static header.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+server_authorize_username_lengt&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The length should not exceed 128 character excluding <a href="NULL.html" target="topic">NULL</a> character.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+server_authorize_password_lengt&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The length should not exceed 40 character excluding <a href="NULL.html" target="topic">NULL</a> character.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="52657475726E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('52657475726E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img52657475726E73">Returns</a></div>
+<div id="div52657475726E73">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ <a href="VM_RESULT.html" target="topic">VM_RESULT</a></p></div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+vmhttps.h</p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="%21%21FUNCTIONS_C_NET_HTTPS.html" target="topic">Functions</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_https_set_channel@VMUINT16@VMBOOL@VMUINT8@VMUINT16@VMSTR@VMUINT8@VMSTR@VMUINT8@VMSTR@VMUINT8@VMSTR@VMUINT8@VMSTR@VMUINT32.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:00:28 GMT -->
+</html>

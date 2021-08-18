@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_Servo_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:23 GMT -->
+<head>
+<title>Servo Class Members</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_Servo_14_Members.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+Servo Class Members</div>
+<div class="Element28">
+<a href="Servo.html" target="topic">Servo Class</a> | <a href="_Servo_14_Members_Members.html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Members</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element215">
+Methods</div>
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Method&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="Servo__attach%40int.html" target="topic">attach</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Attaches a servo motor to a digital pin. Only digital pins supporting PWM (D3, D9) can use this function.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="Servo__attach%40int%40int%40int.html" target="topic">attach</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Attaches servo motor to a digital pin. Only digital pins supporting PWM (D3, D9) can use this function.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="Servo__attached.html" target="topic">attached</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Detects if servo has been attached with a pin.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="Servo__detach.html" target="topic">detach</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+To detach servo motor and pin. If all servo motors are bound, you can use PWM output and <a href="analogWrite%40uint32_t%40uint32_t.html" target="topic">analogWrite</a> for output.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="Servo__read.html" target="topic">read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads the current rotation angle of the servo motor.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="Servo__write%40int.html" target="topic">write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes a value to servo to control the corresponding lever. Sets up the lever angle for a standard servo motor in order to move the lever to the corresponding angle. To set up the rotation speed for a continuously rotating servo motor, use 0 to rotate in one direction in full speed; 180 to rotate in the opposite direction in full speed; and 90 to stay intact.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="Servo__writeMicroseconds%40int.html" target="topic">writeMicroseconds</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes a value to servo to control the corresponding lever. Sets up the rotation angle of a standard servo motor. In terms of parameters for a standard servo: 1000 means rotating counterclockwise in full speed. 2000 means clockwise in full speed. 1500 means in the middle.<br>The following is extracted from Arduino's official website: For customers who do not operate following the standard method, for example by setting the response value of servo between 700 and 2300, in attempt to enlarge the limits to adjust the range of rotation. However, such operation may shorten the life of a servo and... <a href="Servo__writeMicroseconds%40int.html" target="topic">more</a>&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_Servo_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:24 GMT -->
+</html>

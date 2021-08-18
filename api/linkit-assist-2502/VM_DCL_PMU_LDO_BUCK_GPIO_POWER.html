@@ -1,0 +1,818 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/VM_DCL_PMU_LDO_BUCK_GPIO_POWER.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:59:05 GMT -->
+<head>
+<title>VM_DCL_PMU_LDO_BUCK_GPIO_POWER</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'VM_DCL_PMU_LDO_BUCK_GPIO_POWER.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00356">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">typedef</span></strong> <strong><span style="color: #871F78">enum</span></strong> {
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO0</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO2</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO3</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO4</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO5</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO6</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO7</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO8</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO9</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO10</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO11</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO12</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO13</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO14</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO15</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO16</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO17</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO18</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO19</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO20</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO21</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO22</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO23</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO24</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO25</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO26</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO27</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO28</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO29</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO30</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO31</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO32</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO33</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO34</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO35</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO36</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO37</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO38</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO39</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO40</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO41</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO42</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO43</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO44</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO45</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO46</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO47</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO48</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO49</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO50</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO51</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO52</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO53</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO54</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO55</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO56</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO57</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO58</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO59</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO60</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO61</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO62</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO63</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO64</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO65</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO66</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO67</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO68</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO69</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO70</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO71</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO72</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO73</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO74</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO75</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO76</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO77</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO78</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO79</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO80</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO81</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO82</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO83</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO84</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO85</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO86</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO87</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO88</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO89</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO90</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO91</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO92</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO93</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO94</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO95</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO96</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO97</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO98</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO99</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO100</span></strong>
+} VM_DCL_PMU_LDO_BUCK_GPIO_POWER;</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="VM_DCL_PMU_LDO_BUCK.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="%21%21RECORDS_C_DRV_PMU.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="C_DRV_PWM.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+VM_DCL_PMU_LDO_BUCK_GPIO_POWER</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,46696C65,4D656D62657273,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,46696C65,4D656D62657273,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">typedef</span></strong> <strong><span style="color: #871F78">enum</span></strong> {
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO0</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO2</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO3</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO4</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO5</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO6</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO7</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO8</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO9</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO10</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO11</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO12</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO13</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO14</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO15</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO16</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO17</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO18</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO19</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO20</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO21</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO22</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO23</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO24</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO25</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO26</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO27</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO28</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO29</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO30</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO31</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO32</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO33</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO34</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO35</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO36</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO37</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO38</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO39</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO40</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO41</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO42</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO43</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO44</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO45</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO46</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO47</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO48</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO49</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO50</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO51</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO52</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO53</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO54</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO55</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO56</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO57</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO58</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO59</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO60</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO61</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO62</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO63</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO64</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO65</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO66</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO67</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO68</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO69</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO70</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO71</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO72</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO73</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO74</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO75</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO76</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO77</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO78</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO79</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO80</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO81</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO82</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO83</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO84</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO85</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO86</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO87</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO88</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO89</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO90</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO91</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO92</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO93</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO94</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO95</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO96</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO97</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO98</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO99</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_PMU_VGPIO100</span></strong>
+} VM_DCL_PMU_LDO_BUCK_GPIO_POWER;</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Enum for controlling GPIO pin power. Note that not all GPIO pin numbers are available for configuration on all HDK plaform. Refer to HDK pin-out diagram for the available GPIO pin number. For example, use VM_DCL_PMU_VGPIO10 for GPIO10 on LinkIt ONE, which maps to <a href="VM_PIN_D0.html" target="topic">VM_PIN_D0</a> pin.</p></div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+vmdcl_pmu.h</p></div>
+</div>
+</div>
+<a name="4D656D62657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D656D62657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D656D62657273">Members</a></div>
+<div id="div4D656D62657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element272">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element260" valign="top" width="30%">
+<div class="Element261">
+Members&nbsp;</div></td><td class="Element264" valign="top" width="70%">
+<div class="Element265">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO0&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO0&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO1&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO1&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO2&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO2&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO3&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO3&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO4&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO4&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO5&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO5&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO6&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO6&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO7&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO7&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO8&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO8&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO9&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO9&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO10&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO10&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO11&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO11&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO12&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO12&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO13&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO13&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO14&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO14&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO15&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO15&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO16&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO16&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO17&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO17&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO18&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO18&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO19&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO19&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO20&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO20&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO21&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO21&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO22&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO22&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO23&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO23&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO24&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO24&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO25&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO25&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO26&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO26&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO27&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO27&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO28&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO28&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO29&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO29&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO30&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO30&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO31&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO31&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO32&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO32&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO33&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO33&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO34&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO34&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO35&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO35&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO36&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO36&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO37&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO37&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO38&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO38&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO39&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO39&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO40&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO40&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO41&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO41&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO42&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO42&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO43&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO43&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO44&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO44&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO45&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO45&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO46&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO46&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO47&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO47&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO48&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO48&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO49&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO49&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO50&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO50&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO51&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO51&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO52&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO52&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO53&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO53&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO54&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO54&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO55&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO55&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO56&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO56&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO57&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO57&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO58&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO58&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO59&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO59&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO60&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO60&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO61&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO61&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO62&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO62&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO63&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO63&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO64&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO64&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO65&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO65&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO66&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO66&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO67&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO67&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO68&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO68&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO69&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO69&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO70&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO70&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO71&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO71&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO72&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO72&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO73&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO73&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO74&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO74&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO75&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO75&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO76&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO76&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO77&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO77&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO78&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO78&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO79&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO79&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO80&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO80&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO81&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO81&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO82&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO82&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO83&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO83&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO84&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO84&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO85&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO85&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO86&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO86&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO87&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO87&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO88&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO88&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO89&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO89&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO90&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO90&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO91&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO91&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO92&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO92&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO93&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO93&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO94&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO94&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO95&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO95&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO96&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO96&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO97&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO97&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO98&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO98&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO99&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO99&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_PMU_VGPIO100&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Pin number for GPIO100&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="%21%21RECORDS_C_DRV_PMU.html" target="topic">Structs, Records, Enums</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/VM_DCL_PMU_LDO_BUCK_GPIO_POWER.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:59:05 GMT -->
+</html>

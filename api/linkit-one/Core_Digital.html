@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Core_Digital.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:41:00 GMT -->
+<head>
+<title>Digital I/O</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'Core_Digital.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<img src="btn_prev_d.gif" border="0" alt="Previous" title="Previous"><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="%21%21FUNCTIONS_Core_Digital.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Digital I/O</div>
+<div class="Element7">
+<a href="_Core_Digital_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('46756E6374696F6E73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('46756E6374696F6E73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ &nbsp;</p>
+<p class="Element10">
+The Digital I/O API is one of the fundamental LinkIt APIs; with other APIs and function libraries being based on it (such as Advanced I/O, <a href="SPI.html" target="topic">SPI</a>, I2C and UART). It? used to transmit digital signals, and complements the Analog I/O API that processes analog signals.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Digital signals have two states, high (3.3V) and low (0V), indicated by static variables HIGH and LOW.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+There are 16 pins on LinkIt ONE available for digital I/O; some of the pins can be shared with other APIs (see Table below). In most cases, when you use digital I/O pins, you combine several pins together, constructing a port to communicate with a peripheral.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Table: Digital I/O pins are listed </p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element65" valign="top" width="22%">
+<div class="Element66">
+Board&nbsp;</div></td><td class="Element65" valign="top" width="78%">
+<div class="Element66">
+Pins&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="22%">
+<div class="Element68">
+LinkIt ONE&nbsp;</div></td><td class="Element67" valign="top" width="78%">
+<div class="Element68">
+D0 ~ D13 SDA/SCL or D18/D19 (shared with <a href="Wire.html" target="topic">Wire</a>/I2C)&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Before using a digital I/O pin, you must set its pin mode. Failure to set the correct mode can result in unexpected behaviour. The default pin mode is INPUT. For details, refer to <a href="pinMode%40uint32_t%40uint32_t.html" target="topic">pinMode</a>() in the MediaTek LinkIt API reference</p></div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="digitalRead%40uint32_t.html" target="topic">digitalRead</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads voltage of assigned pin, HIGH or LOW.<br>There are 16 pins on LinkIt ONE used as digital I/O, they are D0 ~ D13 and D18/D19, particularly D18/D19 are shared with <a href="Wire.html" target="topic">Wire</a>/I2C.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="digitalWrite%40uint32_t%40uint32_t.html" target="topic">digitalWrite</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets assigned pins to high voltage (3.3V) or low voltage (0V).<br>There are 16 pins on LinkIt ONE used as digital I/O, they are D0 ~ D13 and D18/D19, particularly D18/D19 are shared with <a href="Wire.html" target="topic">Wire</a>/I2C.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="pinMode%40uint32_t%40uint32_t.html" target="topic">pinMode</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets up modes for assigned pins.<br>There are 16 pins on LinkIt ONE used as digital I/O, they are D0 ~ D13 and D18/D19, particularly D18/D19 are shared with <a href="Wire.html" target="topic">Wire</a>/I2C.<br><br>LinkIt One supports 3 pin modes:<br>&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">INPUT mode is used for reading voltage (HIGH or LOW) or sensor. In INPUT mode when the circuit is at high impedance, similar to serially connecting a big resistance in the circuit, the pin can read accurate voltage value. However, this pin may not have enough voltage to activate peripheral devices, e.g. LED.</li>
+<li class="Element600">INPUT_PULLUP mode is similar to INPUT mode, used for reading... <a href="pinMode%40uint32_t%40uint32_t.html" target="topic">more</a>&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_Core_Digital_14_Topics.html" target="topic">Topics</a>, <a href="_Core_Digital_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Core_Digital.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:41:09 GMT -->
+</html>

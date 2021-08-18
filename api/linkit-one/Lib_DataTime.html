@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_DataTime.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:42:57 GMT -->
+<head>
+<title>DateTime</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'Lib_DataTime.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="Stepper__Stepper%40int%40int%40int%40int%40int.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="%21%21CLASSES_Lib_DataTime.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+DateTime</div>
+<div class="Element7">
+<a href="_Lib_DataTime_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a> | <a href="_Lib_DataTime_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a> | <a href="_Lib_DataTime_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('436C6173736573,537472756374732C205265636F7264732C20456E756D73,5661726961626C6573,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('436C6173736573,537472756374732C205265636F7264732C20456E756D73,5661726961626C6573,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The DateTime API provides APIs to set and get date / time. It is better than <a href="millis.html" target="topic">millis</a>() for scenario that requires very long time period (month and years), because <a href="millis.html" target="topic">millis</a>() will overflow and reset in around 50 days.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+As long as LinkIt ONE is powered (either by USB or by battery) the clock will continue to tick. In the case of losing power or first time booting, there are several ways to initialize current time: Parse the GPGGA data from GPS.getData() or connect to an NTP (Network Time Protocol) server via Wi-Fi.</p></div>
+</div>
+<a name="436C6173736573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('436C6173736573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img436C6173736573">Classes</a></div>
+<div id="div436C6173736573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LDateTimeClass.html" target="topic">LDateTimeClass</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+LDatetimeClass defines system time related functions.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="datetimeInfo.html" target="topic">datetimeInfo</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The datetimeInfo structure.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5661726961626C6573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5661726961626C6573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5661726961626C6573">Variables</a></div>
+<div id="div5661726961626C6573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Variable&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LDateTime.html" target="topic">LDateTime</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+LDateTime object&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_Lib_DataTime_14_Topics.html" target="topic">Topics</a>, <a href="_Lib_DataTime_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a>, <a href="_Lib_DataTime_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a>, <a href="_Lib_DataTime_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_DataTime.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:43:01 GMT -->
+</html>

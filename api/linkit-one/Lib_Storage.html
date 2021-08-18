@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_Storage.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:43:29 GMT -->
+<head>
+<title>Storage (SD/Flash)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'Lib_Storage.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="LVoiceCallClass__voiceCall%40char_%40unsigned_long.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="%21%21CLASSES_Lib_Storage.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Storage (SD/Flash)</div>
+<div class="Element7">
+<a href="_Lib_Storage_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a> | <a href="_Lib_Storage_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('436C6173736573,5661726961626C6573,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('436C6173736573,5661726961626C6573,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ &nbsp;</p>
+<p class="Element10">
+LinkIt ONE provides an SD card slot and 10 MB of internal flash storage. You can manipulate these two storage areas using the <a href="LSD.html" target="topic">LSD</a> and LFlash classes.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The <a href="LSD.html" target="topic">LSD</a> class is for the LinkIt SD card slot. If you would like to use an Arduino SD shield, use the SD library provided by Arduino instead. As a result you can mount and use an Arduino SD shield at the same time as using the LinkIt SD card slot.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+To manipulate a file or folder, use LSD.open() or LFlash.open() to get an <a href="LFile.html" target="topic">LFile</a> object then:
+<ul class="Element632">
+<li class="Element602">If the object is a file (isDirectory() returns false), use the object to read from and write to the file.</li>
+<li class="Element602">If the object is a folder (isDirectory() returns true), use it to enumerate sub-files in this folder.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+<strong>Hardware setup</strong>&nbsp;</p>
+<p class="Element10">
+The built-in SD card and <a href="SPI.html" target="topic">SPI</a> functions are exclusive. Before using the SD APIs, make sure the settings switch is correctly set (see Figure in <a href="SPI.html" target="topic">SPI</a>). Please note that once the board is configured to SD, calling <a href="SPI.html" target="topic">SPI</a> APIs may result in unexpected SD behavior.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If you want to use SD and <a href="SPI.html" target="topic">SPI</a> at the same time, please use an external SD shield.</p></div>
+</div>
+<a name="436C6173736573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('436C6173736573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img436C6173736573">Classes</a></div>
+<div id="div436C6173736573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LDrive.html" target="topic">LDrive</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The base class of LinkIt SD/Flash.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LFile.html" target="topic">LFile</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+LinkIt file support class.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LSDClass.html" target="topic">LSDClass</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+LinkIt SD support class.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5661726961626C6573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5661726961626C6573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5661726961626C6573">Variables</a></div>
+<div id="div5661726961626C6573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Variable&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LSD.html" target="topic">LSD</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The global LSD object. Use it to manipulate the SD.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_Lib_Storage_14_Topics.html" target="topic">Topics</a>, <a href="_Lib_Storage_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a>, <a href="_Lib_Storage_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_Storage.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:43:32 GMT -->
+</html>

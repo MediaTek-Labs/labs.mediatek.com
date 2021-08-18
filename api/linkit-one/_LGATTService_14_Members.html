@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LGATTService_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:58 GMT -->
+<head>
+<title>LGATTService Class Members</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_LGATTService_14_Members.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+LGATTService Class Members</div>
+<div class="Element28">
+<a href="LGATTService.html" target="topic">LGATTService Class</a> | <a href="_LGATTService_14_Members_Members.html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Members</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element215">
+Methods</div>
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Method&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_protected.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LGATTService__onCharacteristicAdded%40LGATTAttributeData__.html" target="topic">onCharacteristicAdded</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+You need to override this function to receive handles for each characteristic when characteristics are added.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_protected.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LGATTService__onConnection%40LGATTAddress__%40boolean.html" target="topic">onConnection</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function is called when the status of connections from the central device has changed.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_protected.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LGATTService__onDescriptorAdded%40LGATTAttributeData__.html" target="topic">onDescriptorAdded</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+You need to override this method to receive handles for each descriptor when descriptors are added.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_protected.gif" border="0" alt="" title=""><img src="indicator_abstract.gif" border="0" alt="" title=""> <a href="LGATTService__onLoadService%40int32_t.html" target="topic">onLoadService</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+You need to override this method in order to define a Bluetooth GATT service. This function is called immediately upon calling LGATTServer.begin(), and it must return an array of <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a> beginning with the type TYPE_SERVICE, followed by elements of TYPE_CHARACTERISTIC or TYPE_DESCRIPTOR. Also, it must be terminated with an element of TYPE_END.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_protected.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LGATTService__onRead%40LGATTReadRequest__.html" target="topic">onRead</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+You need to override this method to handle a read request coming from central device. Always respond to the request by calling request.ackOk() or request.ackFail() before this function returns. Otherwise it will lead to an undefined behavior.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_protected.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LGATTService__onWrite%40LGATTWriteRequest__.html" target="topic">onWrite</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+You need to override this method to handle a write action coming from the central device. You may store sendData or ACK after <a href="LGATTService__onRead%40LGATTReadRequest__.html" target="topic">onRead</a>() returns, Always respond the write request by calling ackOK() and ackFail() before this function returns. Otherwise it will lead to an undefined behavior.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LGATTService__sendIndication%40LGATTAttributeValue__%40uint16_t%40boolean.html" target="topic">sendIndication</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function sends notifications or indications to the central device.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LGATTService_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:59 GMT -->
+</html>

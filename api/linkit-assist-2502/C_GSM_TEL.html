@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_GSM_TEL.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:00:39 GMT -->
+<head>
+<title>Telephony</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_GSM_TEL.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="vm_gsm_sim_get_iccid_callback.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_GSM.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_GSM_TEL.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Telephony</div>
+<div class="Element7">
+<a href="_C_GSM_TEL_14_Topics.html" target="topic">Topics</a> | <a href="_C_GSM_TEL_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a> | <a href="_C_GSM_TEL_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a> | <a href="_C_GSM_TEL_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a> | <a href="_C_GSM_TEL_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,4D6163726F73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,4D6163726F73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Provides functions to control the voice calls.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+An application can register a callback to <a href="listen.html" target="topic">listen</a> to the call events, such as Accepting Call, Ending Call, etc., and take corresponding actions based on specific events.</p></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The LinkIt ONE v2.0 SDK supports only one SIM card. The functions dealing with multiple SIM cards are not applicable for the LinkIt ONE HDK/SDK. </p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_GSM.html" target="topic">GSM</a></p></div>
+</div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_tel_call_actions%40vm_gsm_tel_call_actions_data_t_.html" target="topic">vm_gsm_tel_call_actions</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+APP uses this function to control call progress, such as accepting an incoming call, putting a hold on a call, or ending an ongoing call.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_tel_call_reg_listener%40vm_gsm_tel_call_listener_callback.html" target="topic">vm_gsm_tel_call_reg_listener</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+APP uses this function to register a callback function to <a href="listen.html" target="topic">listen</a> to call events. The user_data for the callback function will be provided by the underneath native.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_tel_keytone_start_detect%40vm_gsm_tel_keytone_callback%40void_.html" target="topic">vm_gsm_tel_keytone_start_detect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Start telephony keytone detect. When there is keytone, this callback will be invoked, the interface should be invoke after telephony connected.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_tel_keytone_stop_detect.html" target="topic">vm_gsm_tel_keytone_stop_detect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Stop telephony keytone detect.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_tel_set_output_device%40VM_GSM_TEL_DEVICE.html" target="topic">vm_gsm_tel_set_output_device</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets Telephony output device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_tel_set_volume%40VM_AUDIO_VOLUME.html" target="topic">vm_gsm_tel_set_volume</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets Telephony volume level.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4D6163726F73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D6163726F73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D6163726F73">Macros</a></div>
+<div id="div4D6163726F73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Macro&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GSM_TEL_MAX_ERROR_MESSAGE_LENGTH.html" target="topic">VM_GSM_TEL_MAX_ERROR_MESSAGE_LENGTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Maximum length of the error messages.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GSM_TEL_MAX_IP_NUMBER_LENGTH.html" target="topic">VM_GSM_TEL_MAX_IP_NUMBER_LENGTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Maximum length of IP number.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GSM_TEL_MAX_NUMBER_LENGTH.html" target="topic">VM_GSM_TEL_MAX_NUMBER_LENGTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Maximum length of the telephone numbers.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GSM_TEL_CALL_ACTION.html" target="topic">VM_GSM_TEL_CALL_ACTION</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Call actions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_call_actions_callback_data_t.html" target="topic">vm_gsm_tel_call_actions_callback_data_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Action callback data struct.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_call_actions_data_t.html" target="topic">vm_gsm_tel_call_actions_data_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Action structure&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_call_info_t.html" target="topic">vm_gsm_tel_call_info_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Incoming &amp; outgoing call indication struct.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_call_listener_data_t.html" target="topic">vm_gsm_tel_call_listener_data_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Listen call event callback structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GSM_TEL_CALL_SIM.html" target="topic">VM_GSM_TEL_CALL_SIM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Call type enum&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_connect_indication_t.html" target="topic">vm_gsm_tel_connect_indication_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Answer indication struct.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GSM_TEL_DEVICE.html" target="topic">VM_GSM_TEL_DEVICE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Telephony output device structure&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_dial_action_request_t.html" target="topic">vm_gsm_tel_dial_action_request_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Action struct for VM_GSM_TEL_CALL_ACTION_DIAL call type.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_id_info_t.html" target="topic">vm_gsm_tel_id_info_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Call ID struct, should be unique.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GSM_TEL_INDICATION.html" target="topic">VM_GSM_TEL_INDICATION</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Call indication enum.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GSM_TEL_RESULT.html" target="topic">VM_GSM_TEL_RESULT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+UCM error cause enum.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_result_info_t.html" target="topic">vm_gsm_tel_result_info_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Action CALLBACK structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_single_call_action_request_t.html" target="topic">vm_gsm_tel_single_call_action_request_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Action struct for VM_GSM_TEL_CALL_ACTION_ACCEPT &amp; VM_GSM_TEL_CALL_ACTION_END_SINGLE call types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_single_group_action_request_t.html" target="topic">vm_gsm_tel_single_group_action_request_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Action struct for VM_GSM_TEL_CALL_ACTION_HOLD call type.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5479706573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5479706573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5479706573">Types</a></div>
+<div id="div5479706573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_call_actions_callback.html" target="topic">vm_gsm_tel_call_actions_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The callback for the call actions. The action is specified in the type_action of data of <a href="vm_gsm_tel_call_actions_callback_data_t.html" target="topic">vm_gsm_tel_call_actions_callback_data_t</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_call_listener_callback.html" target="topic">vm_gsm_tel_call_listener_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback function of the call indication.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_gsm_tel_keytone_callback.html" target="topic">vm_gsm_tel_keytone_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Telephony DTMF callback function pointer&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_GSM_TEL_14_Topics.html" target="topic">Topics</a>, <a href="_C_GSM_TEL_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a>, <a href="_C_GSM_TEL_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a>, <a href="_C_GSM_TEL_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a>, <a href="_C_GSM_TEL_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_GSM_TEL.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:00:44 GMT -->
+</html>

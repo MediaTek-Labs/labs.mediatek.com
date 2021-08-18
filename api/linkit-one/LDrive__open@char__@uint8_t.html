@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/LDrive__open@char__@uint8_t.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:43:36 GMT -->
+<head>
+<title>LDrive::open Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'LDrive__open@char__@uint8_t.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00141">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="LFile.html" target="topic">LFile</a> <strong><span style="color: #660000">open</span></strong>(
+    <strong><span style="color: #871F78">const</span></strong> <strong><span style="color: #871F78">char</span></strong> * <strong><span style="color: #660000">filename</span></strong>, 
+    uint8_t <strong><span style="color: #660000">mode</span></strong> = FILE_READ
+);</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="LDrive__mkdir%40char__.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="LDrive.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="LDrive__remove%40char__.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+LDrive::open Method</div>
+<div class="Element7">
+<a href="LDrive.html" target="topic">LDrive Class</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,46696C65,436C617373', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,46696C65,436C617373', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="LFile.html" target="topic">LFile</a> <strong><span style="color: #660000">open</span></strong>(
+    <strong><span style="color: #871F78">const</span></strong> <strong><span style="color: #871F78">char</span></strong> * <strong><span style="color: #660000">filename</span></strong>, 
+    uint8_t <strong><span style="color: #660000">mode</span></strong> = FILE_READ
+);</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Opens a file (or folder). The following happens when the file path does not exist: - If FILE_WRITE mode is provided, an empty file is created; - If FILE_READ mode is provided, it returns Failed.&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element632">
+<li class="Element602">FILE_READ: It can read from the beginning of file. It cannot write.</li>
+<li class="Element602">FILE_WRITE: It can read and write, starting from the end of file in order to append the written data. </li>
+</ul>&nbsp;</p></div>
+</div>
+</div>
+<a name="506172616D6574657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('506172616D6574657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img506172616D6574657273">Parameters</a></div>
+<div id="div506172616D6574657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="30%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="70%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+const char * filename&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The file to open.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+uint8_t mode = FILE_READ&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The mode of opening, FILE_READ by default if not specified.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="52657475726E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('52657475726E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img52657475726E73">Returns</a></div>
+<div id="div52657475726E73">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+  An <a href="LFile.html" target="topic">LFile</a> object to represent the file (or folder).&nbsp;</p>
+<p class="Element10">
+  An empty <a href="LFile.html" target="topic">LFile</a> object, if the open file fails. An empty <a href="LFile.html" target="topic">LFile</a> object can be evaluated as false and you can use if (f) to test the result.</p></div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+LStorage.h</p></div>
+</div>
+</div>
+<a name="436C617373"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('436C617373');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img436C617373">Class</a></div>
+<div id="div436C617373">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="LDrive.html" target="topic">LDrive Class</a></p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/LDrive__open@char__@uint8_t.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:43:36 GMT -->
+</html>

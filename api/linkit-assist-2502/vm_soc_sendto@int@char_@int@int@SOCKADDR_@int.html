@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_soc_sendto@int@char_@int@int@SOCKADDR_@int.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:59:31 GMT -->
+<head>
+<title>vm_soc_sendto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'vm_soc_sendto@int@char_@int@int@SOCKADDR_@int.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00385">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">vm_soc_sendto</span></strong>(
+    <strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">sock</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <strong><span style="color: #871F78">char</span></strong>* <strong><span style="color: #660000">buf</span></strong>, 
+    <strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">len</span></strong>, 
+    <strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">flags</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <a href="SOCKADDR1.html" target="topic">SOCKADDR</a>* <strong><span style="color: #660000">to</span></strong>, 
+    <strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">tolen</span></strong>
+);</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="vm_soc_send%40int%40char_%40int%40int.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_NET_SOC_BSD.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="vm_soc_setsockopt%40int%40unsigned_int%40void_%40unsigned_int.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+vm_soc_sendto</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E2056616C756573,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E2056616C756573,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">vm_soc_sendto</span></strong>(
+    <strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">sock</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <strong><span style="color: #871F78">char</span></strong>* <strong><span style="color: #660000">buf</span></strong>, 
+    <strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">len</span></strong>, 
+    <strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">flags</span></strong>, 
+    <strong><span style="color: #871F78">const</span></strong> <a href="SOCKADDR1.html" target="topic">SOCKADDR</a>* <strong><span style="color: #660000">to</span></strong>, 
+    <strong><span style="color: #871F78">int</span></strong> <strong><span style="color: #660000">tolen</span></strong>
+);</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Sends data to the endpoint node.</p></div>
+</div>
+</div>
+<a name="506172616D6574657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('506172616D6574657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img506172616D6574657273">Parameters</a></div>
+<div id="div506172616D6574657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element240" valign="top" width="30%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="70%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+int sock&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The <a href="socket.html" target="topic">socket</a> descriptor.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+const char* buf&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The buffer that contains the data to be sent.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+int len&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The length of data (in bytes).&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+int flags&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN]  Reserved. Not in use.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+const SOCKADDR* to&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The remote <a href="socket.html" target="topic">socket</a> address.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+int tolen&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The size of the remote <a href="socket.html" target="topic">socket</a> address.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="52657475726E2056616C756573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('52657475726E2056616C756573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img52657475726E2056616C756573">Return Values</a></div>
+<div id="div52657475726E2056616C756573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element292">
+<div class="TableDiv">
+<table cellspacing="0" class="Table4">
+<tr>
+<td class="Element280" valign="top" width="30%">
+<div class="Element281">
+Return Values&nbsp;</div></td><td class="Element284" valign="top" width="70%">
+<div class="Element285">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+Non-negative number&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+The actual number of bytes that has been sent.<br> &nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+VM_SOC_INVALID_SOCKET&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+Invalid <a href="socket.html" target="topic">socket</a> ID.<br> &nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+VM_SOC_INVAL&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+Socket is not calling soc_listen.<br> &nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+VM_SOC_WOULDBLOCK&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+Non-blocking.<br> &nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+VM_SOC_BEARER_FAIL&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+Bearer broken.<br> &nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+VM_SOC_NOTCONN&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+Socket is not connected in case of TCP.<br> &nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+VM_SOC_PIPE&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+Socket is already shutdown.<br> &nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+VM_SOC_MSGSIZE&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+Message is too long.<br> &nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+VM_SOC_ERROR&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+Unspecified error.<br> &nbsp;</div></td></tr><tr>
+<td class="Element282" valign="top" width="30%">
+<div class="Element283">
+VM_SOC_NOTBIND&nbsp;</div></td><td class="Element286" valign="top" width="70%">
+<div class="Element287">
+Unbound in case of sending ICMP Echo Request, shall <a href="bind.html" target="topic">bind</a> before&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+vmsock.h</p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="%21%21FUNCTIONS_C_NET_SOC_BSD.html" target="topic">Functions</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_soc_sendto@int@char_@int@int@SOCKADDR_@int.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:59:31 GMT -->
+</html>

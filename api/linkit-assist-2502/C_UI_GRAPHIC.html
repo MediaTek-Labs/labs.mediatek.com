@@ -1,0 +1,446 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_UI_GRAPHIC.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:02:58 GMT -->
+<head>
+<title>Graphics and Text</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_UI_GRAPHIC.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="vm_audio_result_callback.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="%21%21FUNCTIONS_C_UI_GRAPHIC.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Graphics and Text</div>
+<div class="Element7">
+<a href="_C_UI_GRAPHIC_14_Topics.html" target="topic">Topics</a> | <a href="_C_UI_GRAPHIC_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a> | <a href="_C_UI_GRAPHIC_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Use Graphics API to add graphics and fonts capabilities.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The Graphics API provides the following functions:</p>
+<ul class="Element630">
+<li class="Element600">Perform pixel operations, drawings such as points, lines, rectangles and ellipses. </li>
+<li class="Element600">Perform image decoding and painting. </li>
+<li class="Element600">Provide text outputs.</li>
+<li class="Element600">Perform LCD operations.</li>
+</ul></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+
+<ul class="Element630">
+<li class="Element600">The effects of <a href="vm_graphic_blt_frame%40vm_graphic_frame_t_%40vm_graphic_point_t%40VMINT.html" target="topic">vm_graphic_blt_frame</a>() API will only work in MTK LCD interface.</li>
+<li class="Element600">Currently, the API only supports image formats in BMP, JPG and GIF.</li>
+<li class="Element600">The use of fonts require additional memory for your running software, in the form of the font cache: 100KB of memory when using vector fonts and 50KB for bitmap fonts. To ensure the best performance when using fonts, subtract the font cache size from maximum allowed memory size for your application. </li>
+</ul></div>
+</div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_blt_frame%40vm_graphic_frame_t_%40vm_graphic_point_t%40VMINT.html" target="topic">vm_graphic_blt_frame</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function allows you to blot frames in the LCD. Please note this function works on MediaTek Serial Interface LCD only. The frames don't have to be the same size as the LCD, and the it will be blot from the corresponding positions of the frames. The color format of the frames should remain the same.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_ellipse%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_ellipse</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws an ellipse at the given point within the frame.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_gradient_rectangle%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT%40vm_graphic_color_argb_t%40vm_graphic_color_argb_t%40VM_GRAP.html" target="topic">vm_graphic_draw_gradient_rectangle</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a gradient rectangle at the given point within the frame.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_image_file%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMWSTR%40VMINT.html" target="topic">vm_graphic_draw_image_file</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws an image file to the frame, this will replace the original frame content. The image format can be ABM / AB2 / JPEG / GIF / PNG / BMP&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_image_memory%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMUINT8_%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_image_memory</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws an image saved in memory to the frame. The image format can be ABM / AB2 / JPEG / GIF / PNG / BMP&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_line%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_line</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a line from position(x0, y0) to position(x1, y1) within the frame&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_point%40vm_graphic_frame_t_%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_point</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a point at position(x,y) within the frame&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_polygon%40vm_graphic_frame_t_%40vm_graphic_point_t%40VMINT.html" target="topic">vm_graphic_draw_polygon</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a polygon at the given point within the frame.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_rectangle%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_rectangle</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a rectangle at the given point within the frame.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_resized_image_file%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT%40VMWSTR%40VMINT.html" target="topic">vm_graphic_draw_resized_image_file</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws an image file to the frame resizing it to the specified size. The image format can be ABM / AB2 / JPEG / GIF / PNG / BMP&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_resized_image_memory%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT%40VMUINT8_%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_resized_image_memory</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws an image saved in memory to the frame resizing it to the specified size. The image format can be ABM / AB2 / JPEG / GIF / PNG / BMP&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_round_rectangle%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_round_rectangle</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a rectangle with rounded corners at the given point within the frame.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_solid_ellipse%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_solid_ellipse</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a solid ellipse at the given point within the frame.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_solid_polygon%40vm_graphic_frame_t_%40vm_graphic_point_t%40VMINT.html" target="topic">vm_graphic_draw_solid_polygon</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a solid polygon at the given point within the frame.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_solid_rectangle%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_solid_rectangle</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a solid rectangle at the given point within the frame.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_solid_round_rectangle%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMINT%40VMINT.html" target="topic">vm_graphic_draw_solid_round_rectangle</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws a solid rectangle with rounded corners at the given point within the frame.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_text%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMWSTR.html" target="topic">vm_graphic_draw_text</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws the texts at the given position within the frame. The font / color / font_size are following the global settings set by vm_graphic_font_set_font() / vm_graphic_color() / vm_graphic_font_set_font_size(). If they are not set the default system font / block color and medium font will be used.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_text_by_baseline%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMWSTR%40VMINT.html" target="topic">vm_graphic_draw_text_by_baseline</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws the text to the frame according to the baseline. The font / color / font_size are following the global setting set by vm_graphic_font_set_font() / vm_graphic_color() / vm_graphic_font_set_font_size(). If not set the default system font / block color and medium font will be used.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_draw_truncated_text%40vm_graphic_frame_t_%40VMINT%40VMINT%40VMINT%40VMWSTR%40VMWSTR%40VMINT.html" target="topic">vm_graphic_draw_truncated_text</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Draws the texts at the given position within the frame. Will be truncated if necessary with configured truncate symbol.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_flatten_frame%40vm_graphic_frame_t_%40vm_graphic_frame_t_%40vm_graphic_point_t%40VMINT.html" target="topic">vm_graphic_flatten_frame</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Flatten frames to output_frame&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_char_baseline_all_language%40VMINT.html" target="topic">vm_graphic_get_char_baseline_all_language</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get maximum char baseline in pixel regardless of language for the font size&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_char_height_all_language.html" target="topic">vm_graphic_get_char_height_all_language</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get maximum char height regardless of language for the font size&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_char_height_common_language.html" target="topic">vm_graphic_get_char_height_common_language</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+get current font height only considering English and Chinese, for dot character, it is precise. for vector font,it is usually higher than single character, it is the text height.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_character_height%40VMWCHAR.html" target="topic">vm_graphic_get_character_height</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get the height in pixel of a character&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_character_info%40VMWCHAR%40vm_graphic_character_info_t_.html" target="topic">vm_graphic_get_character_info</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+get the information of the appointed character. Unit:pixel&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_character_width%40VMWCHAR.html" target="topic">vm_graphic_get_character_width</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get the width in pixel of a character&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_color%40vm_graphic_color_argb_t_.html" target="topic">vm_graphic_get_color</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get global color&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_font_pool_size%40VMUINT32%40VMUINT32%40VMUINT32%40VMUINT32_.html" target="topic">vm_graphic_get_font_pool_size</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get the memory size needed for the font pool. The user can allocate memory with desired size, and set it as font pool size by calling <a href="vm_graphic_init_font_pool%40VMUINT8_%40VMUINT32.html" target="topic">vm_graphic_init_font_pool</a>();&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_image_file_frame_number%40VMWSTR%40VMINT_.html" target="topic">vm_graphic_get_image_file_frame_number</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the frame number of an image file. The image format can be ABM / AB2 / JPEG / GIF / PNG / BMP&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_image_file_property%40VMWSTR%40vm_graphic_image_property_t_.html" target="topic">vm_graphic_get_image_file_property</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the property of an image file.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_image_memory_frame_number%40VMUINT8_%40VMINT%40VMINT_.html" target="topic">vm_graphic_get_image_memory_frame_number</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the frame number of an image saved in memory. The image format can be ABM / AB2 / JPEG / GIF / PNG / BMP&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_image_memory_property%40VMUINT8_%40VMINT%40VMINT%40vm_graphic_image_property_t_.html" target="topic">vm_graphic_get_image_memory_property</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the property of an image saved in memory. The image format can be ABM / AB2 / JPEG / GIF / PNG / BMP&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_point_color%40vm_graphic_frame_t_%40vm_graphic_color_argb_t_%40VMINT%40VMINT.html" target="topic">vm_graphic_get_point_color</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the color of the appointed point in the frame&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_text_baseline%40VMWSTR.html" target="topic">vm_graphic_get_text_baseline</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+get the baseline of a text in pixels&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_text_height%40VMWSTR.html" target="topic">vm_graphic_get_text_height</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+get the height of a text in pixels&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_text_width%40VMWSTR.html" target="topic">vm_graphic_get_text_width</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+get the width of a text in pixels&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_get_text_width_height%40VMWSTR%40VMINT%40VMINT_%40VMINT_%40VMINT%40VMUINT8%40VMUINT8.html" target="topic">vm_graphic_get_text_width_height</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_init_font_pool%40VMUINT8_%40VMUINT32.html" target="topic">vm_graphic_init_font_pool</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Initialize the font pool with outside memory.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_is_vector_font_supported.html" target="topic">vm_graphic_is_vector_font_supported</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Query the current platform if it supports vector fonts.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_linear_transform%40vm_graphic_frame_t_%40vm_graphic_frame_t_%40VMFLOAT_%40VMINT32%40VMINT32%40VMINT32%40VMINT32%40VMINT32%40VMINT32%40VMINT32%40V.html" target="topic">vm_graphic_linear_transform</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Linear transformation&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_measure_character%40VMWCHAR%40VMINT_%40VMINT_.html" target="topic">vm_graphic_measure_character</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+get the width and height of the appointed character. Unit:pixel&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_reset_clip.html" target="topic">vm_graphic_reset_clip</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reset the clip&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_reset_font.html" target="topic">vm_graphic_reset_font</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reset app's own fonts, afterward, the texts will be drawn using system font&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_rotate_frame%40vm_graphic_frame_t_%40vm_graphic_frame_t_%40VM_GRAPHIC_ROTATE_TYPE.html" target="topic">vm_graphic_rotate_frame</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Rotates a frame according to the rotate type, the frame is rotated in-place.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_set_clip%40VMINT%40VMINT%40VMINT%40VMINT.html" target="topic">vm_graphic_set_clip</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the clip, it will affect all the graphic function calls. The coordinates are frame-based.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_set_color%40vm_graphic_color_argb_t.html" target="topic">vm_graphic_set_color</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the global color for graphic functions such as draw text or shapes&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_set_font%40VMWSTR%40VMINT.html" target="topic">vm_graphic_set_font</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Set app's own fonts, afterward, engine will try to find the font for a character from these font files one by one, the font with smaller index in the font_file_paths array will have higher priority. If there is no related font in thest font files for a character, the system font will be used. Please call this API after VM_MSG_PAINT event. Set fonts clears the internal cache of the text rendering engine, therefore performance-wise it is better to prevent Reset/Set fonts frequently.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_set_font_size%40VMINT.html" target="topic">vm_graphic_set_font_size</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Set the global font size. You can use the <a href="VM_GRAPHIC_FONT_SIZE.html" target="topic">VM_GRAPHIC_FONT_SIZE</a> enum. If the platform supports vector font you will be able to set the real font size in pixel, but it should be bigger than 2 for the value that is occupied by <a href="VM_GRAPHIC_FONT_SIZE.html" target="topic">VM_GRAPHIC_FONT_SIZE</a> enum.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_graphic_set_font_style%40VMINT%40VMINT%40VMINT.html" target="topic">vm_graphic_set_font_style</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Set the font style. Only valid for vector fonts.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_graphic_character_info_t.html" target="topic">vm_graphic_character_info_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+character information in pixel&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_graphic_color_argb_t.html" target="topic">vm_graphic_color_argb_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Color struct in argb format&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GRAPHIC_COLOR_FORMAT.html" target="topic">VM_GRAPHIC_COLOR_FORMAT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Graphic color formats&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GRAPHIC_FONT_SIZE.html" target="topic">VM_GRAPHIC_FONT_SIZE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+font size&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_graphic_frame_t.html" target="topic">vm_graphic_frame_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Frame struct&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GRAPHIC_GRADIENT_STYLE.html" target="topic">VM_GRAPHIC_GRADIENT_STYLE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gradient style&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_graphic_image_property_t.html" target="topic">vm_graphic_image_property_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+image property&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_graphic_point_t.html" target="topic">vm_graphic_point_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Point structure&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GRAPHIC_RESULT.html" target="topic">VM_GRAPHIC_RESULT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Graphic results&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GRAPHIC_ROTATE_TYPE.html" target="topic">VM_GRAPHIC_ROTATE_TYPE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Graphic rotate type&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GRAPHIC_TRANSFORM_FLAG.html" target="topic">VM_GRAPHIC_TRANSFORM_FLAG</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Transform flags&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GRAPHIC_TRANSFORM_SAMPLE_MODE.html" target="topic">VM_GRAPHIC_TRANSFORM_SAMPLE_MODE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Transform sample mode&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_GRAPHIC_TRANSFORM_SOURCE_KEY_EDGE_FILTER.html" target="topic">VM_GRAPHIC_TRANSFORM_SOURCE_KEY_EDGE_FILTER</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Transform source key edge filters&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_UI_GRAPHIC_14_Topics.html" target="topic">Topics</a>, <a href="_C_UI_GRAPHIC_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a>, <a href="_C_UI_GRAPHIC_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_UI_GRAPHIC.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:01 GMT -->
+</html>

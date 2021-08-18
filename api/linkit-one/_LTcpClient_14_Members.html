@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LTcpClient_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:04:09 GMT -->
+<head>
+<title>LTcpClient Class Members</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_LTcpClient_14_Members.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+LTcpClient Class Members</div>
+<div class="Element28">
+<a href="LTcpClient.html" target="topic">LTcpClient Class</a> | <a href="_LTcpClient_14_Members_Members.html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Members</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element215">
+Methods</div>
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Method&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__available.html" target="topic">available</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Queries if there are incoming data from server side and returns the number of byte available for <a href="LTcpClient__read.html" target="topic">read</a> after connecting to a server.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__connect%40IPAddress%40uint16_t.html" target="topic">connect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Connects to a TCP server.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__connect%40char__%40uint16_t.html" target="topic">connect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Connects to a TCP server.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__connected.html" target="topic">connected</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Queries if this client object has been connected to a TCP server.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__flush.html" target="topic">flush</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+flush is not currrently supported.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LTcpClient__LTcpClient.html" target="topic">LTcpClient</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Constructs a LTcpClient object which can be used to <a href="LTcpClient__connect%40IPAddress%40uint16_t.html" target="topic">connect</a> to the remote TCP server.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__peek.html" target="topic">peek</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Queries the first unread byte sent from the <a href="LTcpClient__connected.html" target="topic">connected</a> server side. This byte is not considered as <a href="LTcpClient__read.html" target="topic">read</a>; therefore this method will return the same byte until <a href="LTcpClient__read.html" target="topic">read</a>() is called.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__read.html" target="topic">read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads the data sent from the server side and returns one single byte if there is no parameter given. If the buffer and buffer size are given, store the data in the buffer passed in.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__read%40uint8_t__%40size_t.html" target="topic">read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads the data sent from the server side and returns one single byte if there is no parameter given. If the buffer and buffer size are given, store the data in the buffer passed in.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__stop.html" target="topic">stop</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Disconnects from the <a href="LTcpClient__connected.html" target="topic">connected</a> TCP server.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__write%40uint8_t.html" target="topic">write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes data to server after <a href="LTcpClient__connected.html" target="topic">connected</a> to one.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__write%40uint8_t__%40size_t.html" target="topic">write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes data to server after <a href="LTcpClient__connected.html" target="topic">connected</a> to one.&nbsp;</div></td></tr></table></div></div>
+<div class="Element215">
+Operators</div>
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Operator&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_operator.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LTcpClient__bool.html" target="topic">bool</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+An <a href="LWiFiClient.html" target="topic">LWiFiClient</a> or <a href="LGPRSClient.html" target="topic">LGPRSClient</a> object will evaluate to true if it is <a href="LTcpClient__connected.html" target="topic">connected</a>.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LTcpClient_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:04:10 GMT -->
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LUDP_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:04:12 GMT -->
+<head>
+<title>LUDP Class Members</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_LUDP_14_Members.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+LUDP Class Members</div>
+<div class="Element28">
+<a href="LUDP.html" target="topic">LUDP Class</a> | <a href="_LUDP_14_Members_Members.html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Members</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element215">
+Methods</div>
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Method&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LUDP___LUDP.html" target="topic">~LUDP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Destructor. LUDP will close resources when it is destroyed.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__available.html" target="topic">available</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Number of remaining bytes in the current packet. Only meaningful after <a href="LUDP__parsePacket.html" target="topic">parsePacket</a>() returns non-zero.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__begin%40uint16_t.html" target="topic">begin</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Initializes UDP function, and start listening on specified local port.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__beginPacket%40IPAddress%40uint16_t.html" target="topic">beginPacket</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Start constructing an UDP datagrams to a remote host specified by IP address and port. Call <a href="LUDP__write%40uint8_t.html" target="topic">write</a>() subsequently to construct the datagram content. Then call <a href="LUDP__endPacket.html" target="topic">endPacket</a>() to actually send it.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_abstract.gif" border="0" alt="" title=""> <a href="LUDP__beginPacket%40char__%40uint16_t.html" target="topic">beginPacket</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Start constructing an UDP datagrams to a remote host specified by URL address and port. Call <a href="LUDP__write%40uint8_t.html" target="topic">write</a>() subsequently to construct the datagram content. Then call <a href="LUDP__endPacket.html" target="topic">endPacket</a>() to actually send it.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__endPacket.html" target="topic">endPacket</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Send the datagram after calling <a href="LUDP__beginPacket%40IPAddress%40uint16_t.html" target="topic">beginPacket</a>() and <a href="LUDP__write%40uint8_t.html" target="topic">write</a>().&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__flush.html" target="topic">flush</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Stop processing current packet.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LUDP__LUDP.html" target="topic">LUDP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Constructor. LUDP cannot be instantiated directly. Use <a href="LWiFiUDP.html" target="topic">LWiFiUDP</a> or <a href="LGPRSUDP.html" target="topic">LGPRSUDP</a> instead.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__parsePacket.html" target="topic">parsePacket</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Check if there are incoming UDP datagrams. <a href="LUDP__read.html" target="topic">read</a>() should be then used to actually <a href="LUDP__read.html" target="topic">read</a> the data from packet.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__peek.html" target="topic">peek</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+return the value of next <a href="LUDP__available.html" target="topic">available</a> byte from current packet. The byte remains in the packet.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__read.html" target="topic">read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Read 1 byte from current packet after calling <a href="LUDP__parsePacket.html" target="topic">parsePacket</a>();&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__read%40unsigned_char_%40size_t.html" target="topic">read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Read up to len bytes from current packet after calling <a href="LUDP__parsePacket.html" target="topic">parsePacket</a>();&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__remoteIP.html" target="topic">remoteIP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+retrieve the sender IP address of the current packet started by <a href="LUDP__parsePacket.html" target="topic">parsePacket</a>()&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__remotePort.html" target="topic">remotePort</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+retrieve the sender port of the current packet started by <a href="LUDP__parsePacket.html" target="topic">parsePacket</a>()&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__stop.html" target="topic">stop</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Stop listening for UDP datagram and uninitializes UDP module.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__write%40uint8_t.html" target="topic">write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Append 1 single byte into the datagram&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LUDP__write%40uint8_t__%40size_t.html" target="topic">write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Append a buffer into the datagram.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LUDP_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:04:13 GMT -->
+</html>

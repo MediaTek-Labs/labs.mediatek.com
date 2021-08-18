@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/!!FUNCTIONS_C_WLAN.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:01:35 GMT -->
+<head>
+<title>Functions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '%21%21FUNCTIONS_C_WLAN.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="C_WLAN.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_WLAN.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="vm_wlan_connect%40vm_wlan_ap_info_t_%40vm_wlan_connect_callback%40void_.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Functions</div>
+<div class="Element7">
+<a href="_%21%21FUNCTIONS_C_WLAN_14_Functions.html" target="topic">Functions</a> | <a href="C_WLAN.html" target="topic">WLAN</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('46756E6374696F6E73,4D6F64756C65', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('46756E6374696F6E73,4D6F64756C65', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53756D6D617279"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The following table lists functions in this documentation.</p></div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_connect%40vm_wlan_ap_info_t_%40vm_wlan_connect_callback%40void_.html" target="topic">vm_wlan_connect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Connects to the AP, as specified by the ap_info. DA WLAN service can only support one connection at the same time due to chip constraint. If a new connection request is received, the connecting process of the current request will be aborted. If there is a connection established already, the connection will be disconnected, and then make a new connection.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_disconnect%40vm_wlan_callback%40void_.html" target="topic">vm_wlan_disconnect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Disconnects the current WLAN connection. After the WLAN disconnecting process is complete, the specified callback will be invoked.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_get_connected_ap_info%40void_%40VM_WLAN_AP_INFO_TYPE.html" target="topic">vm_wlan_get_connected_ap_info</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets information of the connected AP, such as BSSID, RSSI and the profile ID.<br>The info_type specifies what kind of information to be retrieved. The caller should ensure enough space for the buffer to store the information as following: info_type info VM_WLAN_AP_INFO_BSSID <a href="VMUINT8.html" target="topic">VMUINT8</a> array with length at least <a href="VM_WLAN_MAC_ADDRESS_LENGTH.html" target="topic">VM_WLAN_MAC_ADDRESS_LENGTH</a> + 1. VM_WLAN_AP_INFO_PROF_ID <a href="VMUINT32.html" target="topic">VMUINT32</a>* points to a <a href="VMUINT32.html" target="topic">VMUINT32</a> variable. VM_WLAN_AP_INFO_RSSI <a href="VMINT32.html" target="topic">VMINT32</a>* points to an <a href="VMINT32.html" target="topic">VMINT32</a> variable. VM_WLAN_AP_INFO_ALL <a href="vm_wlan_connected_ap_info_t.html" target="topic">vm_wlan_connected_ap_info_t</a>* to an <a href="vm_wlan_connected_ap_info_t.html" target="topic">vm_wlan_connected_ap_info_t</a> variable.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_get_ip_info%40vm_wlan_ip_info_t_.html" target="topic">vm_wlan_get_ip_info</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the IP address, Netmask, gateway IP and DNS, when they are available. The IP information will be available only when the WLAN server is in CONNECTED status. There are two situations due to the way of how to obtain the IP. If using static IP when connecting, the IP will be available once the connection succeeds. If using DHCP when connecting, the IP will be available only when ABM notifies the IP by MSG, which will take a little time after connection succeeds.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_get_mac_address%40vm_wlan_string_info_query_t_.html" target="topic">vm_wlan_get_mac_address</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the MAC address. The size of the dest buffer must be equal to or greater than <a href="VM_WLAN_MAC_ADDRESS_LENGTH.html" target="topic">VM_WLAN_MAC_ADDRESS_LENGTH</a>, which means the destination_length must be equal to or greater than <a href="VM_WLAN_MAC_ADDRESS_LENGTH.html" target="topic">VM_WLAN_MAC_ADDRESS_LENGTH</a>. Otherwise the WLAN Server will fail, and the required length (<a href="VM_WLAN_MAC_ADDRESS_LENGTH.html" target="topic">VM_WLAN_MAC_ADDRESS_LENGTH</a>) will be set in the request_length, back to the application.<br>If the dest is <a href="NULL.html" target="topic">NULL</a> and the request_length exists (not <a href="NULL.html" target="topic">NULL</a>), the function will fail with the required length set in request_length for the application.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_get_parameter%40VM_WLAN_MODE%40void_.html" target="topic">vm_wlan_get_parameter</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the parameter under different modes. Currently, only VM_WLAN_MODE_AP and VM_WLAN_MODE_AP_STA are supported to get AP's SSID, Auth mode and Password.<br>The caller should prepare the corresponding variables with proper types for parameter. The caller should prepare varible with proper type for &quot;parameter&quot; input parameter.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_mode_get.html" target="topic">vm_wlan_mode_get</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Retrieves the WLAN mode.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_mode_set%40VM_WLAN_MODE%40vm_wlan_callback%40void_.html" target="topic">vm_wlan_mode_set</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Switches the mode. VM_WLAN_SET_MODE_OFF turns off both AP mode and STA mode. VM_WLAN_SET_MODE_AP turns only AP mode on. VM_WLAN_SET_MODE_STA turns only STA mode on. VM_WLAN_SET_MODE_AP_STA turns both AP mode and STA mode on.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_register_notification_handler%40VM_WLAN_NOTIFICATION_TYPE%40vm_wlan_notification_callback%40void_.html" target="topic">vm_wlan_register_notification_handler</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Registers the callback for the notifications, such as IP available notification, or WiFi passive disconnect notification. When the related things happens, notifications will be activated and the callback will be invoked, if the callback has been registered.<br>Use vm_wlan_deregister_notification_handler() to un-register the callback that was registered prior.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_roaming_get%40VMBOOL_.html" target="topic">vm_wlan_roaming_get</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets roaming parameter.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_roaming_set%40VMBOOL%40vm_wlan_callback%40void_.html" target="topic">vm_wlan_roaming_set</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the roaming parameter.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_scan%40vm_wlan_scan_callback%40void_.html" target="topic">vm_wlan_scan</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Scans for the Access Points.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_scan_abort%40VMUINT32.html" target="topic">vm_wlan_scan_abort</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Aborts the scan job.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_scan_set_parameter%40void_%40VM_WLAN_SCAN_PARAMETER%40vm_wlan_callback%40void_.html" target="topic">vm_wlan_scan_set_parameter</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets scan parameters, such as dwell time or specific SSID list. The scan parameters will be initialized to the default values everytime when the WLAN is turned on from inactive. Setting scan parameters is not useful if the WLAN is in INACTIVE state. So it is not allowed to call this function when the WLAN is in INACTIVE state. If the scan parameters are not set, the default will be used. The default dwell time is 60 seconds; the default spec_ssid_list is <a href="NULL.html" target="topic">NULL</a>.<br>The parameter_type specifies what kind of scan parameters that is expected to be set. The caller... <a href="vm_wlan_scan_set_parameter%40void_%40VM_WLAN_SCAN_PARAMETER%40vm_wlan_callback%40void_.html" target="topic">more</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_set_parameter%40VM_WLAN_MODE%40void_%40VM_WLAN_PARAMETER.html" target="topic">vm_wlan_set_parameter</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Set the WLAN parameters under different modes. The caller should prepare the corresponding variables with proper types for parameter and parameter_type of the input parameters.<br>Currently, only VM_WLAN_MODE_AP and VM_WLAN_MODE_AP_STA are supported for setting up the SSID, Authorize Mode and Password.<br>For Authorize mode, only OPEN and WPA2_ONLY_PSK are supported. The parameter(s) need to be set before the AP is turned on.<br>The default values will be used if the parameters are not set or the setting operation failed. The default SSID is MTK_XXXXXX, where the value of XXXXXX is the last three bytes of mac address. The default authorize... <a href="vm_wlan_set_parameter%40VM_WLAN_MODE%40void_%40VM_WLAN_PARAMETER.html" target="topic">more</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_sniffer_off%40vm_wlan_sniffer_off_callback%40void_.html" target="topic">vm_wlan_sniffer_off</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The function is used to close the sniffer in WLAN STA mode.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_sniffer_on%40vm_wlan_sniffer_on_config_t_%40vm_wlan_sniffer_on_callback%40void_.html" target="topic">vm_wlan_sniffer_on</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The function is used to open the sniffer in WLAN STA mode.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_wlan_station_status.html" target="topic">vm_wlan_station_status</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Retrieves the status of WLAN STA mode.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4D6F64756C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D6F64756C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D6F64756C65">Module</a></div>
+<div id="div4D6F64756C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_WLAN.html" target="topic">WLAN</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/!!FUNCTIONS_C_WLAN.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:01:36 GMT -->
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_soc_select@int@fd_set_@fd_set_@fd_set_@timeval__3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:58 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_vm_soc_select@int@fd_set_@fd_set_@fd_set_@timeval__3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="vm_soc_select%40int%40fd_set_%40fd_set_%40fd_set_%40timeval_.html" target="topic">vm_soc_select</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"> <a href="timeval.html" target="topic">timeval</a> timeout;
+ <a href="fd_set.html" target="topic">fd_set</a> writefds;
+ timeout.tv_sec = 0;
+ timeout.tv_usec = 2000;
+ FD_ZERO(&amp;writefds);
+ <a href="FD_SET1.html" target="topic">FD_SET</a>((bf_u32)sockIds[sock].id, &amp;writefds);
+ <strong><span style="color: #871F78">if</span></strong> (vm_soc_select(sockIds[sock].id+1, 0, &amp;writefds, 0, &amp;timeout) &gt;= 0)
+ {
+    <strong><span style="color: #871F78">if</span></strong> (FD_ISSET(sockIds[sock].id, &amp;writefds))
+    {
+        <i><span style="color: #0000FF">//socket is ready for writting data</span></i>
+    }
+ }</pre></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_soc_select@int@fd_set_@fd_set_@fd_set_@timeval__3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:58 GMT -->
+</html>

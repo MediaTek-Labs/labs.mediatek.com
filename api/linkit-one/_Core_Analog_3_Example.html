@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_Core_Analog_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:09 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_Core_Analog_3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="Core_Analog.html" target="topic">Analog I/O</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+to read the voltage of a sensor. The process is used in reverse to convert discrete digital signals to a continuous analog signal for writing to an assigned pin.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Table: The analog input and output pins </p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element65" valign="top" width="24%">
+<div class="Element66">
+Board&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Analog input pin&nbsp;</div></td><td class="Element65" valign="top" width="37%">
+<div class="Element66">
+Analog output pin&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="24%">
+<div class="Element68">
+LinkIt ONE&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+A0,A1,A2&nbsp;</div></td><td class="Element67" valign="top" width="37%">
+<div class="Element68">
+D3, D9&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Please note the following:
+<ul class="Element633">
+<li class="Element603"><a href="analogWrite%40uint32_t%40uint32_t.html" target="topic">analogWrite</a>() realizes analog output using PWM to drive hardware analog output.</li>
+<li class="Element603"><a href="analogWriteAdvance%40uint32_t%40uint32_t%40uint32_t%40uint32_t%40uint32_t.html" target="topic">analogWriteAdvance</a>() fine-tunes parameters for more accurate PWM control.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+LinkIt ONE provides 3 analog inputs (A0 to A2) compared to 6 inputs (A0 to A5) on Arduino UNO. Although LinkIt ONE operates on 3.3V, the analog input still accepts 0 to 5V inputs and transforms them to the digital range 0 to 1023.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+LinkIt ONE provides 2 PWM outputs (D3, D9) compared to 6 outputs (D3, D5, D6, D9, D10, D11) on Arduino UNO. However, the output from LinkIt on D3 and D9 supports accuracy up to 13-bit. The bit accuracy effects the output frequency, with 1.6kHz offered at 13bit, 50.8kHz at 8bit and 800kHz at 4bit.</p></div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_Core_Analog_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:09 GMT -->
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_fs_get_size@VM_FS_HANDLE@VMUINT_.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:56:24 GMT -->
+<head>
+<title>vm_fs_get_size</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'vm_fs_get_size@VM_FS_HANDLE@VMUINT_.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00126">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="VM_RESULT.html" target="topic">VM_RESULT</a> <strong><span style="color: #660000">vm_fs_get_size</span></strong>(
+    VM_FS_HANDLE <strong><span style="color: #660000">handle</span></strong>, 
+    <a href="VMUINT.html" target="topic">VMUINT</a>* <strong><span style="color: #660000">size</span></strong>
+);</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="vm_fs_get_removable_drive_letter.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_STD_FS.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="vm_fs_is_eof%40VM_FS_HANDLE.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+vm_fs_get_size</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="VM_RESULT.html" target="topic">VM_RESULT</a> <strong><span style="color: #660000">vm_fs_get_size</span></strong>(
+    VM_FS_HANDLE <strong><span style="color: #660000">handle</span></strong>, 
+    <a href="VMUINT.html" target="topic">VMUINT</a>* <strong><span style="color: #660000">size</span></strong>
+);</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Obtains the size of the file in bytes. The file is specified by the file handle.</p></div>
+</div>
+</div>
+<a name="506172616D6574657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('506172616D6574657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img506172616D6574657273">Parameters</a></div>
+<div id="div506172616D6574657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element240" valign="top" width="30%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="70%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VM_FS_HANDLE handle&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN]  The file handle of the file.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMUINT* size&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[OUT] The size of the file specified by the file handle in bytes, an output parameter of this function.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="52657475726E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('52657475726E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img52657475726E73">Returns</a></div>
+<div id="div52657475726E73">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+   It returns 0, if the size of the file was obtained successfully. If fails,&nbsp;</p>
+<p class="Element10">
+   a negative value is returned. Refer to <a href="VM_FS_RESULT.html" target="topic">VM_FS_RESULT</a> for error code.</p></div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+vmfs.h</p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="%21%21FUNCTIONS_C_STD_FS.html" target="topic">Functions</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_fs_get_size@VM_FS_HANDLE@VMUINT_.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:56:24 GMT -->
+</html>

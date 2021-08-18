@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_C_FW_RESOURCE_14_Functions_(AutoDoc_Folder).html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:37 GMT -->
+<head>
+<title>Resource Functions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_C_FW_RESOURCE_14_Functions_(AutoDoc_Folder).html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+Resource Functions</div>
+<div class="Element28">
+<a href="C_FW_RESOURCE.html" target="topic">Resource</a> | <a href="_C_FW_RESOURCE_14_Functions_(AutoDoc_Folder)_Functions_(AutoDoc_Folder).html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Functions</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_res_delete%40VMUINT32.html" target="topic">vm_res_delete</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Release resources allocated by a specific resource ID after calling resource loading APIs, e.g. <a href="vm_res_get_image%40VMUINT32%40VMUINT32_.html" target="topic">vm_res_get_image</a>(), <a href="vm_res_get_audio%40VMUINT32%40VMUINT32_.html" target="topic">vm_res_get_audio</a>(), and <a href="vm_res_get_binary%40VMUINT32%40VMUINT32_.html" target="topic">vm_res_get_binary</a>().&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_res_get_audio%40VMUINT32%40VMUINT32_.html" target="topic">vm_res_get_audio</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Load and get audio data according to resource ID. The buffer is allocated by resource module and <a href="vm_res_delete%40VMUINT32.html" target="topic">vm_res_delete</a>() must be called when it is no longer used.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_res_get_binary%40VMUINT32%40VMUINT32_.html" target="topic">vm_res_get_binary</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Load and get binary data according to resource ID. The buffer is allocated by resource module and <a href="vm_res_delete%40VMUINT32.html" target="topic">vm_res_delete</a>() must be called when it is no longer used.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_res_get_image%40VMUINT32%40VMUINT32_.html" target="topic">vm_res_get_image</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Load and get image data according to resource ID. The buffer is allocated by resource module and <a href="vm_res_delete%40VMUINT32.html" target="topic">vm_res_delete</a>() must be called when it is no longer used.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_res_get_string%40VMUINT32%40VMUINT32_.html" target="topic">vm_res_get_string</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get string by its resource ID. If there are multiple languages defined in the string table, the language passed to <a href="vm_res_init%40VMUINT32.html" target="topic">vm_res_init</a>() will be used.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_res_init%40VMUINT32.html" target="topic">vm_res_init</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Call this function prior to any other resource APIs. This function initializes the resource module, and load language-specific string data in memory.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_res_release.html" target="topic">vm_res_release</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Release all resource and free all memory occupied. Note that any resource pointers retrieved prior to this function call become invalid. Accessing these resources after vm_res_release() results in undefined behavior.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_C_FW_RESOURCE_14_Functions_(AutoDoc_Folder).html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:38 GMT -->
+</html>

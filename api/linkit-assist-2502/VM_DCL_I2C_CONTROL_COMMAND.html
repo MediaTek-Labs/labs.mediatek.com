@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/VM_DCL_I2C_CONTROL_COMMAND.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:58:12 GMT -->
+<head>
+<title>VM_DCL_I2C_CONTROL_COMMAND</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'VM_DCL_I2C_CONTROL_COMMAND.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00304">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">typedef</span></strong> <strong><span style="color: #871F78">enum</span></strong> {
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_GET_TRANSACTION_MODE</span></strong> = 0x901,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_SET_TRANSACTION_SPEED</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_SINGLE_WRITE</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_SINGLE_READ</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_CONT_WRITE</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_CONT_READ</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_WRITE_AND_READ</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_RESERVED_0</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_RESERVED_1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_RESERVED_2</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_RESERVED_3</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_SET_SLAVE_ADDRESS</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_CONFIG</span></strong>
+} VM_DCL_I2C_CONTROL_COMMAND;</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="%21%21RECORDS_C_DRV_I2C.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="%21%21RECORDS_C_DRV_I2C.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="vm_dcl_i2c_control_config_t.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+VM_DCL_I2C_CONTROL_COMMAND</div>
+<div class="Element7">
+<a href="_VM_DCL_I2C_CONTROL_COMMAND_3_Example.html" target="topic">Example</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,4578616D706C65,46696C65,4D656D62657273,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,4578616D706C65,46696C65,4D656D62657273,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">typedef</span></strong> <strong><span style="color: #871F78">enum</span></strong> {
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_GET_TRANSACTION_MODE</span></strong> = 0x901,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_SET_TRANSACTION_SPEED</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_SINGLE_WRITE</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_SINGLE_READ</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_CONT_WRITE</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_CONT_READ</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_WRITE_AND_READ</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_RESERVED_0</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_RESERVED_1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_RESERVED_2</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_RESERVED_3</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_SET_SLAVE_ADDRESS</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_I2C_CMD_CONFIG</span></strong>
+} VM_DCL_I2C_CONTROL_COMMAND;</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+VM_DCL_I2C_CTRL_CMD_T indicates the I2C control commands, you can <a href="select.html" target="topic">select</a> CMDS to control the driver.</p></div>
+</div>
+</div>
+<a name="4578616D706C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4578616D706C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4578616D706C65">Example</a></div>
+<div id="div4578616D706C65">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"> <a href="VM_DCL_HANDLE.html" target="topic">VM_DCL_HANDLE</a> i2c_handle;
+ <a href="vm_dcl_i2c_control_config_t.html" target="topic">vm_dcl_i2c_control_config_t</a> conf_data;
+ vm_i2c_ctrl_single_write_t write_data;
+ VM_DCL_BUFF_LEN len;
+ <a href="VMUINT8.html" target="topic">VMUINT8</a> i2c_write_data[2] = {0x56,0x78};
+i2c_handle = <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>(VM_DCL_I2C,0);
+<strong><span style="color: #871F78">if</span></strong>(<a href="VM_DCL_HANDLE_INVALID.html" target="topic">VM_DCL_HANDLE_INVALID</a>==i2c_handle) <strong><span style="color: #871F78">return</span></strong>;
+conf_data.reserved_0 = 0;
+conf_data.transaction_mode = VM_DCL_I2C_TRANSACTION_FAST_MODE;
+conf_data.get_handle_wait = 0;
+conf_data.reserved_1 = 0;
+conf_data.delay_length = 0;
+conf_data.slave_address = 0x98;
+conf_data.fast_mode_speed = 400;
+conf_data.high_mode_speed = 0;
+<a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>(i2c_handle,VM_DCL_I2C_CMD_CONFIG,(<strong><span style="color: #871F78">void</span></strong> *)&amp;conf_data);
+write_data.data_ptr = i2c_write_data;
+write_data.data_length = 2;
+<a href="vm_dcl_write%40VM_DCL_HANDLE%40VM_DCL_BUFFER_%40VM_DCL_BUFFER_LENGTH%40VM_DCL_BUFFER_LENGTH_%40VM_DCL_OPTIONS.html" target="topic">vm_dcl_write</a>(i2c_handle,(VM_DCL_BUFF*)i2c_write_data,2,&amp;len,0);
+ <i><span style="color: #0000FF">//To do something with the handle.</span></i></pre></div></div>
+</div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+vmdcl_i2c.h</p></div>
+</div>
+</div>
+<a name="4D656D62657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D656D62657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D656D62657273">Members</a></div>
+<div id="div4D656D62657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element272">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element260" valign="top" width="30%">
+<div class="Element261">
+Members&nbsp;</div></td><td class="Element264" valign="top" width="70%">
+<div class="Element265">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_GET_TRANSACTION_MODE = 0x901&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This gets the transaction mode.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_SET_TRANSACTION_SPEED&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This sets the transaction speed.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_SINGLE_WRITE&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+The single write of a blocking mode.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_SINGLE_READ&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+The single read of a blocking mode.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_CONT_WRITE&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This continues the write of a blocking mode.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_CONT_READ&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This continues the read of a blocking mode.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_WRITE_AND_READ&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This is the write and the read of a blocking mode.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_RESERVED_0&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This is a reserved command. Do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_RESERVED_1&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This is a reserved command. Do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_RESERVED_2&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This is a reserved command. Do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_RESERVED_3&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This is a reserved command. Do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_SET_SLAVE_ADDRESS&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This sets the slave address of a sensor.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_I2C_CMD_CONFIG&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+This configures the I2C for read or write.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="%21%21RECORDS_C_DRV_I2C.html" target="topic">Structs, Records, Enums</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/VM_DCL_I2C_CONTROL_COMMAND.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:58:13 GMT -->
+</html>

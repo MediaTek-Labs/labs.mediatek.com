@@ -1,0 +1,530 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_DRV_DCL.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:57:42 GMT -->
+<head>
+<title>Driver Common Layer</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_DRV_DCL.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="C_DRV.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_DRV.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_DRV_DCL.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Driver Common Layer</div>
+<div class="Element7">
+<a href="_C_DRV_DCL_14_Topics.html" target="topic">Topics</a> | <a href="_C_DRV_DCL_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a> | <a href="_C_DRV_DCL_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a> | <a href="_C_DRV_DCL_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a> | <a href="_C_DRV_DCL_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,4D6163726F73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,4D6163726F73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Provides functions to control and access (read and write) to the hardware devices on LinkIt platform.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+This is the DCL (Device Control Layer) module, which provides functions to control and access the hardware devices on LinkIt platform.&nbsp;</p>
+<p class="Element10">
+Before application tries to access a hardware device, such as GPIO, I2C, etc., it must open the device first by calling <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>() to obtain a device handle, then access the device through the device handle (Calling the <a href="vm_dcl_close%40VM_DCL_HANDLE.html" target="topic">vm_dcl_close</a>() to close the device handle).&nbsp;</p>
+<p class="Element10">
+The application reads and writes to the device through the <a href="vm_dcl_read%40VM_DCL_HANDLE%40VM_DCL_BUFFER_%40VM_DCL_BUFFER_LENGTH%40VM_DCL_BUFFER_LENGTH_%40VM_DCL_OPTIONS.html" target="topic">vm_dcl_read</a>() and <a href="vm_dcl_write%40VM_DCL_HANDLE%40VM_DCL_BUFFER_%40VM_DCL_BUFFER_LENGTH%40VM_DCL_BUFFER_LENGTH_%40VM_DCL_OPTIONS.html" target="topic">vm_dcl_write</a>(). It can also <a href="send.html" target="topic">send</a> commands to control a device through <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>().&nbsp;</p>
+<p class="Element10">
+An application can also register callback for various events from a particular device by calling <a href="vm_dcl_register_callback%40VM_DCL_HANDLE%40VM_DCL_EVENT%40vm_dcl_callback%40void_.html" target="topic">vm_dcl_register_callback</a>(). It can add multiple events to the registered callback by calling <a href="vm_dcl_add_event%40VM_DCL_HANDLE%40VM_DCL_EVENT%40void_.html" target="topic">vm_dcl_add_event</a>().</p></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+To add multiple event to a callback, the callback has to be already registered by <a href="vm_dcl_add_event%40VM_DCL_HANDLE%40VM_DCL_EVENT%40void_.html" target="topic">vm_dcl_add_event</a>() before calling <a href="vm_dcl_add_event%40VM_DCL_HANDLE%40VM_DCL_EVENT%40void_.html" target="topic">vm_dcl_add_event</a>() to add additional events. </p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_DRV.html" target="topic">Driver</a></p></div>
+</div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_add_event%40VM_DCL_HANDLE%40VM_DCL_EVENT%40void_.html" target="topic">vm_dcl_add_event</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+If want to <a href="listen.html" target="topic">listen</a> to multiple events, then use <a href="vm_dcl_register_callback%40VM_DCL_HANDLE%40VM_DCL_EVENT%40vm_dcl_callback%40void_.html" target="topic">vm_dcl_register_callback</a>() first to register the callback and use vm_dcl_add_event() to add additional events you want the callback to <a href="listen.html" target="topic">listen</a> to.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_close%40VM_DCL_HANDLE.html" target="topic">vm_dcl_close</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Closes the device, as specified by the device_handle. After the device operation completes, this function should be invoked to close the device. If the device operation involves a callback, the device should not be closed before the callback finishes.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_config_pin_mode%40VMUINT%40VM_DCL_PIN_MODE.html" target="topic">vm_dcl_config_pin_mode</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the pin mode.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sends command to control the device, after the device is opened successfully by <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>(). The command specifies what to do and the argument specifies the information needed for controlling the device by the device driver. The specific command is defined in the header file of the device driver.<br>The device_handle, command and argument should correlate, so that the desired operation command is sent to the desired device. The execution of vm_dcl_control() can be either synchronously or asynchronously, depending on the command and the targeted device. Refer to the command description in the specific driver documentation.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_get_owner_id.html" target="topic">vm_dcl_get_owner_id</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the identifier of the user. Some device may need this. Most of the time the return value of this function needs to be passed to the driver when the device do asynchronous operations.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Opens the device. Every device must be opened with this function before it can be used. The device number passed to this function is defined in the header file of the device driver. The returned handle is the identifier of the device. The device handle is used to access the device by the other functions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_read%40VM_DCL_HANDLE%40VM_DCL_BUFFER_%40VM_DCL_BUFFER_LENGTH%40VM_DCL_BUFFER_LENGTH_%40VM_DCL_OPTIONS.html" target="topic">vm_dcl_read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads data from the device. This function may not applicable to the devices that do not transfer data. Some devices may also use <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>() to transfer data, such as SPI.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_register_callback%40VM_DCL_HANDLE%40VM_DCL_EVENT%40vm_dcl_callback%40void_.html" target="topic">vm_dcl_register_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Registers a callback to <a href="listen.html" target="topic">listen</a> to the events from a device specified by the device_handle. The callback enables an asynchronous operation between the application and the device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_write%40VM_DCL_HANDLE%40VM_DCL_BUFFER_%40VM_DCL_BUFFER_LENGTH%40VM_DCL_BUFFER_LENGTH_%40VM_DCL_OPTIONS.html" target="topic">vm_dcl_write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes data to the device. This function may not applicable to the devices that do not transfer data. Refer to the specific device driver document for details. Some devices may also use <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>() to transfer data, such as SPI.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_irq_mask.html" target="topic">vm_irq_mask</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Used in AP mode, it masks the I bit of the processor. This function must be used in pair with the <a href="vm_irq_restore%40VMUINT32.html" target="topic">vm_irq_restore</a>(). The I bit mask time should not exceed 5ms.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_irq_restore%40VMUINT32.html" target="topic">vm_irq_restore</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Used in AP mode, it restores the I bit of the processor. This function must be used in pair with <a href="vm_irq_mask.html" target="topic">vm_irq_mask</a>().&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4D6163726F73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D6163726F73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D6163726F73">Macros</a></div>
+<div id="div4D6163726F73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Macro&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="PIN2CHANNEL.html" target="topic">PIN2CHANNEL</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Converts PIN to ADC channel ID.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="PIN2EINT.html" target="topic">PIN2EINT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Converts PIN to EINT ID, e.g. &nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="PIN2PWM.html" target="topic">PIN2PWM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Converts PIN to PWM ID.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_HANDLE_INVALID.html" target="topic">VM_DCL_HANDLE_INVALID</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Invalid handle, returned by <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a> when there is an error.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_A0.html" target="topic">VM_PIN_A0</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_A1.html" target="topic">VM_PIN_A1</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_A2.html" target="topic">VM_PIN_A2</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D0.html" target="topic">VM_PIN_D0</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_UART&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D1.html" target="topic">VM_PIN_D1</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_UART&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D10.html" target="topic">VM_PIN_D10</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D11.html" target="topic">VM_PIN_D11</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_SPI / VM_DCL_PIN_MODE_SDIO&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D12.html" target="topic">VM_PIN_D12</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_SPI / VM_DCL_PIN_MODE_SDIO&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D13.html" target="topic">VM_PIN_D13</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_SPI / VM_DCL_PIN_MODE_SDIO&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D14.html" target="topic">VM_PIN_D14</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D15.html" target="topic">VM_PIN_D15</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D16.html" target="topic">VM_PIN_D16</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D18.html" target="topic">VM_PIN_D18</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_I2C&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D19.html" target="topic">VM_PIN_D19</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_I2C&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D2.html" target="topic">VM_PIN_D2</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_EINT&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D3.html" target="topic">VM_PIN_D3</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_EINT / VM_DCL_PIN_MODE_PWM&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D4.html" target="topic">VM_PIN_D4</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D5.html" target="topic">VM_PIN_D5</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D6.html" target="topic">VM_PIN_D6</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D7.html" target="topic">VM_PIN_D7</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D8.html" target="topic">VM_PIN_D8</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_D9.html" target="topic">VM_PIN_D9</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_PWM&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P0.html" target="topic">VM_PIN_P0</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_PWM / VM_DCL_PIN_MODE_EINT&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P1.html" target="topic">VM_PIN_P1</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_PWM&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P10.html" target="topic">VM_PIN_P10</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P11.html" target="topic">VM_PIN_P11</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_EINT / VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P12.html" target="topic">VM_PIN_P12</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_EINT / VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P13.html" target="topic">VM_PIN_P13</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_EINT / VM_DCL_PIN_MODE_ADC&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P14.html" target="topic">VM_PIN_P14</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_EINT&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P2.html" target="topic">VM_PIN_P2</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_SPI&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P3.html" target="topic">VM_PIN_P3</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_SPI&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P4.html" target="topic">VM_PIN_P4</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_SPI&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P5.html" target="topic">VM_PIN_P5</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_SPI&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P6.html" target="topic">VM_PIN_P6</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_I2C&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P7.html" target="topic">VM_PIN_P7</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_I2C&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P8.html" target="topic">VM_PIN_P8</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_UART&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_P9.html" target="topic">VM_PIN_P9</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_UART&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_RX.html" target="topic">VM_PIN_RX</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_UART&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_SCL.html" target="topic">VM_PIN_SCL</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_I2C&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_SDA.html" target="topic">VM_PIN_SDA</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_I2C&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_PIN_TX.html" target="topic">VM_PIN_TX</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pin mux, VM_DCL_PIN_MODE_GPIO / VM_DCL_PIN_MODE_UART&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_callback_data_t.html" target="topic">vm_dcl_callback_data_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The type is used for callback to transfer the data from the driver. It is the parameter type of the callback. Usually, the data sent back by the driver is wrapped in the local_parameters, and sometimes in peer_buffer. Different device driver has different specific types for these two parameters.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_DEVICE_GROUP.html" target="topic">VM_DCL_DEVICE_GROUP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This is the device number group enum. Each group device may have several devices. The specific device number please reference to the device driver.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_EVENT_VALUE.html" target="topic">VM_DCL_EVENT_VALUE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This is the event number group enum. Each device group may have several events. Some device may not generate the events. Refer to the device driver for the specific event number and the meaning.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_PIN_MODE.html" target="topic">VM_DCL_PIN_MODE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+pin mux mode&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_STATUS.html" target="topic">VM_DCL_STATUS</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+VM_DCL_STATUS is the type used to represent the status the driver returns.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5479706573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5479706573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5479706573">Types</a></div>
+<div id="div5479706573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_BUFFER.html" target="topic">VM_DCL_BUFFER</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+A buffer type.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_BUFFER_LENGTH.html" target="topic">VM_DCL_BUFFER_LENGTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Length of a buffer of <a href="VM_DCL_BUFFER.html" target="topic">VM_DCL_BUFFER</a> type.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_callback.html" target="topic">vm_dcl_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The definition of the callback function used in DCL module.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_CONTROL_COMMAND.html" target="topic">VM_DCL_CONTROL_COMMAND</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+VM_DCL_CONTROL_COMMAND is the type used to represent the operations a driver needs to perform. The value of the variable of this type variable depends on specific device driver. Refer to the command enum of specific driver for detail. SIO: VM_DCL_SIO_CONTROL_COMMAND, I2C: <a href="VM_DCL_I2C_CONTROL_COMMAND.html" target="topic">VM_DCL_I2C_CONTROL_COMMAND</a>, SPI: <a href="VM_DCL_SPI_CONTROL_COMMAND.html" target="topic">VM_DCL_SPI_CONTROL_COMMAND</a>, ADC: <a href="VM_DCL_ADC_CONTROL_COMMAND.html" target="topic">VM_DCL_ADC_CONTROL_COMMAND</a>, GPIO: <a href="VM_DCL_GPIO_CONTROL_COMMAND.html" target="topic">VM_DCL_GPIO_CONTROL_COMMAND</a>, PMU: <a href="VM_DCL_PMU_CONTROL_COMMAND.html" target="topic">VM_DCL_PMU_CONTROL_COMMAND</a>, EINT: VM_DCL_EINT_CONTROL_COMMAND.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_DEVICE.html" target="topic">VM_DCL_DEVICE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+VM_DCL_DEVICE is the type used to represent a specific device such as UART, I2C, GPIO and so on. Each device belongs to a specific device group. The value for a device group is defined in <a href="VM_DCL_DEVICE_GROUP.html" target="topic">VM_DCL_DEVICE_GROUP</a>. The value for a specific device is defined in the header file of that device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_EVENT.html" target="topic">VM_DCL_EVENT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This is the event type to represent the change of a specific hardware condition, such as data transfer finished. An event is used to communicate asynchronously among the device operations. The value of each event is defined in <a href="VM_DCL_EVENT_VALUE.html" target="topic">VM_DCL_EVENT_VALUE</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_FLAGS.html" target="topic">VM_DCL_FLAGS</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+VM_DCL_FLAGS is the type used to represent the flags passed to the <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>. The value of the flag depends on each specific device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_HANDLE.html" target="topic">VM_DCL_HANDLE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+VM_DCL_HANDLE is the type used to represent a specific device that is opened by <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>. It is the return value of <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>. The value will be passed to other API to tell the driver which device will respond to the corresponding operation.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_OPTIONS.html" target="topic">VM_DCL_OPTIONS</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+VM_DCL_OPTIONS is the type used to specify options to the read/write API. The value of the options depends on each specific device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_OWNER_ID.html" target="topic">VM_DCL_OWNER_ID</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Owner ID.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_DRV_DCL_14_Topics.html" target="topic">Topics</a>, <a href="_C_DRV_DCL_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a>, <a href="_C_DRV_DCL_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a>, <a href="_C_DRV_DCL_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a>, <a href="_C_DRV_DCL_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_DRV_DCL.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:57:47 GMT -->
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LFile_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:48 GMT -->
+<head>
+<title>LFile Class Members</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_LFile_14_Members.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+LFile Class Members</div>
+<div class="Element28">
+<a href="LFile.html" target="topic">LFile Class</a> | <a href="_LFile_14_Members_Members.html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Members</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element215">
+Methods</div>
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Method&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LFile__available.html" target="topic">available</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Queries if there are still data to be <a href="LFile__read.html" target="topic">read</a> (if it reaches the end of file or not).&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LFile__close.html" target="topic">close</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Closes the file to release resource to prevent leakage. Makes sure the data are completely written to the SD/flash storage.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LFile__flush.html" target="topic">flush</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Makes sure the data are written into SD/flash storage to prevent data corruption in case of unexpected power outage or cut.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LFile__isDirectory.html" target="topic">isDirectory</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Folder is a special type of file. isDirectory() is used to identify if an LFile object is a file or a folder.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LFile__name.html" target="topic">name</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Returns the name of file.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LFile__openNextFile%40uint8_t.html" target="topic">openNextFile</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Folder is a special type of file. openNextFile() is used for enumerating sub-files in a folder. It returns the next sub-file or sub-folder from the folder.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LFile__peek.html" target="topic">peek</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads single byte from file without moving the file cursor. If peek() is called repeatedly, it will always get the same result because the cursor is kept in the same place. In contrast, <a href="LFile__read.html" target="topic">read</a>() moves the file cursor 1 step further.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LFile__position.html" target="topic">position</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Returns the position of file cursor.<br>
+<ul class="Element634">
+<li class="Element604">Use <a href="LFile__read.html" target="topic">read</a>() to retrieve content from the current position and move the cursor at the same time.</li>
+<li class="Element604">Use <a href="LFile__peek.html" target="topic">peek</a>() to retrieve content from the current position without moving the cursor.</li>
+<li class="Element604">Use <a href="LFile__seek%40uint32_t.html" target="topic">seek</a>() to change the cursor position.</li>
+</ul>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LFile__read.html" target="topic">read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads single byte from the file and moves the file cursor 1 step further. In contrast, <a href="LFile__peek.html" target="topic">peek</a>() reads from the file without moving the file cursor.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LFile__read%40void__%40uint16_t.html" target="topic">read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads the array of bytes from file.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LFile__rewindDirectory.html" target="topic">rewindDirectory</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Folder is a special type of file. rewindDirectory() is used with <a href="LFile__openNextFile%40uint8_t.html" target="topic">openNextFile</a>() to rewind the enumeration and start from the beginning; so that the next <a href="LFile__openNextFile%40uint8_t.html" target="topic">openNextFile</a>() call will return the first sub-file (or sub-folder).&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LFile__seek%40uint32_t.html" target="topic">seek</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Changes the cursor <a href="LFile__position.html" target="topic">position</a>; it can be from 0 to the <a href="LFile__size.html" target="topic">size</a> of file.<br>
+<ul class="Element634">
+<li class="Element604">Use <a href="LFile__read.html" target="topic">read</a>() to retrieve the content on the current <a href="LFile__position.html" target="topic">position</a> and move the cursor at the same time.</li>
+<li class="Element604">Use <a href="LFile__peek.html" target="topic">peek</a>() to retrieve content on the current <a href="LFile__position.html" target="topic">position</a> without moving the cursor.</li>
+<li class="Element604">Use <a href="LFile__position.html" target="topic">position</a>() to get the current cursor <a href="LFile__position.html" target="topic">position</a>.</li>
+</ul>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LFile__size.html" target="topic">size</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Returns the size of file.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="LFile__write%40uint8_t.html" target="topic">write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes data information to the file opened with FILE_WRITE mode, which is similar to print().&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LFile_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:49 GMT -->
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_BT_CONN.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:02:07 GMT -->
+<head>
+<title>Connection Manager</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_BT_CONN.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="C_BT.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_BT.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_BT_CONN.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Connection Manager</div>
+<div class="Element7">
+<a href="_C_BT_CONN_14_Topics.html" target="topic">Topics</a> | <a href="_C_BT_CONN_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a> | <a href="_C_BT_CONN_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a> | <a href="_C_BT_CONN_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Provides functions for applications to configure, monitor, search Bluetooth connections.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+An application calls <a href="vm_bt_cm_init%40vm_bt_cm_callback%40VMUINT%40void_.html" target="topic">vm_bt_cm_init</a>() to initialize a Bluetooth module and register a callback for various connection events, and calls <a href="vm_bt_cm_exit%40VM_BT_CM_HANDLE.html" target="topic">vm_bt_cm_exit</a>() to exit and release resources from the Bluetooth module. The application can turn on or turn off the Bluetooth by calling <a href="vm_bt_cm_switch_on.html" target="topic">vm_bt_cm_switch_on</a>() or <a href="vm_bt_cm_switch_off.html" target="topic">vm_bt_cm_switch_off</a>(). It sets the Bluetooth visibility through <a href="vm_bt_cm_set_visibility%40VM_BT_CM_VISIBILITY_TYPE.html" target="topic">vm_bt_cm_set_visibility</a>(), so that the Bluetooth device becomes discoverable. It also can search for the Bluetooth enabled device around by calling <a href="vm_bt_cm_search%40VMUINT8%40VMUINT16%40VMUINT%40VMBOOL.html" target="topic">vm_bt_cm_search</a>().</p></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+N/A </p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_BT.html" target="topic">Bluetooth</a></p></div>
+</div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_exit%40VM_BT_CM_HANDLE.html" target="topic">vm_bt_cm_exit</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Exits the Bluetooth Connection Manager and releases the resources.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_get_device_info_by_index%40VMUINT%40VM_BT_CM_DEV_TYPE%40vm_bt_cm_device_info_t_.html" target="topic">vm_bt_cm_get_device_info_by_index</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the device info&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_get_device_number%40VM_BT_CM_DEV_TYPE.html" target="topic">vm_bt_cm_get_device_number</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the device number according to device type&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_get_host_device_info%40vm_bt_cm_device_info_t_.html" target="topic">vm_bt_cm_get_host_device_info</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the host device information.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_get_power_status.html" target="topic">vm_bt_cm_get_power_status</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the current power status of the Bluetooth.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_get_visibility.html" target="topic">vm_bt_cm_get_visibility</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function is to get the BT visibility&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_init%40vm_bt_cm_callback%40VMUINT%40void_.html" target="topic">vm_bt_cm_init</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Initializes the Bluetooth Connection Manager and registers the callback. The callback will be triggered when the events occur, as specified by the event_mask.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_release_all_connection.html" target="topic">vm_bt_cm_release_all_connection</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Releases all active Bluetooth connections. When it completes, the callback is invoked through the VM_BT_CM_EVENT_RELEASE_ALL_CONN event.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_search%40VMUINT8%40VMUINT16%40VMUINT%40VMBOOL.html" target="topic">vm_bt_cm_search</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Searches for the Bluetooth devices.The search process could trigger two events, the VM_BT_CM_EVENT_INQUIRY_IND and VM_BT_CM_EVENT_INQUIRY_COMPLETE, which in turn triggers the callback.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_search_abort.html" target="topic">vm_bt_cm_search_abort</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Aborts the search process. It invokes srv_bt_cm_cancel_discovery_req_hdler. A callback will be invoked by the VM_BT_CM_EVENT_INQUIRY_COMPLETE event, after the cancelling of the search procedure is complete.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_send_passkey%40vm_bt_cm_bt_address_t_%40VMUINT8_%40VMBOOL.html" target="topic">vm_bt_cm_send_passkey</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Processes the pairing request and sends the passkey when the VM_BT_CM_PAIR_IND event occurs.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_set_bt_pairing_type%40VM_BT_CM_PAIRING_TYPE.html" target="topic">vm_bt_cm_set_bt_pairing_type</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the Bluetooth pairing type. This function should be called prior to the VM_BT_CM_PAIR_IND event occurs, to properly configure the expected pairing method.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_set_host_name%40VMUINT8_.html" target="topic">vm_bt_cm_set_host_name</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the host device name. It will trigger the VM_BT_CM_EVENT_SET_NAME event, after the host device name procedure is completed.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_set_visibility%40VM_BT_CM_VISIBILITY_TYPE.html" target="topic">vm_bt_cm_set_visibility</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the Bluetooth visibility, so that other devices can detect it.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_switch_off.html" target="topic">vm_bt_cm_switch_off</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Switches off the Bluetooth chipset. It also deactivates the Bluetooth profiles. If there are any active connections, it will disconnect the connections before switching off the Bluetooth chipset.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_cm_switch_on.html" target="topic">vm_bt_cm_switch_on</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Switches on the Bluetooth chipset. It also activates the Bluetooth profiles that are registered to the Connection Manager.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_activate_t.html" target="topic">vm_bt_cm_activate_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Event struct for VM_BT_CM_EVENT_ACTIVATE &amp; VM_BT_CM_EVENT_BLE_ACTIVATE.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_bt_address_t.html" target="topic">vm_bt_cm_bt_address_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Bluetooth address.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_deactivate_t.html" target="topic">vm_bt_cm_deactivate_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Event struct for VM_BT_CM_EVENT_DEACTIVATE.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_CM_DEV_TYPE.html" target="topic">VM_BT_CM_DEV_TYPE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Bluetooth device type&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_device_info_t.html" target="topic">vm_bt_cm_device_info_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Device info structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_CM_ERROR.html" target="topic">VM_BT_CM_ERROR</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Error code of the Bluetooth&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_CM_EVENT.html" target="topic">VM_BT_CM_EVENT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Event definitions of the Bluetooth&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_inquiry_complete_t.html" target="topic">vm_bt_cm_inquiry_complete_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Event struct for VM_BT_CM_EVENT_INQUIRY_COMPLETE&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_inquiry_indication_t.html" target="topic">vm_bt_cm_inquiry_indication_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Event struct for VM_BT_CM_EVENT_INQUIRY_IND.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_pair_indication_t.html" target="topic">vm_bt_cm_pair_indication_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pairing indication struct.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_CM_PAIRING_TYPE.html" target="topic">VM_BT_CM_PAIRING_TYPE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Pairing method.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_CM_POWER_STATUS.html" target="topic">VM_BT_CM_POWER_STATUS</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The power status of the Bluetooth.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_set_name_t.html" target="topic">vm_bt_cm_set_name_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Event struct for VM_BT_CM_EVENT_SET_NAME.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_set_visibility_t.html" target="topic">vm_bt_cm_set_visibility_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Event struct for VM_BT_CM_EVENT_SET_VISIBILITY.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_CM_VISIBILITY_TYPE.html" target="topic">VM_BT_CM_VISIBILITY_TYPE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Bluetooth visibility type enum&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5479706573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5479706573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5479706573">Types</a></div>
+<div id="div5479706573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_cm_callback.html" target="topic">vm_bt_cm_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The prototype of the callback function for event notification from the Bluetooth Connection Manager.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_CM_HANDLE.html" target="topic">VM_BT_CM_HANDLE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Bluetooth Connection Manager resource handle&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_BT_CONN_14_Topics.html" target="topic">Topics</a>, <a href="_C_BT_CONN_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a>, <a href="_C_BT_CONN_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a>, <a href="_C_BT_CONN_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_BT_CONN.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:02:11 GMT -->
+</html>

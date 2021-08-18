@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_!!FUNCTIONS_C_DRV_DCL_14_Functions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:52 GMT -->
+<head>
+<title>Functions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_%21%21FUNCTIONS_C_DRV_DCL_14_Functions.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+Functions</div>
+<div class="Element28">
+<a href="%21%21FUNCTIONS_C_DRV_DCL.html" target="topic">Functions</a> | <a href="_%21%21FUNCTIONS_C_DRV_DCL_14_Functions_Functions.html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Functions</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_add_event%40VM_DCL_HANDLE%40VM_DCL_EVENT%40void_.html" target="topic">vm_dcl_add_event</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+If want to <a href="listen.html" target="topic">listen</a> to multiple events, then use <a href="vm_dcl_register_callback%40VM_DCL_HANDLE%40VM_DCL_EVENT%40vm_dcl_callback%40void_.html" target="topic">vm_dcl_register_callback</a>() first to register the callback and use vm_dcl_add_event() to add additional events you want the callback to <a href="listen.html" target="topic">listen</a> to.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_close%40VM_DCL_HANDLE.html" target="topic">vm_dcl_close</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Closes the device, as specified by the device_handle. After the device operation completes, this function should be invoked to close the device. If the device operation involves a callback, the device should not be closed before the callback finishes.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_config_pin_mode%40VMUINT%40VM_DCL_PIN_MODE.html" target="topic">vm_dcl_config_pin_mode</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the pin mode.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sends command to control the device, after the device is opened successfully by <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>(). The command specifies what to do and the argument specifies the information needed for controlling the device by the device driver. The specific command is defined in the header file of the device driver.<br>The device_handle, command and argument should correlate, so that the desired operation command is sent to the desired device. The execution of vm_dcl_control() can be either synchronously or asynchronously, depending on the command and the targeted device. Refer to the command description in the specific driver documentation.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_get_owner_id.html" target="topic">vm_dcl_get_owner_id</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the identifier of the user. Some device may need this. Most of the time the return value of this function needs to be passed to the driver when the device do asynchronous operations.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Opens the device. Every device must be opened with this function before it can be used. The device number passed to this function is defined in the header file of the device driver. The returned handle is the identifier of the device. The device handle is used to access the device by the other functions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_read%40VM_DCL_HANDLE%40VM_DCL_BUFFER_%40VM_DCL_BUFFER_LENGTH%40VM_DCL_BUFFER_LENGTH_%40VM_DCL_OPTIONS.html" target="topic">vm_dcl_read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads data from the device. This function may not applicable to the devices that do not transfer data. Some devices may also use <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>() to transfer data, such as SPI.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_register_callback%40VM_DCL_HANDLE%40VM_DCL_EVENT%40vm_dcl_callback%40void_.html" target="topic">vm_dcl_register_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Registers a callback to <a href="listen.html" target="topic">listen</a> to the events from a device specified by the device_handle. The callback enables an asynchronous operation between the application and the device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_dcl_write%40VM_DCL_HANDLE%40VM_DCL_BUFFER_%40VM_DCL_BUFFER_LENGTH%40VM_DCL_BUFFER_LENGTH_%40VM_DCL_OPTIONS.html" target="topic">vm_dcl_write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes data to the device. This function may not applicable to the devices that do not transfer data. Refer to the specific device driver document for details. Some devices may also use <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>() to transfer data, such as SPI.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_irq_mask.html" target="topic">vm_irq_mask</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Used in AP mode, it masks the I bit of the processor. This function must be used in pair with the <a href="vm_irq_restore%40VMUINT32.html" target="topic">vm_irq_restore</a>(). The I bit mask time should not exceed 5ms.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_irq_restore%40VMUINT32.html" target="topic">vm_irq_restore</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Used in AP mode, it restores the I bit of the processor. This function must be used in pair with <a href="vm_irq_mask.html" target="topic">vm_irq_mask</a>().&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_!!FUNCTIONS_C_DRV_DCL_14_Functions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:53 GMT -->
+</html>

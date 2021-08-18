@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_NET_HTTPS.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:00:23 GMT -->
+<head>
+<title>HTTP &amp; HTTPS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_NET_HTTPS.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="VM_SSL_HANDLE.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_NET.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_NET_HTTPS.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+HTTP &amp; HTTPS</div>
+<div class="Element7">
+<a href="_C_NET_HTTPS_14_Topics.html" target="topic">Topics</a> | <a href="_C_NET_HTTPS_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a> | <a href="_C_NET_HTTPS_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a> | <a href="_C_NET_HTTPS_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+This API enables the use of the HTTPS protocol.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The basic flow of using HTTPS is as follows:</p>
+<ol class="Element630">
+<li value="1" class="Element600">Register the callback function by calling <a href="vm_https_register_context_and_callback%40VM_BEARER_DATA_ACCOUNT_TYPE%40vm_https_callbacks_t_.html" target="topic">vm_https_register_context_and_callback</a>().</li>
+<li value="2" class="Element600">Configure a dedicated channel for HTTPS requests by calling <a href="vm_https_set_channel%40VMUINT16%40VMBOOL%40VMUINT8%40VMUINT16%40VMSTR%40VMUINT8%40VMSTR%40VMUINT8%40VMSTR%40VMUINT8%40VMSTR%40VMUINT8%40VMSTR%40VMUINT32.html" target="topic">vm_https_set_channel</a>().</li>
+<li value="3" class="Element600">Send an HTTPS request by calling <a href="vm_https_send_request%40VMUINT16%40VM_HTTPS_METHOD%40VM_HTTPS_OPTION%40VM_HTTPS_DATA_TYPE%40VMUINT32%40VMSTR%40VMUINT32%40VMSTR%40VMUINT32%40VMSTR%40VMUINT32.html" target="topic">vm_https_send_request</a>().</li>
+<li value="4" class="Element600">Read the content by calling <a href="vm_https_read_content%40VMUINT16%40VMUINT8%40VMUINT32.html" target="topic">vm_https_read_content</a>().</li>
+</ol></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The maximum concurrent https requests you can make is four with unique request IDs.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+&nbsp;</p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_NET.html" target="topic">Network Protocol</a></p></div>
+</div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_https_cancel%40VMUINT16.html" target="topic">vm_https_cancel</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function sends a request to cancel an incomplete WSP/HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_https_post%40VMUINT16%40VMUINT8%40VMBOOL%40VMSTR%40VMUINT32.html" target="topic">vm_https_post</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function handles continuous content post of a HTTPS request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_https_read_content%40VMUINT16%40VMUINT8%40VMUINT32.html" target="topic">vm_https_read_content</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function sends a request to continue to read HTTP/WSP reply content.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_https_register_context_and_callback%40VM_BEARER_DATA_ACCOUNT_TYPE%40vm_https_callbacks_t_.html" target="topic">vm_https_register_context_and_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function registers a callback function.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_https_request_ext%40VMUINT16%40VM_HTTPS_METHOD%40VM_HTTPS_OPTION%40VM_HTTPS_DATA_TYPE%40VMUINT32%40VMBOOL%40VM_HTTPS_DATA_TYPE%40vm_https_request_c.html" target="topic">vm_https_request_ext</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function sends a HTTP/WSP request. It's an extended version of the function <a href="vm_https_send_request%40VMUINT16%40VM_HTTPS_METHOD%40VM_HTTPS_OPTION%40VM_HTTPS_DATA_TYPE%40VMUINT32%40VMSTR%40VMUINT32%40VMSTR%40VMUINT32%40VMSTR%40VMUINT32.html" target="topic">vm_https_send_request</a>. CALLS&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_https_send_request%40VMUINT16%40VM_HTTPS_METHOD%40VM_HTTPS_OPTION%40VM_HTTPS_DATA_TYPE%40VMUINT32%40VMSTR%40VMUINT32%40VMSTR%40VMUINT32%40VMSTR%40VMUINT32.html" target="topic">vm_https_send_request</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sends an HTTP/WSP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_https_set_channel%40VMUINT16%40VMBOOL%40VMUINT8%40VMUINT16%40VMSTR%40VMUINT8%40VMSTR%40VMUINT8%40VMSTR%40VMUINT8%40VMSTR%40VMUINT8%40VMSTR%40VMUINT32.html" target="topic">vm_https_set_channel</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Configure a dedicated channel for HTTP/WSP requests. An channel can be configured to use a proxy while use_proxy is true. When use_proxy is true, This function configures a dedicated channel for HTTP/WSP requests. A channel can be configured to use a proxy while use_proxy is true. When use_proxy is true, prx_ip, prx_port, username, and password will be used to communicate with the proxy server, thus prx_ip cannot be 0.0.0.0 and if the prx_port value is 0 it means the default proxy port is 8080. When the conn_type is HTTPS_CONN_TYPE_WSP_CO or HTTPS_CONN_TYPE_WSP_CL, the use_proxy is true by default. However, if the... <a href="vm_https_set_channel%40VMUINT16%40VMBOOL%40VMUINT8%40VMUINT16%40VMSTR%40VMUINT8%40VMSTR%40VMUINT8%40VMSTR%40VMUINT8%40VMSTR%40VMUINT8%40VMSTR%40VMUINT32.html" target="topic">more</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_https_unset_channel%40VMUINT8.html" target="topic">vm_https_unset_channel</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function sends unset channel request information to HTTPS.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_callbacks_t.html" target="topic">vm_https_callbacks_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+HTTPS callbacks struct&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_HTTPS_CHARSET.html" target="topic">VM_HTTPS_CHARSET</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This enum indicates the HTTPS character set.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_content_t.html" target="topic">vm_https_content_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The vm_http_content_t is the unit of multipart.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_HTTPS_DATA_TYPE.html" target="topic">VM_HTTPS_DATA_TYPE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This enum specifies the data format in a given HTTPS request or response.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_HTTPS_METHOD.html" target="topic">VM_HTTPS_METHOD</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+HTTPS method constants&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_HTTPS_OPTION.html" target="topic">VM_HTTPS_OPTION</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+HTTPS request options&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_HTTPS_PROTOCOL.html" target="topic">VM_HTTPS_PROTOCOL</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Protocol constants&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_HTTPS_READY_STATUS.html" target="topic">VM_HTTPS_READY_STATUS</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This enum indicates HTTPS ready status&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_request_context_t.html" target="topic">vm_https_request_context_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This is the structure used for vm_https_send_req_ext.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_HTTPS_RESULT.html" target="topic">VM_HTTPS_RESULT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This enum indicates the result and error code of a request.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5479706573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5479706573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5479706573">Types</a></div>
+<div id="div5479706573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_cancel_response_callback.html" target="topic">vm_https_cancel_response_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function responds to the cancel request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_post_callback.html" target="topic">vm_https_post_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function responds to the post request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_read_content_response_callback.html" target="topic">vm_https_read_content_response_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Response to the <a href="vm_https_read_content%40VMUINT16%40VMUINT8%40VMUINT32.html" target="topic">vm_https_read_content</a>. The sequence_number must be the same as the one in the corresponding <a href="vm_https_read_content%40VMUINT16%40VMUINT8%40VMUINT32.html" target="topic">vm_https_read_content</a>. The more flag is used to indicate if the application needs to use This function responds to the <a href="vm_https_read_content%40VMUINT16%40VMUINT8%40VMUINT32.html" target="topic">vm_https_read_content</a>. The sequence_number must be the same as the one in the corresponding <a href="vm_https_read_content%40VMUINT16%40VMUINT8%40VMUINT32.html" target="topic">vm_https_read_content</a>. The more flag is used to indicate if the application needs to use <a href="vm_https_read_content%40VMUINT16%40VMUINT8%40VMUINT32.html" target="topic">vm_https_read_content</a> to retrieve the remaining content.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_release_all_request_response_callback.html" target="topic">vm_https_release_all_request_response_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function responds to release of all requests.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_send_response_callback.html" target="topic">vm_https_send_response_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Response to the HTTPS request. New_url is used to hold the new URL that was used to retrieve this reply if the original request was This function responds to the HTTPS request. New_url is used to hold the new URL that was used to retrieve this reply if the original request was redirected. If the reply_type is VM_HTTPS_DATA_TYPE_BUFFER, then the more flag is used to indicate if the application needs to use <a href="vm_https_read_content%40VMUINT16%40VMUINT8%40VMUINT32.html" target="topic">vm_https_read_content</a> to retrieve the remaining content.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_set_channel_response_callback.html" target="topic">vm_https_set_channel_response_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Response to the channel configuration request. If the result is successful then the channel ID will be used in the HTTP/WSP request. This function responds to the channel configuration request. If the result is successful, then the channel ID will be used in the HTTP/WSP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_status_query_response_callback.html" target="topic">vm_https_status_query_response_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function responds to status query request. It's reserved for future development.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_termination_callback.html" target="topic">vm_https_termination_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Notifying the application about an HTTPS agent termination. The application should clear all information at its end, and start again. This function sends notification on an HTTPS agent termination to the application. Upon receiving the notification, the application should clear all information at termination, and start again.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_https_unset_channel_response_callback.html" target="topic">vm_https_unset_channel_response_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Response to channel remove request. If the channel ID requested is invalid or some pending request of this channel exists, an error will come back as a result. This function responds to channel removal request. If the channel ID requested is invalid or if there's a pending request of this channel, an error will incurr.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_NET_HTTPS_14_Topics.html" target="topic">Topics</a>, <a href="_C_NET_HTTPS_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a>, <a href="_C_NET_HTTPS_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a>, <a href="_C_NET_HTTPS_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_NET_HTTPS.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:00:27 GMT -->
+</html>

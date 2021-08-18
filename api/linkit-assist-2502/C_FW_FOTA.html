@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_FW_FOTA.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:57:09 GMT -->
+<head>
+<title>Firmware</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_FW_FOTA.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="VM_TAG_RESULT.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_FW.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_FW_FOTA.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Firmware</div>
+<div class="Element7">
+<a href="_C_FW_FOTA_14_Topics.html" target="topic">Topics</a> | <a href="_C_FW_FOTA_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a> | <a href="_C_FW_FOTA_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+API to query firmware information and trigger firmware update process.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The firmware module provides firmware-related APIs to query firmware information like version and build time. It also provides API to query if a specific functional module, e.g. Wi-Fi, is supported by the current running firmware. And to update firmware with LinkIt API, <a href="vm_firmware_trigger_update.html" target="topic">vm_firmware_trigger_update</a> is provided to trigger the update process.</p></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+A LinkIt application cannot execute during firmware update process. See documentation of <a href="vm_firmware_trigger_update.html" target="topic">vm_firmware_trigger_update</a> to know how to check the result of update process. </p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_FW.html" target="topic">Framework</a></p></div>
+</div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_firmware_get_info%40VMSTR%40VMUINT%40VM_FIRMWARE_KEY_INFO.html" target="topic">vm_firmware_get_info</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get firmware information, e.g. firmware version, build date, and maximum memory that LinkIt application can use.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_firmware_is_module_supported%40VM_FIRMWARE_MODULE_NAME.html" target="topic">vm_firmware_is_module_supported</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Query if the specified module is supported or not.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_firmware_trigger_update.html" target="topic">vm_firmware_trigger_update</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Calling this function causes the system to reboot immediately and then trigger the firmware update process in bootloader to update full firmware image. The path to the image must be &quot;C:\image.bin&quot;. This function always returns <a href="VM_SUCCESS.html" target="topic">VM_SUCCESS</a> because the LinkIt application will be terminated before the actual updating process takes action. The result of the update process is written to a file named &quot;C:\update_info&quot; on the disk. The file type is binary with structure <a href="vm_firmware_update_status_t.html" target="topic">vm_firmware_update_status_t</a> as the content. Use file system APIs to read and parse the update_info file to check if the firmware update procedure has performed successfully or not.... <a href="vm_firmware_trigger_update.html" target="topic">more</a>&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_FIRMWARE_KEY_INFO.html" target="topic">VM_FIRMWARE_KEY_INFO</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Information that can be queried by <a href="vm_firmware_get_info%40VMSTR%40VMUINT%40VM_FIRMWARE_KEY_INFO.html" target="topic">vm_firmware_get_info</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_FIRMWARE_MODULE_NAME.html" target="topic">VM_FIRMWARE_MODULE_NAME</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Use this enum to query if a functional module is supported by firmware.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_FIRMWARE_UPDATE_RESULT.html" target="topic">VM_FIRMWARE_UPDATE_RESULT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The result code is stored in the error_code field of <a href="vm_firmware_update_status_t.html" target="topic">vm_firmware_update_status_t</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_firmware_update_status_t.html" target="topic">vm_firmware_update_status_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+After <a href="vm_firmware_trigger_update.html" target="topic">vm_firmware_trigger_update</a> is called and the system reboots, open &quot;C:\update_info&quot; in binary mode and read the content to this structure to know the result of update process.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_FW_FOTA_14_Topics.html" target="topic">Topics</a>, <a href="_C_FW_FOTA_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a>, <a href="_C_FW_FOTA_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_FW_FOTA.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:57:12 GMT -->
+</html>

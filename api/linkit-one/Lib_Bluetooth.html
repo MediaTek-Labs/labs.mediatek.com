@@ -1,0 +1,386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_Bluetooth.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:43:40 GMT -->
+<head>
+<title>Bluetooth</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'Lib_Bluetooth.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="LSD.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="%21%21CLASSES_Lib_Bluetooth.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Bluetooth</div>
+<div class="Element7">
+<a href="_Lib_Bluetooth_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a> | <a href="_Lib_Bluetooth_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a> | <a href="_Lib_Bluetooth_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a> | <a href="_Lib_Bluetooth_14_Types_(AutoDoc_Folder).html" target="topic">Types</a> | <a href="_Lib_Bluetooth_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('436C6173736573,537472756374732C205265636F7264732C20456E756D73,5479706573,5661726961626C6573,4D6163726F73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('436C6173736573,537472756374732C205265636F7264732C20456E756D73,5479706573,5661726961626C6573,4D6163726F73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ &nbsp;</p>
+<p class="Element10">
+LinkIt ONE provides built-in Bluetooth <a href="Serial.html" target="topic">Serial</a> Port Profile (SPP) support for one-to-one connections. The Bluetooth API uses this feature to enable connection of two Bluetooth devices and the data exchange between them.&nbsp;</p>
+<p class="Element10">
+When acting as a server, LinkIt waits for the Bluetooth SPP client before sending data data and receiving data.&nbsp;</p>
+<p class="Element10">
+When acting as a client, LinkIt will do the following:
+<ul class="Element632">
+<li class="Element602">Scan for Bluetooth devices and connect to a designated server device.</li>
+<li class="Element602">Send data to and receive data from the connected server device.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+LinkIt ONE also provides built-in Bluetooth 4.0 Generic Attribute Profile (GATT) to transmit arbitrary data between devices. The GATT profile is a general specification for sending and receiving short pieces of data known as &quot;attributes&quot; over a Bluetooth connection. All Bluetooth 4.0 application profiles are based on GATT.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+This module allows you to create a Bluetooth 4.0 central device or a peripheral device. A central device is created with <a href="LGATTClient.html" target="topic">LGATTClient</a> and a peripheral device is created with <a href="LGATTServer.html" target="topic">LGATTServer</a>.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Typical steps to build a Bluetooth 4.0 peripheral device are as follows:&nbsp;</p>
+<p class="Element10">
+1) Inherit and implement one or more <a href="LGATTService.html" target="topic">LGATTService</a>, which defines attributes of each service&nbsp;</p>
+<p class="Element10">
+2) Call LGATTServer.begin() with service objects as input parameter&nbsp;</p>
+<p class="Element10">
+3) In the loop() function, call handleEvents() to process incoming Bluetooth 4.0 events and requests&nbsp;</p>
+<p class="Element10">
+4) The callback functions in <a href="LGATTService.html" target="topic">LGATTService</a> is called on corresponding events&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Typical steps of call sequence to build a Bluetooth 4.0 peripheral device are as follows:&nbsp;</p>
+<p class="Element10">
+1) Create a <a href="LGATTClient.html" target="topic">LGATTClient</a> object&nbsp;</p>
+<p class="Element10">
+2) Scan for nearby Bluetooth 4.0 devices and retrieve their addresses and RSSI values&nbsp;</p>
+<p class="Element10">
+3) Enumerate each scanned device and their available services&nbsp;</p>
+<p class="Element10">
+4) Connect to the desired device once the required services and profiles are found&nbsp;</p>
+<p class="Element10">
+5) Read attributes and write attributes according to defined profile behavior&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+<img src="BLE.png" border="0" alt="" title="">&nbsp;</p></div>
+</div>
+<a name="436C6173736573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('436C6173736573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img436C6173736573">Classes</a></div>
+<div id="div436C6173736573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LBTClientClass.html" target="topic">LBTClientClass</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="LBTClient.html" target="topic">LBTClient</a> class interface&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LBTServerClass.html" target="topic">LBTServerClass</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="LBTServer.html" target="topic">LBTServer</a> class interface.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LGATTClient.html" target="topic">LGATTClient</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+You can use this class to read and write Bluetooth GATT attributes and receive notifications. This class instantiates an object to <a href="LGATTClient__scan%40uint32_t.html" target="topic">scan</a> for nearby Bluetooth 4.0 peripheral devices. It also provides functionality to <a href="LGATTClient__connect%40LGATTAddress_.html" target="topic">connect</a> to one Bluetooth 4.0 peripheral device and enumerate all the GATT service the peripheral device provides.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LGATTReadRequest.html" target="topic">LGATTReadRequest</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This class represents a read request from the central device. It also provides method to send the attribute value back to the central device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LGATTServerClass.html" target="topic">LGATTServerClass</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+You can use the <a href="LGATTServer.html" target="topic">LGATTServer</a> singleton macro to access its methods instead of instantiating this class directly.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LGATTService.html" target="topic">LGATTService</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This class inherits and implements callbacks to define a GATT service.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LGATTUUID.html" target="topic">LGATTUUID</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This class facilitates handling UUIDs used by <a href="LGATTClient.html" target="topic">LGATTClient</a>, <a href="LGATTServerClass.html" target="topic">LGATTServerClass</a> and <a href="LGATTService.html" target="topic">LGATTService</a> classes.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="LGATTWriteRequest.html" target="topic">LGATTWriteRequest</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This class represents a write request from the central device. It also provides method to send the write operation result to the central device.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4D6163726F73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D6163726F73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D6163726F73">Macros</a></div>
+<div id="div4D6163726F73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Macro&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_ATT_MAX_VALUE_LEN.html" target="topic">LGATT_ATT_MAX_VALUE_LEN</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This is the attribute MTU and it is the maximum number of bytes that a single read and write operation can transmit. If the characteristic is more than 23 bytes, then offset must be used in onRead() and onWrite().&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_BD_ADDR_SIZE.html" target="topic">LGATT_BD_ADDR_SIZE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This is the address size of a Bluetooth 4.0 device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_CHAR_PROP_BROADCAST.html" target="topic">LGATT_CHAR_PROP_BROADCAST</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit position in <a href="LGATT_CHAR_PROPERTIES.html" target="topic">LGATT_CHAR_PROPERTIES</a> that represents the broadcast.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_CHAR_PROP_EXT.html" target="topic">LGATT_CHAR_PROP_EXT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit position in <a href="LGATT_CHAR_PROPERTIES.html" target="topic">LGATT_CHAR_PROPERTIES</a> that represents the extension.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_CHAR_PROP_INDICATE.html" target="topic">LGATT_CHAR_PROP_INDICATE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit position in <a href="LGATT_CHAR_PROPERTIES.html" target="topic">LGATT_CHAR_PROPERTIES</a> that represents the Indicate.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_CHAR_PROP_NOTIFY.html" target="topic">LGATT_CHAR_PROP_NOTIFY</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit position in <a href="LGATT_CHAR_PROPERTIES.html" target="topic">LGATT_CHAR_PROPERTIES</a> that represents the Notify.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_CHAR_PROP_READ.html" target="topic">LGATT_CHAR_PROP_READ</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit position in <a href="LGATT_CHAR_PROPERTIES.html" target="topic">LGATT_CHAR_PROPERTIES</a> that represents the Read.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_CHAR_PROP_SIGNED_WRITE.html" target="topic">LGATT_CHAR_PROP_SIGNED_WRITE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit position in <a href="LGATT_CHAR_PROPERTIES.html" target="topic">LGATT_CHAR_PROPERTIES</a> that represents the Signed Write.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_CHAR_PROP_WRITE.html" target="topic">LGATT_CHAR_PROP_WRITE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit position in <a href="LGATT_CHAR_PROPERTIES.html" target="topic">LGATT_CHAR_PROPERTIES</a> that represents the Write.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_CHAR_PROP_WRITE_WO_RESPONSE.html" target="topic">LGATT_CHAR_PROP_WRITE_WO_RESPONSE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit position in <a href="LGATT_CHAR_PROPERTIES.html" target="topic">LGATT_CHAR_PROPERTIES</a> that represents the &quot;Write Without Response&quot;.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_PERM_READ.html" target="topic">LGATT_PERM_READ</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit 0.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_PERM_READ_ENC_MITM.html" target="topic">LGATT_PERM_READ_ENC_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit 2.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_PERM_READ_ENCRYPTED.html" target="topic">LGATT_PERM_READ_ENCRYPTED</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit 1.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_PERM_WRITE.html" target="topic">LGATT_PERM_WRITE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit 3.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_PERM_WRITE_ENC_MITM.html" target="topic">LGATT_PERM_WRITE_ENC_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit 5.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_PERM_WRITE_ENCRYPTED.html" target="topic">LGATT_PERM_WRITE_ENCRYPTED</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit 4.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_PERM_WRITE_SIGNED.html" target="topic">LGATT_PERM_WRITE_SIGNED</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit 6.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_PERM_WRITE_SIGNED_MITM.html" target="topic">LGATT_PERM_WRITE_SIGNED_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The bit 7.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATTServer.html" target="topic">LGATTServer</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+You can use the LGATTServer singleton to access GATT server's functionality.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="MAX_SERVICES.html" target="topic">MAX_SERVICES</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This can be enlarged according to your specified profile.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_structure.gif" border="0" alt="" title=""> <a href="LGATTAttributeData.html" target="topic">LGATTAttributeData</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This represents information about a characteristic or a descriptor.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="LGATTAddress.html" target="topic">LGATTAddress</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This represents address structure for Bluetooth 4.0 devices.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="LGATTAttributeValue.html" target="topic">LGATTAttributeValue</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This represents value of a GATT attribute.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="LGATTDeviceInfo.html" target="topic">LGATTDeviceInfo</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This represents the information of a remote Bluetooth 4.0 peripheral device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This is a structure that defines the Bluetooth GATT service, characteristic and descriptor.<br>A Bluetooth GATT service is defined by an array of LGATTServiceInfo, the first array elements must be of type TYPE_SERVICE, followed by elements of type TYPE_CHARACTERISTIC or type TYPE_DESCRIPTOR. The last element in the array must be of type TYPE_END.<br>Please see LGATTServerClass.loadService() for more details.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5479706573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5479706573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5479706573">Types</a></div>
+<div id="div5479706573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_CHAR_PROPERTIES.html" target="topic">LGATT_CHAR_PROPERTIES</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This represents the characteristic properties or the descriptor. The meaning of each bit in this property is defined by bit-flag, i.e. <a href="LGATT_CHAR_PROP_READ.html" target="topic">LGATT_CHAR_PROP_READ</a>, <a href="LGATT_CHAR_PROP_EXT.html" target="topic">LGATT_CHAR_PROP_EXT</a>, etc.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LGATT_PERMISSION.html" target="topic">LGATT_PERMISSION</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This represents the permission of the characteristic or descriptor.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5661726961626C6573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5661726961626C6573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5661726961626C6573">Variables</a></div>
+<div id="div5661726961626C6573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Variable&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LBTClient.html" target="topic">LBTClient</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The <a href="LBTClientClass.html" target="topic">LBTClientClass</a> object.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="LBTServer.html" target="topic">LBTServer</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The <a href="LBTServerClass.html" target="topic">LBTServerClass</a> object.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_Lib_Bluetooth_14_Topics.html" target="topic">Topics</a>, <a href="_Lib_Bluetooth_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a>, <a href="_Lib_Bluetooth_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a>, <a href="_Lib_Bluetooth_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a>, <a href="_Lib_Bluetooth_14_Types_(AutoDoc_Folder).html" target="topic">Types</a>, <a href="_Lib_Bluetooth_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_Bluetooth.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:43:47 GMT -->
+</html>

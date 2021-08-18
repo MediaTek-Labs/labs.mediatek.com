@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_SPI.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:42:15 GMT -->
+<head>
+<title>SPI</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'Lib_SPI.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="SERVOS_PER_TIMER.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="%21%21CLASSES_Lib_SPI.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+SPI</div>
+<div class="Element7">
+<a href="_Lib_SPI_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a> | <a href="_Lib_SPI_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a> | <a href="_Lib_SPI_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('436C6173736573,5661726961626C6573,4D6163726F73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('436C6173736573,5661726961626C6573,4D6163726F73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ &nbsp;</p>
+<p class="Element10">
+The <a href="SPI.html" target="topic">SPI</a> (<a href="Serial.html" target="topic">Serial</a> Peripheral Interface) API provides for data communication between the processor and various peripheral devices over a synchronous external serial port. On LinkIt ONE, <a href="SPI.html" target="topic">SPI</a> needs the following 3 pins to complete communication (see Table below):
+<ul class="Element632">
+<li class="Element602">MISO (Master In Slave Out): Transmits data from slave to master.</li>
+<li class="Element602">MOSI (Master Out Slave In): Transmits data from master to slave.</li>
+<li class="Element602">SCK (<a href="Serial.html" target="topic">Serial</a> Clock): <a href="Serial.html" target="topic">Serial</a> clock output from master, used to sync signal timing between master and slave.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element65" valign="top" width="43%">
+<div class="Element66">
+Board&nbsp;</div></td><td class="Element65" valign="top" width="20%">
+<div class="Element66">
+MOSI&nbsp;</div></td><td class="Element65" valign="top" width="20%">
+<div class="Element66">
+MISO&nbsp;</div></td><td class="Element65" valign="top" width="17%">
+<div class="Element66">
+SCK&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="43%">
+<div class="Element68">
+LinkIt ONE&nbsp;</div></td><td class="Element67" valign="top" width="20%">
+<div class="Element68">
+D11&nbsp;</div></td><td class="Element67" valign="top" width="20%">
+<div class="Element68">
+D12&nbsp;</div></td><td class="Element67" valign="top" width="17%">
+<div class="Element68">
+D13&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+As many slaves may be connected to one master at the same time, the SS (Slave Select) pin enables the Master to selects the slave to communicate with. When the SS signal of a slave is at low voltage, the master will start communicating with it.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The <a href="SPI.html" target="topic">SPI</a> communication protocol is very flexible; therefore before conducting data exchange using <a href="SPI.html" target="topic">SPI</a>, please pay extra attention to the slaves??configuration tables. Only when relevant parameter settings comply with the demand from the slave can the master and slave start normal data communication. Before using a new slave, please answer the following questions first:
+<ul class="Element632">
+<li class="Element602">Is the device? process for sending and receiving data &quot;MSB first&quot; or &quot;LSB first&quot;? (You set this up in setBitOrder().)</li>
+<li class="Element602">Is the clock of the device at high voltage or low voltage when it? idle? Does data exchange occur at the rising edge or falling edge of the clock cycle? (You set this up in setDataMode().)</li>
+<li class="Element602">What is the transmission speed required by the slave? (You set this up in setClockDivider().)</li>
+</ul>After all the questions above are answered and the appropriate parameters set, you can use LinkIt ONE to control the device.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+<strong>Hardware setup</strong>&nbsp;</p>
+<p class="Element10">
+The <a href="SPI.html" target="topic">SPI</a> and built-in SD card functions are exclusive. Before using the <a href="SPI.html" target="topic">SPI</a> API, make sure the settings switch is correctly set (see Figure below). Please note that once the board is configured to <a href="SPI.html" target="topic">SPI</a>, calling SD APIs may result in unexpected <a href="SPI.html" target="topic">SPI</a> behavior.&nbsp;</p>
+<p class="Element10">
+<img src="SPI.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+Figure : The <a href="SPI.html" target="topic">SPI</a>/SD switch&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If you want to use <a href="SPI.html" target="topic">SPI</a> and SD functions at the same time, please use an external SD shield.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+On LinkIt ONE, the LinkIt processor can be used as the master only; therefore other peripheral devices can be used as slaves only.</p></div>
+</div>
+<a name="436C6173736573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('436C6173736573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img436C6173736573">Classes</a></div>
+<div id="div436C6173736573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="SPIClass.html" target="topic">SPIClass</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> class interface is used to control <a href="SPI.html" target="topic">SPI</a> port to conduct data communication between the processor and multitudes of peripheral devices.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4D6163726F73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D6163726F73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D6163726F73">Macros</a></div>
+<div id="div4D6163726F73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Macro&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_CLOCK_DIV128.html" target="topic">SPI_CLOCK_DIV128</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> clock is 1/128 of the system clock.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_CLOCK_DIV16.html" target="topic">SPI_CLOCK_DIV16</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> clock is 1/16 of the system clock.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_CLOCK_DIV2.html" target="topic">SPI_CLOCK_DIV2</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> clock is 1/2 of the system clock.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_CLOCK_DIV32.html" target="topic">SPI_CLOCK_DIV32</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> clock is 1/32 of the system clock.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_CLOCK_DIV4.html" target="topic">SPI_CLOCK_DIV4</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> clock is 1/4 of the system clock.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_CLOCK_DIV64.html" target="topic">SPI_CLOCK_DIV64</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> clock is 1/64 of the system clock.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_CLOCK_DIV8.html" target="topic">SPI_CLOCK_DIV8</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> clock is 1/8 of the system clock.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_MODE0.html" target="topic">SPI_MODE0</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> data transfer mode 0.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_MODE1.html" target="topic">SPI_MODE1</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> data transfer mode 1.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_MODE2.html" target="topic">SPI_MODE2</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> data transfer mode 2.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI_MODE3.html" target="topic">SPI_MODE3</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+<a href="SPI.html" target="topic">SPI</a> data transfer mode 3.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5661726961626C6573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5661726961626C6573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5661726961626C6573">Variables</a></div>
+<div id="div5661726961626C6573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Variable&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SPI.html" target="topic">SPI</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The SPI object.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_Lib_SPI_14_Topics.html" target="topic">Topics</a>, <a href="_Lib_SPI_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a>, <a href="_Lib_SPI_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a>, <a href="_Lib_SPI_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_SPI.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:42:20 GMT -->
+</html>

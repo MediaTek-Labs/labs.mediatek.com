@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_BT_SPP.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:02:15 GMT -->
+<head>
+<title>Serial Port Profile</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_BT_SPP.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="VM_BT_CM_HANDLE.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_BT.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_BT_SPP.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Serial Port Profile</div>
+<div class="Element7">
+<a href="_C_BT_SPP_14_Topics.html" target="topic">Topics</a> | <a href="_C_BT_SPP_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a> | <a href="_C_BT_SPP_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a> | <a href="_C_BT_SPP_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The Bluetooth SPP API supports client and server functionality for one-to-one connections.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The built-in Bluetooth Serial Port Profile (SPP) supports one-to-one connections. The API enables you to <a href="connect.html" target="topic">connect</a> two Bluetooth devices and the exchange data between them. When acting as a client, it can:</p>
+<ul class="Element630">
+<li class="Element600">Scan for Bluetooth devices and connects to a designated server device.</li>
+<li class="Element600">Send and receive data to and from the connected server device.</li>
+</ul><p class="Element10">
+When acting as a server, it can:</p>
+<ul class="Element630">
+<li class="Element600">Accept/reject SPP clients - Send/receive data from a client</li>
+</ul></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The API only support one-to-one connections. </p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_BT.html" target="topic">Bluetooth</a></p></div>
+</div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_accept%40VM_BT_SPP_CONNECTION_ID%40void_%40VMUINT%40VMUINT.html" target="topic">vm_bt_spp_accept</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+A server uses this function in order to <a href="accept.html" target="topic">accept</a> a connection when it is notified by the VM_BT_SPP_EVENT_AUTHORIZE event.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_bind%40VM_BT_SPP_HANDLE%40VMUINT16.html" target="topic">vm_bt_spp_bind</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Creates an SPP instance.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_close%40VM_BT_SPP_HANDLE.html" target="topic">vm_bt_spp_close</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function destroys a SPP resource.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_connect%40VM_BT_SPP_HANDLE%40vm_bt_cm_bt_address_t_%40void_%40VMUINT%40VMUINT%40VMUINT16.html" target="topic">vm_bt_spp_connect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Connects to a server.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_disconnect%40VM_BT_SPP_CONNECTION_ID.html" target="topic">vm_bt_spp_disconnect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Disconnects an already opened SPP connection.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_get_device_address%40VM_BT_SPP_CONNECTION_ID%40vm_bt_cm_bt_address_t_.html" target="topic">vm_bt_spp_get_device_address</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get the Bluetooth address with the connection ID.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_get_min_buffer_size.html" target="topic">vm_bt_spp_get_min_buffer_size</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the bt_spp minimum buffer, returns the minimum size for tx and rx buffer in <a href="vm_bt_spp_connect%40VM_BT_SPP_HANDLE%40vm_bt_cm_bt_address_t_%40void_%40VMUINT%40VMUINT%40VMUINT16.html" target="topic">vm_bt_spp_connect</a>() It is recommended to malloc tx/rx buffer for SPP data transmission, the size is determined by the device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_open%40VMUINT%40vm_bt_spp_event_callback%40void_.html" target="topic">vm_bt_spp_open</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Opens bt_spp and returns the resource handle if it is successful.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_read%40VM_BT_SPP_CONNECTION_ID%40void_%40VMUINT.html" target="topic">vm_bt_spp_read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Read data over an established connection.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_reject%40VM_BT_SPP_CONNECTION_ID.html" target="topic">vm_bt_spp_reject</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The server uses this function to reject when it is notified by the VM_BT_SPP_EVENT_AUTHORIZE event. PARAMETERS. connection_id : Connection ID.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_set_security_level%40VM_BT_SPP_HANDLE%40VM_BT_SPP_SECURITY_LEVEL.html" target="topic">vm_bt_spp_set_security_level</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Set the security level for the handle.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_set_service_name%40VM_BT_SPP_HANDLE%40VMWCHAR_.html" target="topic">vm_bt_spp_set_service_name</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets an SPP resource name.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_spp_write%40VM_BT_SPP_CONNECTION_ID%40void_%40VMUINT.html" target="topic">vm_bt_spp_write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes data over an established connection.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_SPP_EVENT.html" target="topic">VM_BT_SPP_EVENT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bt_spp srv for app event enum&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_spp_event_cntx_t.html" target="topic">vm_bt_spp_event_cntx_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+spp srv for app event structure&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_SPP_RESULT.html" target="topic">VM_BT_SPP_RESULT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bt_spp return error type&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_SPP_SECURITY_LEVEL.html" target="topic">VM_BT_SPP_SECURITY_LEVEL</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bt_spp security level&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5479706573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5479706573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5479706573">Types</a></div>
+<div id="div5479706573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_SPP_CONNECTION_ID.html" target="topic">VM_BT_SPP_CONNECTION_ID</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bt SPP connection id&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_spp_event_callback.html" target="topic">vm_bt_spp_event_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback function of bt_spp.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_SPP_HANDLE.html" target="topic">VM_BT_SPP_HANDLE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bt_spp open handle&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_BT_SPP_14_Topics.html" target="topic">Topics</a>, <a href="_C_BT_SPP_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a>, <a href="_C_BT_SPP_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a>, <a href="_C_BT_SPP_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_BT_SPP.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:02:19 GMT -->
+</html>

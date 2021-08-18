@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_C_DRV_SIO_14_Structs,_Records,_Enums_(AutoDoc_Folder).html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:54 GMT -->
+<head>
+<title>SIO(UART USB) Structs, Records, Enums</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_C_DRV_SIO_14_Structs,_Records,_Enums_(AutoDoc_Folder).html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+SIO(UART USB) Structs, Records, Enums</div>
+<div class="Element28">
+<a href="C_DRV_SIO.html" target="topic">SIO(UART USB)</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Structs, Records, Enums</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_SIO_COMMAND.html" target="topic">VM_DCL_SIO_COMMAND</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Commands for serial port hardware. DCB stands for Device Control Block. Call <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a> with VM_DCL_SIO_COMMAND_SET_DCB_CONFIG to config uart driver.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_sio_config_t.html" target="topic">vm_dcl_sio_config_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This structure is part of the parameter structure <a href="vm_dcl_sio_control_dcb_t.html" target="topic">vm_dcl_sio_control_dcb_t</a> struct for command VM_DCL_SIO_COMMAND_SET_DCB_CONFIG. This structure allows developer to configure UART parameters such as baud rate and parity bits. Refer to vm_dcl_sio_config_t for usage example.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_dcl_sio_control_dcb_t.html" target="topic">vm_dcl_sio_control_dcb_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Parameter structure for command VM_DCL_SIO_COMMAND_SET_DCB_CONFIG, which configures the parameter for the serial port device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_SIO_DEVICE_SERIAL_PORT.html" target="topic">VM_DCL_SIO_DEVICE_SERIAL_PORT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Device identifiers for serial ports. Pass this to <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a> to <a href="select.html" target="topic">select</a> one of the serial port devices to use. Currently, only the hardware UART port (TX/RX pins) is available on 2502A. The USB COM ports are used by SDK for debugging and SDK functions, therefore not available to the application.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_SIO_EVENT.html" target="topic">VM_DCL_SIO_EVENT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+VM_DCL_SIO_EVENT are serial port hardware events that can be registered with vm_dcl_registercallback.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_SIO_UART_BAUDRATE.html" target="topic">VM_DCL_SIO_UART_BAUDRATE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+VM_DCL_SIO_UART_BAUDRATE defines values for the baud_rate field in the serial port configuration structure <a href="vm_dcl_sio_config_t.html" target="topic">vm_dcl_sio_config_t</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_SIO_UART_BITS_PER_CHAR_LENGTH.html" target="topic">VM_DCL_SIO_UART_BITS_PER_CHAR_LENGTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Defines values for the data_bits_per_char_length field in <a href="vm_dcl_sio_config_t.html" target="topic">vm_dcl_sio_config_t</a>. This configures the length of data bits during UART transmission.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_SIO_UART_FLOW_CONTROL_MODE.html" target="topic">VM_DCL_SIO_UART_FLOW_CONTROL_MODE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Defines values for the flow_control field in <a href="vm_dcl_sio_config_t.html" target="topic">vm_dcl_sio_config_t</a>. This configures hardware or software flow control is used during UART transmission.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_SIO_UART_PARITY.html" target="topic">VM_DCL_SIO_UART_PARITY</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Defines values for the parity field in <a href="vm_dcl_sio_config_t.html" target="topic">vm_dcl_sio_config_t</a>. This configures the behavior of parity bit during UART transmission.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_DCL_SIO_UART_STOP_BITS.html" target="topic">VM_DCL_SIO_UART_STOP_BITS</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Defines values for the stop_bits field in <a href="vm_dcl_sio_config_t.html" target="topic">vm_dcl_sio_config_t</a>. This configures the stop bits during UART transmission.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_USB_CABLE_STATUS.html" target="topic">VM_USB_CABLE_STATUS</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The USB cable status.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_C_DRV_SIO_14_Structs,_Records,_Enums_(AutoDoc_Folder).html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:54 GMT -->
+</html>

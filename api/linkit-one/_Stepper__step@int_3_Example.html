@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_Stepper__step@int_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:33 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_Stepper__step@int_3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="Stepper__step%40int.html" target="topic">Stepper::step Method</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"> <strong><span style="color: #871F78">#include</span></strong> &lt;<a href="Stepper.html" target="topic">Stepper</a>.h&gt;
+  
+ <strong><span style="color: #871F78">#define</span></strong> STEPS 100   <i><span style="color: #0000FF">// Set up by particular stepper motor.</span></i>
+  
+ <i><span style="color: #0000FF">// The 4-pin stepper motor, connecting 4 pins.</span></i>
+ <a href="Stepper.html" target="topic">Stepper</a> stepper(STEPS, 8, 9, 10, 11);
+  
+ <strong><span style="color: #871F78">int</span></strong> prev = 0;       <i><span style="color: #0000FF">// Reserve the previous value.</span></i>
+   
+ <strong><span style="color: #871F78">void</span></strong> setup()
+ {
+   stepper.<a href="Stepper__setSpeed%40long.html" target="topic">setSpeed</a>(40);      <i><span style="color: #0000FF">// Sets up rotation speed to 40 RPMs.</span></i>
+ }
+   
+ <strong><span style="color: #871F78">void</span></strong> loop()
+ {
+   <strong><span style="color: #871F78">int</span></strong> value = <a href="analogRead%40uint32_t.html" target="topic">analogRead</a>(0); <i><span style="color: #0000FF">// Gets data from the sensor.</span></i>
+   stepper.step(value- prev); <i><span style="color: #0000FF">// The movement.</span></i>
+   prev = value;              <i><span style="color: #0000FF">// Records the previous displacement.</span></i>
+ }</pre></div></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_Stepper__step@int_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:33 GMT -->
+</html>

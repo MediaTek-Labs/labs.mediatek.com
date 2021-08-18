@@ -1,0 +1,23 @@
+{
+  "name": "MediaTek Labs",
+  "short_name": "MediaTekLabs",
+  "description": "MediaTek Labs is an Internet of Things (IoT) developer program that provides all the tools and resources to make your IoT and wearable idea a reality.",
+  "start_url": "./",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "images/labs_logo_320.png",
+      "sizes": "320X320",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon",
+      "sizes": "16X16",
+      "type": "image/x-icon"
+    }
+  ],
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FAFAFA",
+  "theme_color": "#F39A1E"
+}

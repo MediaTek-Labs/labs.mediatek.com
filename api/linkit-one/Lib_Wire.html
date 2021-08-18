@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_Wire.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:42:32 GMT -->
+<head>
+<title>Wire(I2C)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'Lib_Wire.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="SPI_MODE3.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="%21%21CLASSES_Lib_Wire.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Wire(I2C)</div>
+<div class="Element7">
+<a href="_Lib_Wire_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a> | <a href="_Lib_Wire_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a> | <a href="_Lib_Wire_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('436C6173736573,5661726961626C6573,4D6163726F73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('436C6173736573,5661726961626C6573,4D6163726F73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ &nbsp;</p>
+<p class="Element10">
+The <a href="Wire.html" target="topic">Wire</a> API is used to connect LinkIt ONE to other devices through an I2C/TWI bus using the pins shown in Table below.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Table : The I2C pins </p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element65" valign="top" width="17%">
+<div class="Element66">
+Board&nbsp;</div></td><td class="Element65" valign="top" width="83%">
+<div class="Element66">
+[I2C/TWI] pin&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+LinkIt ONE&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+D18 <a href="Serial.html" target="topic">Serial</a> Data <a href="Wire.html" target="topic">Wire</a> (SDA)<br>D19 <a href="Serial.html" target="topic">Serial</a> Clock <a href="Wire.html" target="topic">Wire</a> (SCL)&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+LinkIt ONE can join the I2C bus as a master only, not as a slave</p></div>
+</div>
+<a name="436C6173736573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('436C6173736573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img436C6173736573">Classes</a></div>
+<div id="div436C6173736573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_class.gif" border="0" alt="" title=""> <a href="TwoWire.html" target="topic">TwoWire</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+TwoWire class interface enables LinkIt ONE to connect to other devices through I2C/TWI bus. It occupies pin D18 (SDA) as the serial data wire and pin D19 (SCL) as the serial clock wire.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4D6163726F73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D6163726F73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D6163726F73">Macros</a></div>
+<div id="div4D6163726F73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Macro&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="TwoWire_h.html" target="topic">TwoWire_h</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Include Atmel CMSIS driver include &nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5661726961626C6573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5661726961626C6573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5661726961626C6573">Variables</a></div>
+<div id="div5661726961626C6573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Variable&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="Wire.html" target="topic">Wire</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The Wire object.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_Lib_Wire_14_Topics.html" target="topic">Topics</a>, <a href="_Lib_Wire_14_Classes_(AutoDoc_Folder).html" target="topic">Classes</a>, <a href="_Lib_Wire_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a>, <a href="_Lib_Wire_14_Variables_(AutoDoc_Folder).html" target="topic">Variables</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/Lib_Wire.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:42:36 GMT -->
+</html>

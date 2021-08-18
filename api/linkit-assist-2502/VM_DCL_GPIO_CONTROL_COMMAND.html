@@ -1,0 +1,423 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/VM_DCL_GPIO_CONTROL_COMMAND.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:58:04 GMT -->
+<head>
+<title>VM_DCL_GPIO_CONTROL_COMMAND</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'VM_DCL_GPIO_CONTROL_COMMAND.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00294">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">typedef</span></strong> <strong><span style="color: #871F78">enum</span></strong> {
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_READ</span></strong> = 1,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_WRITE_LOW</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_WRITE_HIGH</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_0</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_2</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_3</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_4</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_5</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_6</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_7</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_8</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_DIRECTION_OUT</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_DIRECTION_IN</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RETURN_MODE</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RETURN_DIRECTION</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RETURN_OUT</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_ENABLE_PULL</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_DISABLE_PULL</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_PULL_HIGH</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_PULL_LOW</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_INVERSION</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_0</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_CLOCK_OUT</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_CLOCK_DIVIDE</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_2</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_3</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_4</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_5</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_6</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_7</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_8</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_9</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_10</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_11</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_12</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_13</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_14</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_REGISTER_STATUS_R0_R1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_9</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_10</span></strong>
+} VM_DCL_GPIO_CONTROL_COMMAND;</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="VM_DCL_GPIO_CLOCK_MODE.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="%21%21RECORDS_C_DRV_GPIO.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="vm_dcl_gpio_control_direction_t.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+VM_DCL_GPIO_CONTROL_COMMAND</div>
+<div class="Element7">
+<a href="_VM_DCL_GPIO_CONTROL_COMMAND_3_Example.html" target="topic">Example</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,4578616D706C65,46696C65,4D656D62657273,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,4578616D706C65,46696C65,4D656D62657273,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">typedef</span></strong> <strong><span style="color: #871F78">enum</span></strong> {
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_READ</span></strong> = 1,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_WRITE_LOW</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_WRITE_HIGH</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_0</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_2</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_3</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_4</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_5</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_6</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_7</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_8</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_DIRECTION_OUT</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_DIRECTION_IN</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RETURN_MODE</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RETURN_DIRECTION</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RETURN_OUT</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_ENABLE_PULL</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_DISABLE_PULL</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_PULL_HIGH</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_PULL_LOW</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_INVERSION</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_0</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_CLOCK_OUT</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_CLOCK_DIVIDE</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_2</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_3</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_4</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_5</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_6</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_7</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_8</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_9</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_10</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_11</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_12</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_13</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_RESERVED_14</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_REGISTER_STATUS_R0_R1</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_9</span></strong>,
+  <strong><span style="color: #660000">VM_DCL_GPIO_COMMAND_SET_MODE_10</span></strong>
+} VM_DCL_GPIO_CONTROL_COMMAND;</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+GPIO commands that can be passed to GPIO devices with <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>. Refer to each command for the related GPIO functionality. Note that for clock-related commands VM_DCL_GPIO_COMMAND_SET_CLOCK_DIVIDE and VM_DCL_GPIO_COMMAND_SET_CLOCK_OUT, open a VM_DCL_GPIO_CLOCK device instead of VM_DCL_GPIO.</p></div>
+</div>
+</div>
+<a name="4578616D706C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4578616D706C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4578616D706C65">Example</a></div>
+<div id="div4578616D706C65">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12">  <strong><span style="color: #871F78">#include</span></strong> &quot;vm_dcl.h&quot;
+  <a href="VM_DCL_HANDLE.html" target="topic">VM_DCL_HANDLE</a> gpio_handle;  <i><span style="color: #0000FF">// device handle</span></i>
+  <a href="vm_dcl_gpio_control_level_status_t.html" target="topic">vm_dcl_gpio_control_level_status_t</a> gpio_input_data;  <i><span style="color: #0000FF">// parameter for VM_DCL_GPIO_COMMAND_READ.</span></i>
+  gpio_handle = <a href="vm_dcl_open%40VM_DCL_DEVICE%40VM_DCL_FLAGS.html" target="topic">vm_dcl_open</a>(VM_DCL_GPIO, 55);          <i><span style="color: #0000FF">// First, we call vm_dcl_open to get a handle. 55 means gpio55</span></i>
+  <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>(gpio_handle, VM_DCL_GPIO_COMMAND_SET_MODE_3, <a href="NULL.html" target="topic">NULL</a>);                 <i><span style="color: #0000FF">// we call vm_dcl_control to set gpio55 as mode3.</span></i>
+  <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>(gpio_handle, VM_DCL_GPIO_COMMAND_READ, (<strong><span style="color: #871F78">void</span></strong> *)&amp;gpio_input_data);   <i><span style="color: #0000FF">// We call vm_dcl_control to read gpio55.</span></i>
+  <a href="vm_dcl_control%40VM_DCL_HANDLE%40VM_DCL_CONTROL_COMMAND%40void_.html" target="topic">vm_dcl_control</a>(gpio_handle, VM_DCL_GPIO_COMMAND_WRITE_HIGH, 0);                    <i><span style="color: #0000FF">// we call vm_dcl_control to write gpio55.</span></i>
+  <a href="vm_dcl_close%40VM_DCL_HANDLE.html" target="topic">vm_dcl_close</a>(gpio_handle);    <i><span style="color: #0000FF">// close the device handle.</span></i></pre></div></div>
+</div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+vmdcl_gpio.h</p></div>
+</div>
+</div>
+<a name="4D656D62657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D656D62657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D656D62657273">Members</a></div>
+<div id="div4D656D62657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element272">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element260" valign="top" width="30%">
+<div class="Element261">
+Members&nbsp;</div></td><td class="Element264" valign="top" width="70%">
+<div class="Element265">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_READ = 1&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Read level status from GPIO Pin. Uses <a href="vm_dcl_gpio_control_level_status_t.html" target="topic">vm_dcl_gpio_control_level_status_t</a> as parameter. This is only valid when the direction is set to input with VM_DCL_GPIO_COMMAND_SET_DIRECTION_IN.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_WRITE_LOW&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Write LOW to GPIO pin. The pin must be set with VM_DCL_GPIO_COMMAND_SET_DIRECTION_OUT.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_WRITE_HIGH&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Write HIGH to GPIO pin. The pin must be set with VM_DCL_GPIO_COMMAND_SET_DIRECTION_OUT.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_0&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 0. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_1&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 1. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_2&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 2. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_3&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 3. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_4&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 4. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_5&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 5. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_6&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 6. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_7&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 7. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_8&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 8. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_DIRECTION_OUT&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set GPIO direction as output.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_DIRECTION_IN&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set GPIO direction as input.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RETURN_MODE&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Get current mode of the GPIO pin. Use <a href="vm_dcl_gpio_control_mode_t.html" target="topic">vm_dcl_gpio_control_mode_t</a> as output parameter.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RETURN_DIRECTION&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Get current GPIO direction. Use <a href="vm_dcl_gpio_control_direction_t.html" target="topic">vm_dcl_gpio_control_direction_t</a> as output parameter.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RETURN_OUT&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Get current GPIO output level. Uses <a href="vm_dcl_gpio_control_level_status_t.html" target="topic">vm_dcl_gpio_control_level_status_t</a> as parameter. This is only valid when the direction is set to input with VM_DCL_GPIO_COMMAND_SET_DIRECTION_IN.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_ENABLE_PULL&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Enable GPIO pull-up/down resistors. No parameter needed.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_DISABLE_PULL&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Disable GPIO pull-up/pull-down resistors. No parameter needed.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_PULL_HIGH&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pull-up resistor. The pin must be set with VM_DCL_GPIO_COMMAND_ENABLE_PULL first. No parameter needed.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_PULL_LOW&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pull-down resistor. The pin must be set with VM_DCL_GPIO_COMMAND_ENABLE_PULL first. No parameter needed.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_INVERSION&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Enable or disable GPIO data inversion. Uses <a href="vm_dcl_gpio_control_set_division_t.html" target="topic">vm_dcl_gpio_control_set_division_t</a> as parameter. This command is valid only when the direction is set to input with VM_DCL_GPIO_COMMAND_SET_DIRECTION_IN.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_0&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_CLOCK_OUT&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Select the clock output source of GPIO.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_CLOCK_DIVIDE&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set the clock division of the clock source.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_1&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_2&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_3&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_4&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_5&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_6&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_7&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_8&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_9&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_10&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_11&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_12&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_13&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_RESERVED_14&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Reserved, do not use.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_REGISTER_STATUS_R0_R1&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+set the special gpio's pull up/down register, user should refer to the GPIO datasheet.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_9&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 9. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr><tr>
+<td class="Element262" valign="top" width="30%">
+<div class="Element263">
+VM_DCL_GPIO_COMMAND_SET_MODE_10&nbsp;</div></td><td class="Element266" valign="top" width="70%">
+<div class="Element267">
+Set pin mode to mode 10. Refer to the pin mapping table for the corresponding mode of each pin.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="%21%21RECORDS_C_DRV_GPIO.html" target="topic">Structs, Records, Enums</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/VM_DCL_GPIO_CONTROL_COMMAND.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:58:05 GMT -->
+</html>

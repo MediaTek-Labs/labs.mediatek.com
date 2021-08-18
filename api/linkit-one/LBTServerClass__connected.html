@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/LBTServerClass__connected.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:44:03 GMT -->
+<head>
+<title>LBTServerClass::connected Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'LBTServerClass__connected.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00179">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100">boolean <strong><span style="color: #660000">connected</span></strong>();</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="LBTServerClass__begin%40uint8_t_%40uint8_t_.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="LBTServerClass.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="LBTServerClass__end.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+LBTServerClass::connected Method</div>
+<div class="Element7">
+<a href="LBTServerClass.html" target="topic">LBTServerClass Class</a> | <a href="_LBTServerClass__connected_3_Example.html" target="topic">Example</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,52657475726E73,4578616D706C65,46696C65,436C617373', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,52657475726E73,4578616D706C65,46696C65,436C617373', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100">boolean <strong><span style="color: #660000">connected</span></strong>();</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Checks if any Bluetooth SPP client is connected.</p></div>
+</div>
+</div>
+<a name="52657475726E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('52657475726E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img52657475726E73">Returns</a></div>
+<div id="div52657475726E73">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+   true: Yes.&nbsp;</p>
+<p class="Element10">
+   false: No.</p></div>
+</div>
+</div>
+<a name="4578616D706C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4578616D706C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4578616D706C65">Example</a></div>
+<div id="div4578616D706C65">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"><strong><span style="color: #871F78">#include</span></strong> &lt;LBT.h&gt;
+<strong><span style="color: #871F78">#include</span></strong> &lt;<a href="LBTServer.html" target="topic">LBTServer</a>.h&gt;
+  
+<strong><span style="color: #871F78">void</span></strong> setup()
+{
+  <a href="Serial.html" target="topic">Serial</a>.<a href="LBTServerClass__begin%40uint8_t_%40uint8_t_.html" target="topic">begin</a>(9600);
+  <strong><span style="color: #871F78">bool</span></strong> success = <a href="LBTServer.html" target="topic">LBTServer</a>.<a href="LBTServerClass__begin%40uint8_t_%40uint8_t_.html" target="topic">begin</a>();
+  <strong><span style="color: #871F78">if</span></strong>( !success )
+  {
+      <a href="Serial.html" target="topic">Serial</a>.println(&quot;Cannot begin Bluetooth Server successfully&quot;);
+      <i><span style="color: #0000FF">// Do nothing.</span></i>
+      <strong><span style="color: #871F78">while</span></strong>(<strong><span style="color: #871F78">true</span></strong>);
+  }
+  <strong><span style="color: #871F78">else</span></strong>
+  {
+      <a href="Serial.html" target="topic">Serial</a>.println(&quot;Bluetooth Server begins successfully&quot;);
+  }
+ 
+}
+ 
+<strong><span style="color: #871F78">void</span></strong> loop()
+{
+﹛﹛ <strong><span style="color: #871F78">if</span></strong>(!<a href="LBTServer.html" target="topic">LBTServer</a>.connected())
+    {
+       <i><span style="color: #0000FF">// waiting for Spp Client to connect</span></i>
+       <strong><span style="color: #871F78">bool</span></strong> connected = <a href="LBTServer.html" target="topic">LBTServer</a>.<a href="LBTServerClass__accept%40size_t.html" target="topic">accept</a>(20);
+ 
+       <strong><span style="color: #871F78">if</span></strong>( !connected )
+       {
+           <a href="Serial.html" target="topic">Serial</a>.println(&quot;No connection request yet&quot;);
+           <i><span style="color: #0000FF">// Do nothing.</span></i>
+           <strong><span style="color: #871F78">while</span></strong>(<strong><span style="color: #871F78">true</span></strong>);
+       }
+       <strong><span style="color: #871F78">else</span></strong>
+       {
+           <a href="Serial.html" target="topic">Serial</a>.println(&quot;Connected&quot;);
+       }
+    }
+    <strong><span style="color: #871F78">else</span></strong>
+    {
+        <strong><span style="color: #871F78">char</span></strong> buffer[10];
+        <strong><span style="color: #871F78">int</span></strong> read_size = <a href="LBTServer.html" target="topic">LBTServer</a>.read((uint8_t*)buffer, 10);
+        <strong><span style="color: #871F78">if</span></strong>(read_size &gt; 0)
+        {
+            <a href="Serial.html" target="topic">Serial</a>.print(&quot;size read: &quot;);
+            <a href="Serial.html" target="topic">Serial</a>.println(read_size);
+            <a href="Serial.html" target="topic">Serial</a>.println(buffer);
+        }
+    }
+}</pre></div></div>
+</div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+LBTServer.h</p></div>
+</div>
+</div>
+<a name="436C617373"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('436C617373');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img436C617373">Class</a></div>
+<div id="div436C617373">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="LBTServerClass.html" target="topic">LBTServerClass Class</a></p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/LBTServerClass__connected.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:44:04 GMT -->
+</html>

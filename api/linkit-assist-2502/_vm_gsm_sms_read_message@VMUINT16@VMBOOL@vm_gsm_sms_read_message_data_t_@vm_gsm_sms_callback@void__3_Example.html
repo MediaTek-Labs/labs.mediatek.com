@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_gsm_sms_read_message@VMUINT16@VMBOOL@vm_gsm_sms_read_message_data_t_@vm_gsm_sms_callback@void__3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:13 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_vm_gsm_sms_read_message@VMUINT16@VMBOOL@vm_gsm_sms_read_message_data_t_@vm_gsm_sms_callback@void__3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="vm_gsm_sms_read_message%40VMUINT16%40VMBOOL%40vm_gsm_sms_read_message_data_t_%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_read_message</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"><strong><span style="color: #871F78">void</span></strong> custom_sms_read_message_callback(<a href="vm_gsm_sms_callback_t.html" target="topic">vm_gsm_sms_callback_t</a>* callback_data)
+{
+    <a href="vm_gsm_sms_read_message_data_callback_t.html" target="topic">vm_gsm_sms_read_message_data_callback_t</a>* read_message;
+    <strong><span style="color: #871F78">if</span></strong>(callback_data-&gt;action == VM_GSM_SMS_ACTION_READ)
+    {
+        <strong><span style="color: #871F78">if</span></strong>(callback_data-&gt;cause == VM_GSM_SMS_CAUSE_NO_ERROR)
+        {
+            <strong><span style="color: #871F78">if</span></strong>(!callback_data-&gt;action_data)
+            {
+                 <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;action_data is NULL.&quot;);
+                 <strong><span style="color: #871F78">return</span></strong>;
+            }
+            read_message = (<a href="vm_gsm_sms_read_message_data_callback_t.html" target="topic">vm_gsm_sms_read_message_data_callback_t</a>*)callback_data-&gt;action_data;
+            <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;message content is %s.&quot;,
+                         vm_gb2312_string((<a href="VMWSTR.html" target="topic">VMWSTR</a>)(read_message-&gt;message_data-&gt;content_buffer)));
+            <i><span style="color: #0000FF">//maybe copy content_buff to other place</span></i>
+            <a href="vm_free%40void_.html" target="topic">vm_free</a>(read_message-&gt;message_data-&gt;content_buffer);
+            <a href="vm_free%40void_.html" target="topic">vm_free</a>(read_message-&gt;message_data);
+        }
+        <strong><span style="color: #871F78">else</span></strong>
+        {
+            <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;read message failed.&quot;);
+        }
+    }
+}
+
+<strong><span style="color: #871F78">void</span></strong> custom_sms_read_message(<strong><span style="color: #871F78">void</span></strong>)
+{
+    <a href="VMINT16.html" target="topic">VMINT16</a> message_id;
+    <a href="vm_gsm_sms_read_message_data_t.html" target="topic">vm_gsm_sms_read_message_data_t</a> * message_data = <a href="NULL.html" target="topic">NULL</a>;
+    <a href="VMWCHAR.html" target="topic">VMWCHAR</a> * content_buff;
+    <a href="VMINT.html" target="topic">VMINT</a> res;
+
+    message_id = <a href="vm_gsm_sms_get_message_id%40VM_GSM_SMS_BOX%40VMUINT16.html" target="topic">vm_gsm_sms_get_message_id</a>(VM_GSM_SMS_BOX_INBOX, 0);
+    <strong><span style="color: #871F78">if</span></strong>(message_id == -1)
+    {
+        <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;0 message-index does not exist.&quot;);
+    }
+    message_data = <a href="vm_calloc%40VMUINT.html" target="topic">vm_calloc</a>(<strong><span style="color: #871F78">sizeof</span></strong>(<a href="vm_gsm_sms_read_message_data_t.html" target="topic">vm_gsm_sms_read_message_data_t</a>));
+    <strong><span style="color: #871F78">if</span></strong>(message_data == <a href="NULL.html" target="topic">NULL</a>)
+    {
+        <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;message_data vm_calloc failed.&quot;);
+    }
+    content_buff = <a href="vm_calloc%40VMUINT.html" target="topic">vm_calloc</a>((500+1)*<strong><span style="color: #871F78">sizeof</span></strong>(<a href="VMWCHAR.html" target="topic">VMWCHAR</a>));
+    <strong><span style="color: #871F78">if</span></strong>(content_buff == <a href="NULL.html" target="topic">NULL</a>)
+    {
+        <a href="vm_free%40void_.html" target="topic">vm_free</a>(message_data);
+        <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;content_buff vm_calloc failed.&quot;);
+    }
+    message_data-&gt;content_buffer = content_buff;
+    message_data-&gt;content_buffer_size = 500;
+    res = vm_gsm_sms_read_message(message_id, <a href="VM_TRUE.html" target="topic">VM_TRUE</a>, message_data,
+                                  custom_sms_read_message_callback, <a href="NULL.html" target="topic">NULL</a>);
+    <strong><span style="color: #871F78">if</span></strong>(res != VM_GSM_SMS_RESULT_OK)
+    {
+        <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;read message failed.&quot;);
+    }
+}</pre></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_gsm_sms_read_message@VMUINT16@VMBOOL@vm_gsm_sms_read_message_data_t_@vm_gsm_sms_callback@void__3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:13 GMT -->
+</html>

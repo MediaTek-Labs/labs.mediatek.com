@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_!!FUNCTIONS_C_STD_FS_14_Functions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:30 GMT -->
+<head>
+<title>Functions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_%21%21FUNCTIONS_C_STD_FS_14_Functions.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+Functions</div>
+<div class="Element28">
+<a href="%21%21FUNCTIONS_C_STD_FS.html" target="topic">Functions</a> | <a href="_%21%21FUNCTIONS_C_STD_FS_14_Functions_Functions.html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Functions</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_app_data_close%40VM_FS_HANDLE.html" target="topic">vm_fs_app_data_close</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Closes the application data file file.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_app_data_delete.html" target="topic">vm_fs_app_data_delete</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Deletes the content in the application data space.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_app_data_get_free_space.html" target="topic">vm_fs_app_data_get_free_space</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Checks the size of the current available free space for the application data. Each application (a VXP file) is assigned with a storage space for the application data. The application is responsible for not storing data that exceeds the size of the assigned space.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_app_data_open%40VM_FS_MODE%40VMBOOL.html" target="topic">vm_fs_app_data_open</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Opens the application data file in system drive disk.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_app_data_read%40VM_FS_HANDLE%40void_%40VMUINT%40VMUINT_.html" target="topic">vm_fs_app_data_read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads the application data from the data file, pointed to by the file handle.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_app_data_seek%40VM_FS_HANDLE%40VMINT%40VM_FS_BASE_POSITION.html" target="topic">vm_fs_app_data_seek</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Moves the system data file pointer to a specific position. If the specified position exceeds the size of the file, an error will be returned. If the function succeeds, the return value is the new file pointer value,<br>Moving the file pointer before the beginning of the file is an error. However, moving the file pointer beyond the current file size is supported. In this case, the file is extended. The data between the previous file size and the new file size is undefined. This method is used to extend a file, which is a much faster way than actually... <a href="vm_fs_app_data_seek%40VM_FS_HANDLE%40VMINT%40VM_FS_BASE_POSITION.html" target="topic">more</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_app_data_write%40VM_FS_HANDLE%40void_%40VMUINT%40VMUINT_.html" target="topic">vm_fs_app_data_write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes data at the current position of the data file, pointed to by the handle.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_close%40VM_FS_HANDLE.html" target="topic">vm_fs_close</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Closes a file that is opened by <a href="vm_fs_open%40VMCWSTR%40VM_FS_MODE%40VMBOOL.html" target="topic">vm_fs_open</a>().&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_copy%40VMCWSTR%40VMCWSTR%40vm_fs_copy_callback.html" target="topic">vm_fs_copy</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Copies a file from source to destination. The filenames of source and destination are full path encoded in UCS-2.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_copy_abort%40VM_FS_HANDLE.html" target="topic">vm_fs_copy_abort</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Aborts a file copy. This function should be only invoked inside the callback function of the file copy operation.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_create_directory%40VMCWSTR.html" target="topic">vm_fs_create_directory</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Creates a new directory with specified path name, encoded in UCS-2.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_delete%40VMCWSTR.html" target="topic">vm_fs_delete</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Deletes the file as specified by the full path of the filename.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_find_close%40VM_FS_HANDLE.html" target="topic">vm_fs_find_close</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Closes the file finding process and releases the resource.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_find_close_ex%40VM_FS_HANDLE.html" target="topic">vm_fs_find_close_ex</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Close the file finding process and releases the resource.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_find_first%40VMWSTR%40vm_fs_info_t_.html" target="topic">vm_fs_find_first</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Finds the first file or folder under the specified path, and return a handle. This function supports the wild character (*) in the search pattern. The size and the full path of the first file or folder (no size if it is a folder) is returned through the out parameter of the <a href="vm_fs_info_t.html" target="topic">vm_fs_info_t</a> object.<br>A handle of this find function is returned to the caller, which can be used for getting the next file or folder by <a href="vm_fs_find_next%40VM_FS_HANDLE%40vm_fs_info_t_.html" target="topic">vm_fs_find_next</a>().<br>The caller of this function should call <a href="vm_fs_find_close%40VM_FS_HANDLE.html" target="topic">vm_fs_find_close</a>() to release the resource after it is done with the handle.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_find_first_ex%40VMWSTR%40vm_fs_info_ex_t_.html" target="topic">vm_fs_find_first_ex</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Similar to the <a href="vm_fs_find_first%40VMWSTR%40vm_fs_info_t_.html" target="topic">vm_fs_find_first</a>(), except it obtains more information, as specified in <a href="vm_fs_info_ex_t.html" target="topic">vm_fs_info_ex_t</a>, for the file or folder from the system.<br>It finds the first file or folder under the specified path, and return a handle. This function supports the wild character (*) in the search pattern. The file or folder information is returned through the out parameter of the <a href="vm_fs_info_ex_t.html" target="topic">vm_fs_info_ex_t</a> object.<br>A handle of this find function is returned to the caller, which can be used for getting the next file or folder by calling <a href="vm_fs_find_next_ex%40VM_FS_HANDLE%40vm_fs_info_ex_t_.html" target="topic">vm_fs_find_next_ex</a>().<br>The caller of this function should call <a href="vm_fs_find_close_ex%40VM_FS_HANDLE.html" target="topic">vm_fs_find_close_ex</a>() to... <a href="vm_fs_find_first_ex%40VMWSTR%40vm_fs_info_ex_t_.html" target="topic">more</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_find_next%40VM_FS_HANDLE%40vm_fs_info_t_.html" target="topic">vm_fs_find_next</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the next file or folder from the VM_FS_HANDLE object,which is returned from the <a href="vm_fs_find_first%40VMWSTR%40vm_fs_info_t_.html" target="topic">vm_fs_find_first</a>(). If exists, the size and the full path of the file or folder (no size if it is a folder) is returned through the out parameter of the <a href="vm_fs_info_t.html" target="topic">vm_fs_info_t</a> object. If there is no file or folder exists, the VM_FS_NO_MORE_FILES error code is returned&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_find_next_ex%40VM_FS_HANDLE%40vm_fs_info_ex_t_.html" target="topic">vm_fs_find_next_ex</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the information of the next file or folder from the VM_FS_HANDLE object, which is returned from the <a href="vm_fs_find_first_ex%40VMWSTR%40vm_fs_info_ex_t_.html" target="topic">vm_fs_find_first_ex</a>(). If the next file or folder exists, the information of the file or folder is returned through the out parameter of the <a href="vm_fs_info_ex_t.html" target="topic">vm_fs_info_ex_t</a> object. If no file or folder exists, the VM_FS_NO_MORE_FILES error code is returned.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_flush%40VM_FS_HANDLE.html" target="topic">vm_fs_flush</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Commits the I/O cache data to a file.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_get_attributes%40VMCWSTR%40VM_FS_ATTRIBUTE_.html" target="topic">vm_fs_get_attributes</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Retrieves the attributes of a file or directory, as specified by the full path name, encoded in UCS-2. The value of the attributes is the result of bitwise OR operation of individual attribute.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_get_disk_free_space%40VMCHAR.html" target="topic">vm_fs_get_disk_free_space</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Checks the available free space on the specified drive. It returns the size of the available free space in bytes.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_get_disk_info%40VMCHAR%40vm_fs_disk_info_t_%40VM_FS_DISK_INFO_FLAG.html" target="topic">vm_fs_get_disk_info</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets disk information of a logical drive.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_get_internal_drive_letter.html" target="topic">vm_fs_get_internal_drive_letter</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets drive letter of the removable disk, which normally is the memory card.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_get_position%40VM_FS_HANDLE%40VMUINT_.html" target="topic">vm_fs_get_position</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the current position of the file pointer of the file, pointed to by the specified file handle.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_get_removable_drive_letter.html" target="topic">vm_fs_get_removable_drive_letter</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the drive letter of the removable disk, which normally is the memory card.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_get_size%40VM_FS_HANDLE%40VMUINT_.html" target="topic">vm_fs_get_size</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Obtains the size of the file in bytes. The file is specified by the file handle.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_is_eof%40VM_FS_HANDLE.html" target="topic">vm_fs_is_eof</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Checks if the current file pointer has reached to the end of the file.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_open%40VMCWSTR%40VM_FS_MODE%40VMBOOL.html" target="topic">vm_fs_open</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Opens a file. It opens the file as a binary file, if the is_binary is <a href="VM_TRUE.html" target="topic">VM_TRUE</a>. If the is_binary is <a href="VM_FALSE.html" target="topic">VM_FALSE</a>, it opens the file as an ASCII file.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_read%40VM_FS_HANDLE%40void_%40VMUINT%40VMUINT_.html" target="topic">vm_fs_read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads the file through the file handle.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_remove_directory%40VMCWSTR.html" target="topic">vm_fs_remove_directory</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Removes a directory as specified by full path name, encoded in UCS-2.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_rename%40VMCWSTR%40VMCWSTR.html" target="topic">vm_fs_rename</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Renames the file. Both old_name and new_name are full path of a filename, encoded in UCS-2.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_seek%40VM_FS_HANDLE%40VMINT%40VM_FS_BASE_POSITION.html" target="topic">vm_fs_seek</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Moves the file pointer to a specific position. If the specified position exceeds the size of the file, an error will be returned. If the function succeeds, the return value is the new file pointer value,<br>Moving the file pointer before the beginning of the file is an error. However, moving the file pointer beyond the current file size is supported. In this case, the file is extended. The data between the previous file size and the new file size is undefined. This method is used to extend a file, which is a much faster way than actually writing data... <a href="vm_fs_seek%40VM_FS_HANDLE%40VMINT%40VM_FS_BASE_POSITION.html" target="topic">more</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_set_attributes%40VMCWSTR%40VM_FS_ATTRIBUTE.html" target="topic">vm_fs_set_attributes</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the attributes for a file or directory as specified full path filename, encoded in UCS-2. The attributes can not include VM_FS_ATTRIBUTE_VOLUME, VM_FS_ATTRIBUTE_DIRECTORY, or VM_FS_LONGNAME_ATTRIBUTE. The value of attributes is the result of bitwise OR operation of individual attribute.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_fs_write%40VM_FS_HANDLE%40void_%40VMUINT%40VMUINT_.html" target="topic">vm_fs_write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Writes data in the buffer to a file pointed to by the file handle.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_!!FUNCTIONS_C_STD_FS_14_Functions.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:31 GMT -->
+</html>

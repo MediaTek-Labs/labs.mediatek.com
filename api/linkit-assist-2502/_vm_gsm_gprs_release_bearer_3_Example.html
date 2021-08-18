@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_gsm_gprs_release_bearer_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:17 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_vm_gsm_gprs_release_bearer_3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="vm_gsm_gprs_release_bearer.html" target="topic">vm_gsm_gprs_release_bearer</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"> <strong><span style="color: #871F78">static</span></strong> <a href="VMINT.html" target="topic">VMINT</a> g_tcp_hd;
+
+ <strong><span style="color: #871F78">void</span></strong> connection_manager(<a href="VMBOOL.html" target="topic">VMBOOL</a> <a href="connect.html" target="topic">connect</a>){
+     <strong><span style="color: #871F78">if</span></strong>(<a href="connect.html" target="topic">connect</a>){
+         g_tcp_hd = <a href="vm_tcp_connect%40char_%40VMINT%40VM_BEARER_DATA_ACCOUNT_TYPE%40void_%40vm_tcp_connect_callback.html" target="topic">vm_tcp_connect</a>(&quot;http://www.mediatek.com&quot;, 80, VM_BEARER_DATA_ACCOUNT_TYPE_GPRS_NONE_PROXY_APN, tcp_cb);
+     }
+     <strong><span style="color: #871F78">else</span></strong>{
+         vm_gsm_gprs_release_bearer();
+     }
+ }
+
+ <strong><span style="color: #871F78">void</span></strong> tcp_cb(<a href="VMINT.html" target="topic">VMINT</a> handle, <a href="VMINT.html" target="topic">VMINT</a> event)
+ {
+     <a href="VMINT.html" target="topic">VMINT</a> ret = 0;
+     <strong><span style="color: #871F78">if</span></strong> (VM_TCP_EVENT_CONNECTED == event || VM_TCP_EVENT_CAN_WRITE == event)
+     {
+         ret = vm_gprs_hold_bearer(VM_GSM_GPRS_HANDLE_TYPE_TCP, handle);
+         ret = <a href="vm_tcp_write%40VM_TCP_HANDLE%40void_%40VMUINT.html" target="topic">vm_tcp_write</a>(handle, &quot;GET / HTTP/1.1rnHOST:www.mediate.com:80rnrn&quot;, strlen(&quot;GET / HTTP/1.1rnHOST:www.mediate.com:80rnrn&quot;));
+     }
+     <strong><span style="color: #871F78">if</span></strong> (VM_TCP_EVENT_CAN_READ == event)
+     {
+         <a href="VMCHAR.html" target="topic">VMCHAR</a> buf[2048] = {0};
+         ret = <a href="vm_tcp_read%40VM_TCP_HANDLE%40void_%40VMUINT.html" target="topic">vm_tcp_read</a>(handle, buf, 2048);
+         <a href="vm_tcp_close%40VM_TCP_HANDLE.html" target="topic">vm_tcp_close</a>(handle);
+     }
+ }</pre></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_gsm_gprs_release_bearer_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:17 GMT -->
+</html>

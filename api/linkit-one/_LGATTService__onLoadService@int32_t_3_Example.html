@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LGATTService__onLoadService@int32_t_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:59 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_LGATTService__onLoadService@int32_t_3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="LGATTService__onLoadService%40int32_t.html" target="topic">LGATTService::onLoadService Method</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12">    <strong><span style="color: #871F78">static</span></strong> <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a> g_my_gatt_service[] =
+    {
+        {TYPE_SERVICE, &quot;6e400001-b5a3-f393-e0a9-e50e24dcca9e&quot;, TRUE, 0, 0, 0},
+        {TYPE_CHARACTERISTIC, &quot;6e400002-b5a3-f393-e0a9-e50e24dcca9e&quot;, FALSE, VM_GATT_CHAR_PROP_WRITE, VM_GATT_PERM_WRITE, 0},
+        {TYPE_CHARACTERISTIC, &quot;6e400003-b5a3-f393-e0a9-e50e24dcca9e&quot;, FALSE, VM_GATT_CHAR_PROP_NOTIFY | VM_GATT_CHAR_PROP_INDICATE, VM_GATT_PERM_READ, 0},
+        {TYPE_DESCRIPTOR, &quot;00002902-0000-1000-8000-00805f9b34fb&quot;, FALSE, VM_GATT_CHAR_PROP_NOTIFY, VM_GATT_PERM_READ | VM_GATT_PERM_WRITE, 0},
+        {TYPE_END, 0, 0, 0, 0, 0}
+    };
+
+    <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a> *LGATTUT::loadService(int32_t index)
+    {
+        <strong><span style="color: #871F78">return</span></strong> g_my_gatt_service;
+    }</pre></div></div>
+<p class="Element10">
+This defines a service of UUID 6e400001-b5a3-f393-e0a9-e50e24dcca9e with two characteristics and one descriptor.&nbsp;</p>
+<p class="Element10">
+   This array must be valid until LGATTServerClass.end() is called, therefore you should avoid getting a return of an array declared in the local scope.&nbsp;</p>
+<p class="Element10">
+   It is recommended to return a globally, statically defined array like the example above.</p></div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LGATTService__onLoadService@int32_t_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:59 GMT -->
+</html>

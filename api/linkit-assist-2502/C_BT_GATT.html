@@ -1,0 +1,697 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_BT_GATT.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:02:36 GMT -->
+<head>
+<title>Bluetooth Low Energy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_BT_GATT.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="VM_BT_NS_TITLE_LENGTH.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="%21%21FUNCTIONS_C_BT_GATT.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Bluetooth Low Energy</div>
+<div class="Element7">
+<a href="_C_BT_GATT_14_Topics.html" target="topic">Topics</a> | <a href="_C_BT_GATT_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a> | <a href="_C_BT_GATT_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a> | <a href="_C_BT_GATT_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a> | <a href="_C_BT_GATT_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,4D6163726F73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,5479706573,4D6163726F73,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+This API provides Bluetooth GATT functionality to enable communication with Bluetooth 4.0 devices.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+LinkIt ONE provides built-in Bluetooth 4.0 Generic Attribute Profile(GATT) to transmit arbitrary data between devices. The GATT profile is a general specification for sending and receiving short pieces of data known as &quot;attributes&quot; over a Bluetooth 4.0 link. All current Bluetooth Low Energy application profiles are based on GATT.&nbsp;</p>
+<p class="Element10">
+All the APIs in the GATT module are asynchronous, which means the functions are mere a request passing to underlying framework for execution. The execution results are then passed back from callback functions. Therefore, you can initialize the GATT server and client module by registering a set of callback functions.</p></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+This API doesn't support multiple connections - only one-to-one connection at a time. </p></div>
+</div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_connect%40VM_BT_GATT_CONTEXT_HANDLE%40vm_bt_gatt_address_t_%40VMBOOL.html" target="topic">vm_bt_gatt_client_connect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Send <a href="connect.html" target="topic">connect</a> remote device to GATT&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_deregister%40VM_BT_GATT_CONTEXT_HANDLE.html" target="topic">vm_bt_gatt_client_deregister</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+De-register confirm callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_deregister_for_notification%40VM_BT_GATT_CONTEXT_HANDLE%40vm_bt_gatt_address_t_%40vm_bt_gatt_client_characteristic_t_.html" target="topic">vm_bt_gatt_client_deregister_for_notification</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+De-registers a previous request for notifications/indications.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_disconnect%40vm_bt_gatt_connection_t_%40vm_bt_gatt_address_t_.html" target="topic">vm_bt_gatt_client_disconnect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Send disconnect remote device to GATT&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_execute_write%40vm_bt_gatt_connection_t_%40VMUINT8.html" target="topic">vm_bt_gatt_client_execute_write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Send a command to server to execute a prepared write operation.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_get_characteristic%40vm_bt_gatt_connection_t_%40vm_bt_gatt_service_info_t_%40vm_bt_gatt_attribute_uuid_t_.html" target="topic">vm_bt_gatt_client_get_characteristic</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Enumerates characteristics for a given service. Set start_characteristic_uuid to <a href="NULL.html" target="topic">NULL</a> to get the first characteristic.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_get_descriptor%40vm_bt_gatt_connection_t_%40vm_bt_gatt_client_characteristic_t_%40vm_bt_gatt_attribute_uuid_t_.html" target="topic">vm_bt_gatt_client_get_descriptor</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Enumerates descriptors for a given characteristic. Set start_descriptor_id to <a href="NULL.html" target="topic">NULL</a> to get the first descriptor.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_get_device_type%40VM_BT_GATT_CONTEXT_HANDLE%40vm_bt_gatt_address_t_.html" target="topic">vm_bt_gatt_client_get_device_type</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Determines the type of the remote device (LE, BR/EDR, Dual-mode)&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_get_included_service%40vm_bt_gatt_connection_t_%40vm_bt_gatt_service_info_t_%40vm_bt_gatt_service_info_t_.html" target="topic">vm_bt_gatt_client_get_included_service</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Enumerates included services for a given parent service. Set start_include_service_id to <a href="NULL.html" target="topic">NULL</a> to get the first included service. The result is passed back from callback <a href="vm_bt_gatt_get_included_service_callback.html" target="topic">vm_bt_gatt_get_included_service_callback</a>. After receiving the included service UUID, call vm_bt_gatt_client_get_included_service again and set include_svc_uuid to the service UUID to query the next included service in the parent service.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_listen%40VM_BT_GATT_CONTEXT_HANDLE%40VMBOOL.html" target="topic">vm_bt_gatt_client_listen</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sends <a href="listen.html" target="topic">listen</a> request to <a href="listen.html" target="topic">listen</a> <a href="connect.html" target="topic">connect</a> indicate during disconnected state&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_read_characteristic%40vm_bt_gatt_connection_t_%40vm_bt_gatt_client_characteristic_t_%40VM_BT_GATT_CLIENT_AUTH_REQ.html" target="topic">vm_bt_gatt_client_read_characteristic</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Read characteristic value, can be larger than MTU.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_read_descriptor%40vm_bt_gatt_connection_t_%40vm_bt_gatt_client_descriptor_t_%40VM_BT_GATT_CLIENT_AUTH_REQ.html" target="topic">vm_bt_gatt_client_read_descriptor</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Read characteristic descriptor value.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_read_remote_rssi%40VM_BT_GATT_CONTEXT_HANDLE%40vm_bt_gatt_address_t_.html" target="topic">vm_bt_gatt_client_read_remote_rssi</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Requests the RSSI for a given remote device. The result is passed from <a href="vm_bt_gatt_read_remote_rssi_callback.html" target="topic">vm_bt_gatt_read_remote_rssi_callback</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_register%40VMUINT8%40vm_bt_gatt_client_callback_t_.html" target="topic">vm_bt_gatt_client_register</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Registers a GATT client application with the stack. The resulting client context is passed from <a href="vm_bt_gatt_register_client_callback.html" target="topic">vm_bt_gatt_register_client_callback</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_register_for_notification%40VM_BT_GATT_CONTEXT_HANDLE%40vm_bt_gatt_address_t_%40vm_bt_gatt_client_characteristic_t_.html" target="topic">vm_bt_gatt_client_register_for_notification</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Register to <a href="listen.html" target="topic">listen</a> the notification or indication of a certain characteristic from a connected server&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_scan%40VM_BT_GATT_CONTEXT_HANDLE%40VMBOOL.html" target="topic">vm_bt_gatt_client_scan</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Starts or stops LE device scanning.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_search_service%40vm_bt_gatt_connection_t_%40vm_bt_uuid_with_length_t_.html" target="topic">vm_bt_gatt_client_search_service</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Enumerates all GATT services on a connected device. Optionally, the results can be filtered for a given UUID.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_write_characteristic%40vm_bt_gatt_connection_t_%40vm_bt_gatt_client_characteristic_t_%40vm_bt_gatt_attribute_value_t_%40VM_B.html" target="topic">vm_bt_gatt_client_write_characteristic</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Write characteristic value, can be larger than MTU.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_client_write_descriptor%40vm_bt_gatt_connection_t_%40vm_bt_gatt_client_descriptor_t_%40vm_bt_gatt_attribute_value_t_%40VM_BT_GATT_C.html" target="topic">vm_bt_gatt_client_write_descriptor</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Write characteristic descriptor value.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_add_characteristic%40VM_BT_GATT_CONTEXT_HANDLE%40VM_BT_GATT_SERVICE_HANDLE%40vm_bt_uuid_with_length_t_%40VM_BT_GATT_CHAR_PRO.html" target="topic">vm_bt_gatt_server_add_characteristic</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Adds a characteristic to a service.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_add_descriptor%40VM_BT_GATT_CONTEXT_HANDLE%40VM_BT_GATT_SERVICE_HANDLE%40vm_bt_gatt_attribute_uuid_t_%40VM_BT_GATT_PERMISSION.html" target="topic">vm_bt_gatt_server_add_descriptor</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Adds a descriptor to a given service.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_add_included_service%40VM_BT_GATT_CONTEXT_HANDLE%40VM_BT_GATT_SERVICE_HANDLE%40VM_BT_GATT_ATTRIBUTE_HANDLE.html" target="topic">vm_bt_gatt_server_add_included_service</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Assign an included service to it's parent service. To include multiple services to a parent service, call this function multiple times.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_add_service%40VM_BT_GATT_CONTEXT_HANDLE%40vm_bt_gatt_service_info_t_%40VMUINT16.html" target="topic">vm_bt_gatt_server_add_service</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Creates a new service. The result and corresponding service handle is passed to <a href="vm_bt_gatt_service_added_callback.html" target="topic">vm_bt_gatt_service_added_callback</a> for each services created. Therefore, <a href="vm_bt_gatt_service_added_callback.html" target="topic">vm_bt_gatt_service_added_callback</a> will be invoked 5 times if num_handles is set to 5.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_connect%40VM_BT_GATT_CONTEXT_HANDLE%40vm_bt_gatt_address_t_%40VMBOOL.html" target="topic">vm_bt_gatt_server_connect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Connect Request&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_delete_service%40VM_BT_GATT_CONTEXT_HANDLE%40VM_BT_GATT_SERVICE_HANDLE.html" target="topic">vm_bt_gatt_server_delete_service</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Deletes a local service.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_deregister%40VM_BT_GATT_CONTEXT_HANDLE.html" target="topic">vm_bt_gatt_server_deregister</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+De-register profile from GATT&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_disconnect%40vm_bt_gatt_connection_t_%40vm_bt_gatt_address_t_.html" target="topic">vm_bt_gatt_server_disconnect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Disconnect request&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_listen%40VM_BT_GATT_CONTEXT_HANDLE%40VMBOOL.html" target="topic">vm_bt_gatt_server_listen</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Send <a href="listen.html" target="topic">listen</a> request to <a href="listen.html" target="topic">listen</a> <a href="connect.html" target="topic">connect</a> indicate during disconnect state.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_read_tx_power%40VM_BT_GATT_CONTEXT_HANDLE%40vm_bt_gatt_address_t_.html" target="topic">vm_bt_gatt_server_read_tx_power</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Queries tx power of local device. For Proximity profile. (Songmin Liao)&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_register%40VMUINT8%40vm_bt_gatt_server_callback_t_.html" target="topic">vm_bt_gatt_server_register</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Registers a GATT server application with the stack.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_send_indication%40vm_bt_gatt_connection_t_%40VM_BT_GATT_CHARACTERISTIC_HANDLE%40VMBOOL%40vm_bt_gatt_attribute_value_t_.html" target="topic">vm_bt_gatt_server_send_indication</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Notify/Indicate data to Client&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_send_response%40vm_bt_gatt_connection_t_%40VMUINT16%40VMBOOL%40VM_BT_GATT_CHARACTERISTIC_HANDLE%40vm_bt_gatt_attribute_value_t_.html" target="topic">vm_bt_gatt_server_send_response</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Send response to client for write request&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_set_advertisement_data%40VM_BT_GATT_CONTEXT_HANDLE%40VMBOOL%40VMBOOL%40VMBOOL%40VMUINT16%40VMUINT16%40VMUINT16%40VMUINT16%40VMCHAR_%40VM.html" target="topic">vm_bt_gatt_server_set_advertisement_data</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Configures server advertisement behavior and packet data.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_start_service%40VM_BT_GATT_CONTEXT_HANDLE%40VM_BT_GATT_SERVICE_HANDLE.html" target="topic">vm_bt_gatt_server_start_service</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Start service(add service to ATT database)&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_bt_gatt_server_stop_service%40VM_BT_GATT_CONTEXT_HANDLE%40VM_BT_GATT_SERVICE_HANDLE.html" target="topic">vm_bt_gatt_server_stop_service</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Stops a local service.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4D6163726F73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D6163726F73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D6163726F73">Macros</a></div>
+<div id="div4D6163726F73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Macro&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_ADDRESS_SIZE.html" target="topic">VM_BT_GATT_ADDRESS_SIZE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT attribute handle&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_ATTRIBUTE_HANDLE.html" target="topic">VM_BT_GATT_ATTRIBUTE_HANDLE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT attribute handle&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_ATTRIBUTE_MAX_VALUE_LENGTH.html" target="topic">VM_BT_GATT_ATTRIBUTE_MAX_VALUE_LENGTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT attribute max value length&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_AUTH_REQ_MITM.html" target="topic">VM_BT_GATT_CLIENT_AUTH_REQ_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Authenticated encryption.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_AUTH_REQ_NO_MITM.html" target="topic">VM_BT_GATT_CLIENT_AUTH_REQ_NO_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Unauthenticated encryption.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_AUTH_REQ_NONE.html" target="topic">VM_BT_GATT_CLIENT_AUTH_REQ_NONE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Nothing.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_AUTH_REQ_SIGNED_MITM.html" target="topic">VM_BT_GATT_CLIENT_AUTH_REQ_SIGNED_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Singed with MITM proection.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_AUTH_REQ_SIGNED_NO_MITM.html" target="topic">VM_BT_GATT_CLIENT_AUTH_REQ_SIGNED_NO_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Signed no MITM protection.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_DEV_TYPE_BR_EDR.html" target="topic">VM_BT_GATT_CLIENT_DEV_TYPE_BR_EDR</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Br edr device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_DEV_TYPE_BR_EDR_LE.html" target="topic">VM_BT_GATT_CLIENT_DEV_TYPE_BR_EDR_LE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Br edr low energy device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_DEV_TYPE_LE.html" target="topic">VM_BT_GATT_CLIENT_DEV_TYPE_LE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Low energy device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_DEV_TYPE_UNKNOWN.html" target="topic">VM_BT_GATT_CLIENT_DEV_TYPE_UNKNOWN</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Unknown device.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_WRITE_TYPE_NO_RSP.html" target="topic">VM_BT_GATT_CLIENT_WRITE_TYPE_NO_RSP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Write with no response.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_WRITE_TYPE_PREPARE.html" target="topic">VM_BT_GATT_CLIENT_WRITE_TYPE_PREPARE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Write prepare.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_WRITE_TYPE_REQUEST.html" target="topic">VM_BT_GATT_CLIENT_WRITE_TYPE_REQUEST</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Write request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_PERMISSION_READ.html" target="topic">VM_BT_GATT_PERMISSION_READ</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bit 0&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_PERMISSION_READ_ENC_MITM.html" target="topic">VM_BT_GATT_PERMISSION_READ_ENC_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bit 2&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_PERMISSION_READ_ENCRYPTED.html" target="topic">VM_BT_GATT_PERMISSION_READ_ENCRYPTED</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bit 1&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_PERMISSION_WRITE.html" target="topic">VM_BT_GATT_PERMISSION_WRITE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bit 4&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_PERMISSION_WRITE_ENC_MITM.html" target="topic">VM_BT_GATT_PERMISSION_WRITE_ENC_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bit 6&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_PERMISSION_WRITE_ENCRYPTED.html" target="topic">VM_BT_GATT_PERMISSION_WRITE_ENCRYPTED</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bit 5&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_PERMISSION_WRITE_SIGNED.html" target="topic">VM_BT_GATT_PERMISSION_WRITE_SIGNED</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bit 7&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_PERMISSION_WRITE_SIGNED_MITM.html" target="topic">VM_BT_GATT_PERMISSION_WRITE_SIGNED_MITM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+bit 8&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_address_t.html" target="topic">vm_bt_gatt_address_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT address&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_attribute_uuid_t.html" target="topic">vm_bt_gatt_attribute_uuid_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT attribute UUID&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_attribute_value_t.html" target="topic">vm_bt_gatt_attribute_value_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT attribute value&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_client_callback_t.html" target="topic">vm_bt_gatt_client_callback_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT service callback function structure&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_client_characteristic_t.html" target="topic">vm_bt_gatt_client_characteristic_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT client characteristic structure&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_client_descriptor_t.html" target="topic">vm_bt_gatt_client_descriptor_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT client descriptor structure&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_connection_t.html" target="topic">vm_bt_gatt_connection_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT connection handle structure&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_server_callback_t.html" target="topic">vm_bt_gatt_server_callback_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT service callback function structure&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_service_info_t.html" target="topic">vm_bt_gatt_service_info_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT Service&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_uuid_with_length_t.html" target="topic">vm_bt_uuid_with_length_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Bluetooth UUID&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="5479706573"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('5479706573');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img5479706573">Types</a></div>
+<div id="div5479706573">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CHAR_PROPERTIES.html" target="topic">VM_BT_GATT_CHAR_PROPERTIES</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT characteristic properties. These are bit flags&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_characteristic_added_callback.html" target="topic">vm_bt_gatt_characteristic_added_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback invoked when a characteristic has been added to a service&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_AUTH_REQ.html" target="topic">VM_BT_GATT_CLIENT_AUTH_REQ</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+authentication requirement&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_DEV_TYPE.html" target="topic">VM_BT_GATT_CLIENT_DEV_TYPE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT client device types&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CLIENT_WRITE_TYPE.html" target="topic">VM_BT_GATT_CLIENT_WRITE_TYPE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT client write types&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_connection_callback.html" target="topic">vm_bt_gatt_connection_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Connect confirm callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CONNECTION_HANDLE.html" target="topic">VM_BT_GATT_CONNECTION_HANDLE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT connection handle&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_CONTEXT_HANDLE.html" target="topic">VM_BT_GATT_CONTEXT_HANDLE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT context handle&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_descriptor_added_callback.html" target="topic">vm_bt_gatt_descriptor_added_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback invoked when a descriptor has been added to a characteristic&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_execute_write_callback.html" target="topic">vm_bt_gatt_execute_write_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT execute prepared write callback.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_get_characteristic_callback.html" target="topic">vm_bt_gatt_get_characteristic_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get characteristic confirm callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_get_descriptor_callback.html" target="topic">vm_bt_gatt_get_descriptor_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT descriptor enumeration result callback.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_get_device_type_callback.html" target="topic">vm_bt_gatt_get_device_type_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback invoked in response to get_device_type.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_get_included_service_callback.html" target="topic">vm_bt_gatt_get_included_service_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT included service enumeration result callback.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_included_service_added_callback.html" target="topic">vm_bt_gatt_included_service_added_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback indicating that an included service has been added to a service&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_listen_callback.html" target="topic">vm_bt_gatt_listen_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Listen confirm callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_notify_callback.html" target="topic">vm_bt_gatt_notify_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Remote device notification callback, invoked when a remote device sends a notification or indication that a client has registered.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_BT_GATT_PERMISSION.html" target="topic">VM_BT_GATT_PERMISSION</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+GATT characteristic permission&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_read_characteristic_callback.html" target="topic">vm_bt_gatt_read_characteristic_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Read characteristic value confirm callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_read_descriptor_callback.html" target="topic">vm_bt_gatt_read_descriptor_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Read characteristic descriptor value confirm callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_read_remote_rssi_callback.html" target="topic">vm_bt_gatt_read_remote_rssi_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback invoked in response to read_remote_rssi.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_read_tx_power_callback.html" target="topic">vm_bt_gatt_read_tx_power_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback triggered in response to read_tx_power&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_register_client_callback.html" target="topic">vm_bt_gatt_register_client_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback invoked in response to register.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_register_for_notification_callback.html" target="topic">vm_bt_gatt_register_for_notification_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Register notification callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_register_server_callback.html" target="topic">vm_bt_gatt_register_server_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The callback for <a href="vm_bt_gatt_server_register%40VMUINT8%40vm_bt_gatt_server_callback_t_.html" target="topic">vm_bt_gatt_server_register</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_request_exec_write_callback.html" target="topic">vm_bt_gatt_request_exec_write_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback invoked when a previously prepared write is to be executed&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_request_read_callback.html" target="topic">vm_bt_gatt_request_read_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Client read characteristic request indication&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_request_write_callback.html" target="topic">vm_bt_gatt_request_write_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Client write characteristic request indication&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_response_confirmation_callback.html" target="topic">vm_bt_gatt_response_confirmation_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Send response confirm callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_scan_result_callback.html" target="topic">vm_bt_gatt_scan_result_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback for scan results.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_search_complete_callback.html" target="topic">vm_bt_gatt_search_complete_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Search complete&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_search_result_callback.html" target="topic">vm_bt_gatt_search_result_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Indicates the profile when finding one primary service, the profile can save it in its own field&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_service_added_callback.html" target="topic">vm_bt_gatt_service_added_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback invoked in response to create_service&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_service_deleted_callback.html" target="topic">vm_bt_gatt_service_deleted_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback triggered when a service has been deleted&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_service_started_callback.html" target="topic">vm_bt_gatt_service_started_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Start service callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_service_stopped_callback.html" target="topic">vm_bt_gatt_service_stopped_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback invoked in response to stop_service&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_set_advertisement_data_callback.html" target="topic">vm_bt_gatt_set_advertisement_data_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Callback triggered in response to set_advertisement_data.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_write_characteristic_callback.html" target="topic">vm_bt_gatt_write_characteristic_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Write characteristic value confirm callback&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="vm_bt_gatt_write_descriptor_callback.html" target="topic">vm_bt_gatt_write_descriptor_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Read characteristic descriptor value confirm callback&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_BT_GATT_14_Topics.html" target="topic">Topics</a>, <a href="_C_BT_GATT_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a>, <a href="_C_BT_GATT_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a>, <a href="_C_BT_GATT_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a>, <a href="_C_BT_GATT_14_Types_(AutoDoc_Folder).html" target="topic">Types</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_BT_GATT.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:02:41 GMT -->
+</html>

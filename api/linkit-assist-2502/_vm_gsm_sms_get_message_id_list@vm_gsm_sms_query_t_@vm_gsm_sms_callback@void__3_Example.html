@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_gsm_sms_get_message_id_list@vm_gsm_sms_query_t_@vm_gsm_sms_callback@void__3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:13 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_vm_gsm_sms_get_message_id_list@vm_gsm_sms_query_t_@vm_gsm_sms_callback@void__3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="vm_gsm_sms_get_message_id_list%40vm_gsm_sms_query_t_%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_get_message_id_list</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"><strong><span style="color: #871F78">void</span></strong> custom_sms_get_message_id_list_callback(<a href="vm_gsm_sms_callback_t.html" target="topic">vm_gsm_sms_callback_t</a>* callback_data)
+{
+    <a href="vm_gsm_sms_query_message_callback_t.html" target="topic">vm_gsm_sms_query_message_callback_t</a>* query_result;
+    <strong><span style="color: #871F78">if</span></strong>(callback_data-&gt;action == VM_GSM_SMS_ACTION_QUERY)
+    {
+        <strong><span style="color: #871F78">if</span></strong>(callback_data-&gt;cause == VM_GSM_SMS_CAUSE_NO_ERROR)
+        {
+            <strong><span style="color: #871F78">if</span></strong>(!callback_data-&gt;action_data)
+            {
+                 <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;SMS gets message id list action_data is NULL.&quot;);
+                 <strong><span style="color: #871F78">return</span></strong>;
+            }
+            query_result = (<a href="vm_gsm_sms_query_message_callback_t.html" target="topic">vm_gsm_sms_query_message_callback_t</a>*)callback_data-&gt;action_data;
+            <strong><span style="color: #871F78">if</span></strong>(!query_result-&gt;message_id_list)
+            {
+                <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;message_id_list == NULL.&quot;);
+                <strong><span style="color: #871F78">return</span></strong>;
+            }
+            <strong><span style="color: #871F78">if</span></strong>(query_result-&gt;message_num &lt;=0)
+            {
+               <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;not find the message_id_list.&quot;);
+            }
+            <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;message id list number is %d&quot;, query_result-&gt;message_num);
+
+            <i><span style="color: #0000FF">// Uses the message_id_list to get message or delete message.</span></i>
+            <a href="vm_free%40void_.html" target="topic">vm_free</a>(query_result-&gt;message_id_list);
+        }
+        <strong><span style="color: #871F78">else</span></strong>
+        {
+            <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;Query message failed.&quot;);
+        }
+    }
+}
+
+<strong><span style="color: #871F78">void</span></strong> custom_sms_get_message_id_list_sample(<strong><span style="color: #871F78">void</span></strong>)
+{
+    <a href="vm_gsm_sms_query_t.html" target="topic">vm_gsm_sms_query_t</a> query_data_t;
+    <a href="VMINT.html" target="topic">VMINT</a> res = 0;
+    query_data_t.sort_flag  = VM_GSM_SMS_SORT_TIMESTAMP;
+    query_data_t.order_flag = VM_GSM_SMS_ORDER_ASCEND;
+    query_data_t.status     = VM_GSM_SMS_STATUS_READ;
+    res = vm_gsm_sms_get_message_id_list(&amp;query_data_t,
+                              custom_sms_get_message_id_list_callback, <a href="NULL.html" target="topic">NULL</a>);
+    <strong><span style="color: #871F78">if</span></strong>(res != VM_GSM_SMS_RESULT_OK)
+    {
+        <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;custom_sms_get_message_id_list_sample failed&quot;);
+    }
+}</pre></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_gsm_sms_get_message_id_list@vm_gsm_sms_query_t_@vm_gsm_sms_callback@void__3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:13 GMT -->
+</html>

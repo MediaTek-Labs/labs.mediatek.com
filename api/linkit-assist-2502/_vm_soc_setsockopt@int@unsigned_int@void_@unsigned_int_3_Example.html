@@ -1,0 +1,412 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_soc_setsockopt@int@unsigned_int@void_@unsigned_int_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:58 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_vm_soc_setsockopt@int@unsigned_int@void_@unsigned_int_3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="vm_soc_setsockopt%40int%40unsigned_int%40void_%40unsigned_int.html" target="topic">vm_soc_setsockopt</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+VM_SOC_NBIO:&nbsp;</p>
+<p class="Element10">
+This option must to be set if you want to use the non-blocking mode or&nbsp;</p>
+<p class="Element10">
+non-blocking plus async mode.&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates non-blocking shall be adopted,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates blocking mode shall be adopted.&nbsp;</p>
+<p class="Element10">
+For example, set a <a href="socket.html" target="topic">socket</a> to non-blocking mode:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  SOC_NBIO, &amp;val, sizeof(kal_bool));&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_SILENT_LISTEN:&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates the silent <a href="listen.html" target="topic">listen</a> shall be adopted,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates non-silent <a href="listen.html" target="topic">listen</a> shall be adopted.&nbsp;</p>
+<p class="Element10">
+This is SOC_SOCK_SMS property. For example, if you want to let the <a href="socket.html" target="topic">socket</a> be&nbsp;</p>
+<p class="Element10">
+the passive to activate the bear, you can set a <a href="socket.html" target="topic">socket</a> to silent <a href="listen.html" target="topic">listen</a> mode:&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_SILENT_LISTEN, &amp;val, sizeof(kal_bool))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_UDP_NEED_ICMP:&nbsp;</p>
+<p class="Element10">
+This option is used to deliver NOTIFY(close) for ICMP error.&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates this option shall be enabled,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates this option shall be disabled.&nbsp;</p>
+<p class="Element10">
+For example, if you want to let set a <a href="socket.html" target="topic">socket</a> to UDP NEED ICMP mode:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_UDP_NEED_ICMP, &amp;val, sizeof(kal_bool))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_ASYNC:&nbsp;</p>
+<p class="Element10">
+this option needs to be set if you want to use the non-blocking plus asyn mode.&nbsp;</p>
+<p class="Element10">
+val contains the events application wants to receive.&nbsp;</p>
+<p class="Element10">
+For example, if application wants to receive&nbsp;</p>
+<p class="Element10">
+READ/WRITE/CLOSE/CONNECT events,&nbsp;</p>
+<p class="Element10">
+it shall call soc_setsockopt like the following:&nbsp;</p>
+<p class="Element10">
+kal_uint8 val = 0;&nbsp;</p>
+<p class="Element10">
+val = SOC_READ | SOC_WRITE | SOC_CLOSE | SOC_CONNECT;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_ASYNC, &amp;val, sizeof(kal_uint8));&nbsp;</p>
+<p class="Element10">
+P.S. if you are using the server <a href="socket.html" target="topic">socket</a>, please remember to set the SOC_ACCPET event.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_TCP_MAXSEG:&nbsp;</p>
+<p class="Element10">
+A process can only decrease the MSS. When a TCP <a href="socket.html" target="topic">socket</a> is created,&nbsp;</p>
+<p class="Element10">
+the default MSS is set to 512. The MSS is updated according to the value announced&nbsp;</p>
+<p class="Element10">
+from peer TCP after the <a href="socket.html" target="topic">socket</a> completes TCP three-way handshake.&nbsp;</p>
+<p class="Element10">
+Therefore, after a <a href="socket.html" target="topic">socket</a> is created but before connected, a process can only decrease&nbsp;</p>
+<p class="Element10">
+the MSS from its default of 512. After a connection is established,&nbsp;</p>
+<p class="Element10">
+the process can decrease the MSS from the new updated value.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The value of TCP MSS is reduced to fit the interface MTU if the application set an&nbsp;</p>
+<p class="Element10">
+unacceptable large value.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+kal_uint8 val = 512;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_TCP_MAXSEG, &amp;val, sizeof(kal_uint8));&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_LISTEN_BEARER:&nbsp;</p>
+<p class="Element10">
+val contains bear type indicates which kind of bear we want to receive packets from.&nbsp;</p>
+<p class="Element10">
+For example, set a <a href="socket.html" target="topic">socket</a> to receive the WiFi bear:&nbsp;</p>
+<p class="Element10">
+kal_uint8 val = SOC_BEARER_WIFI;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_LISTEN_BEARER, &amp;val, sizeof(kal_uint8));&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_WIFI_NOWAKEUP:&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates this option shall be enabled,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates this option shall be disabled.&nbsp;</p>
+<p class="Element10">
+This option is to make WNDRV sends outgoing packet to in power saving mode.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_WIFI_NOWAKEUP, &amp;val, sizeof(kal_bool))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_IP_HDRINCL:&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates this option shall be enabled,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates this option shall be disabled. If this option is set for a raw IP <a href="socket.html" target="topic">socket</a>,&nbsp;</p>
+<p class="Element10">
+we must build our own IP header for all the datagrams that we <a href="send.html" target="topic">send</a> on the raw <a href="socket.html" target="topic">socket</a>.&nbsp;</p>
+<p class="Element10">
+We can only set this <a href="socket.html" target="topic">socket</a> option if the <a href="socket.html" target="topic">socket</a> type in soc_create is&nbsp;</p>
+<p class="Element10">
+SOC_SOCK_RAW(raw <a href="socket.html" target="topic">socket</a>) and protocol in soc_create is not SOC_IPPROTO_ICMP.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_IP_HDRINCL, &amp;val, sizeof(kal_bool))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_UDP_ANY_FPORT:&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates this option shall be enabled,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates this option shall be disabled. For a connected UDP <a href="socket.html" target="topic">socket</a>,&nbsp;</p>
+<p class="Element10">
+this option makes <a href="socket.html" target="topic">socket</a> deliver incoming packet from the same remote&nbsp;</p>
+<p class="Element10">
+address but different remote port.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_UDP_ANY_FPORT, &amp;val, sizeof(kal_bool))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_IP_TTL:&nbsp;</p>
+<p class="Element10">
+val contains the TTL values . If you want to change the default TTL (64),&nbsp;</p>
+<p class="Element10">
+you can set this option. For example:&nbsp;</p>
+<p class="Element10">
+kal_uint8 val = 128;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_IP_TTL, &amp;val, sizeof(kal_uint8))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_QOS:&nbsp;</p>
+<p class="Element10">
+val contains the TOS values . If you want to set the TOS values, you can set this option.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+kal_uint8 val = 0x80;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_QOS, &amp;val, sizeof(kal_uint8))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_KEEPALIVE:&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates this option shall be enabled,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates this option shall be disabled.&nbsp;</p>
+<p class="Element10">
+You can use this option to enable or disable the keep-alive timer in TCP.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_KEEPALIVE, &amp;val, sizeof(kal_bool))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_NODELAY:&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates this option shall be enabled,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates this option shall be disabled.&nbsp;</p>
+<p class="Element10">
+If you want to <a href="send.html" target="topic">send</a> the packet directly without waiting a packet size larger than MSS,&nbsp;</p>
+<p class="Element10">
+you can set this option. For example:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_NODELAY, &amp;val, sizeof(kal_bool))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_SENDBUF:&nbsp;</p>
+<p class="Element10">
+val contains the value of <a href="send.html" target="topic">send</a> buffer's high water mark.&nbsp;</p>
+<p class="Element10">
+If you want to set the high water mark, you can set this option.&nbsp;</p>
+<p class="Element10">
+If the value you set is smaller than the MSS, the mss would be adjusted to this value.&nbsp;</p>
+<p class="Element10">
+The value must be greater than 0 and smaller than the SSPDU + SSPDU_GROW.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+kal_uint32 val = 1024;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_SENDBUF, &amp;val, sizeof(kal_uint32))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_RECVBUF:&nbsp;</p>
+<p class="Element10">
+val contains the value of receive buffer's high water mark.&nbsp;</p>
+<p class="Element10">
+If you want to set the high water mark, you can set this option.&nbsp;</p>
+<p class="Element10">
+This value must be greater than 0 and smaller than the SRPDU size.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+kal_uint32 val = 4096;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_RECVBUF, &amp;val, sizeof(kal_uint32))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_LINGER:&nbsp;</p>
+<p class="Element10">
+val contains the value of enable/diable LINGER option and the value of LINGER time.&nbsp;</p>
+<p class="Element10">
+This option is used in linger on close.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+soc_linger_t val;&nbsp;</p>
+<p class="Element10">
+val.onoff = KAL_TRUE; val.&nbsp;</p>
+<p class="Element10">
+linger_time = 3; (sec)&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_LINGER, &amp;val, sizeof(soc_linger_t_val));&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_IPSEC_POLICY:&nbsp;</p>
+<p class="Element10">
+val contains sadb_x_policy structure content.&nbsp;</p>
+<p class="Element10">
+You can set this option to set the IPSEC policy.&nbsp;</p>
+<p class="Element10">
+If you want to get the IPSEC policy,&nbsp;</p>
+<p class="Element10">
+you can set this option. For example:&nbsp;</p>
+<p class="Element10">
+struct sadb_x_policy policy;&nbsp;</p>
+<p class="Element10">
+policy.sadb_x_policy_len = PFKEY_UNIT64(sizeof(policy));&nbsp;</p>
+<p class="Element10">
+policy.sadb_x_policy_exttype = SADB_X_EXT_POLICY;&nbsp;</p>
+<p class="Element10">
+policy.sadb_x_policy_type = 4;  // IPSEC_POLICY_BYPASS;&nbsp;</p>
+<p class="Element10">
+policy.sadb_x_policy_dir = 1;   // IPSEC_DIR_INBOUND;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_IPSEC_POLICY, &amp;policy, sizeof(sadb_x_policy))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_TCP_DELAYED_ACK:&nbsp;</p>
+<p class="Element10">
+The VM_SOC_TCP_DELAYED_ACK function is enable by default. That is to say,&nbsp;</p>
+<p class="Element10">
+if you don't set this option. The default VM_SOC_TCP_DELAYED_ACK value is <a href="TRUE.html" target="topic">TRUE</a>.&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates this option shall be enabled,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates this option shall be disabled.&nbsp;</p>
+<p class="Element10">
+If you want to enable the &quot;TCP no delay&quot; function,&nbsp;</p>
+<p class="Element10">
+you can set this option. For example:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_TCP_DELAYED_ACK, &amp;val, sizeof(kal_bool))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_TCP_SACK:&nbsp;</p>
+<p class="Element10">
+The VM_SOC_TCP_SACK function is enable by default. That is to say,&nbsp;</p>
+<p class="Element10">
+if you don't set this option. The default VM_SOC_TCP_SACK value is <a href="TRUE.html" target="topic">TRUE</a>.&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates this option shall be enabled,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates this option shall be disabled.&nbsp;</p>
+<p class="Element10">
+If you want to enable the &quot;TCP SACK&quot; function,&nbsp;</p>
+<p class="Element10">
+you can set this option. For example:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_TCP_SACK, &amp;val, sizeof(kal_bool))&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+VM_SOC_TCP_TIME_STAMP:&nbsp;</p>
+<p class="Element10">
+The VM_SOC_TCP_TIME_STAMP function is enable by default. That is to say,&nbsp;</p>
+<p class="Element10">
+if you don't set this option. The default VM_SOC_TCP_TIME_STAMP value is <a href="TRUE.html" target="topic">TRUE</a>.&nbsp;</p>
+<p class="Element10">
+val contains KAL_TRUE indicates this option shall be enabled,&nbsp;</p>
+<p class="Element10">
+KAL_FALSE indicates this option shall be disabled.&nbsp;</p>
+<p class="Element10">
+If you want to enable the &quot;TCP TIME STAMP&quot; function,&nbsp;</p>
+<p class="Element10">
+you can set this option. For example:&nbsp;</p>
+<p class="Element10">
+kal_bool val = KAL_TRUE;&nbsp;</p>
+<p class="Element10">
+vm_soc_setsockopt(sock,  VM_SOC_TCP_TIME_STAMP, &amp;val, sizeof(kal_bool))</p></div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_soc_setsockopt@int@unsigned_int@void_@unsigned_int_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:58 GMT -->
+</html>

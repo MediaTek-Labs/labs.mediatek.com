@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_tcp_connect@char_@VMINT@VM_BEARER_DATA_ACCOUNT_TYPE@void_@vm_tcp_connect_callback_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:01 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_vm_tcp_connect@char_@VMINT@VM_BEARER_DATA_ACCOUNT_TYPE@void_@vm_tcp_connect_callback_3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="vm_tcp_connect%40char_%40VMINT%40VM_BEARER_DATA_ACCOUNT_TYPE%40void_%40vm_tcp_connect_callback.html" target="topic">vm_tcp_connect</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"> <strong><span style="color: #871F78">static</span></strong> <a href="VMINT.html" target="topic">VMINT</a> g_hl_tcp_hd;
+ <strong><span style="color: #871F78">void</span></strong> hl_tcp_conn_cb_ex(VM_TCP_HANDLE handle, <a href="VM_TCP_EVENT.html" target="topic">VM_TCP_EVENT</a> event, <strong><span style="color: #871F78">void</span></strong>* user_data)
+ {
+     <strong><span style="color: #871F78">char</span></strong>* my_data = (<strong><span style="color: #871F78">char</span></strong>*)user_data;
+     <strong><span style="color: #871F78">switch</span></strong> (event)
+     {
+         <strong><span style="color: #871F78">case</span></strong> VM_TCP_EVENT_CONNECTED:
+          <i><span style="color: #0000FF">//do something here</span></i>
+             <a href="vm_tcp_close%40VM_TCP_HANDLE.html" target="topic">vm_tcp_close</a>(handle);
+             <strong><span style="color: #871F78">return</span></strong>;
+         <strong><span style="color: #871F78">default</span></strong>:
+             <strong><span style="color: #871F78">return</span></strong>;
+     }
+ }
+ <strong><span style="color: #871F78">void</span></strong> hl_tcp_connect(<strong><span style="color: #871F78">void</span></strong>)
+ {
+     <strong><span style="color: #871F78">char</span></strong>* my_data;
+     my_data = (<strong><span style="color: #871F78">char</span></strong>*)<a href="vm_malloc%40VMUINT.html" target="topic">vm_malloc</a>(10);
+     strcpy(my_data, &quot;aa&quot;);
+     vm_enable_proxy(<a href="FALSE.html" target="topic">FALSE</a>);
+     g_hl_tcp_hd = vm_tcp_connect(&quot;www.mediatek.com&quot;, 80, VM_BEARER_DATA_ACCOUNT_TYPE_GPRS_NONE_PROXY_APN, (<strong><span style="color: #871F78">void</span></strong> )my_data, hl_tcp_conn_cb_ex);
+
+ }</pre></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_tcp_connect@char_@VMINT@VM_BEARER_DATA_ACCOUNT_TYPE@void_@vm_tcp_connect_callback_3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:01 GMT -->
+</html>

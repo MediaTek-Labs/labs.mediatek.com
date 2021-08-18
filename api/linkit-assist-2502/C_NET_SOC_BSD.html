@@ -1,0 +1,582 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_NET_SOC_BSD.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:59:18 GMT -->
+<head>
+<title>BSD Socket</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'C_NET_SOC_BSD.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="C_NET.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_NET.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_NET_SOC_BSD.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+BSD Socket</div>
+<div class="Element7">
+<a href="_C_NET_SOC_BSD_14_Topics.html" target="topic">Topics</a> | <a href="_C_NET_SOC_BSD_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a> | <a href="_C_NET_SOC_BSD_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a> | <a href="_C_NET_SOC_BSD_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,4D6163726F73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,496E74726F64756374696F6E,4C696D69746174696F6E,46756E6374696F6E73,537472756374732C205265636F7264732C20456E756D73,4D6163726F73,47726F7570,4C696E6B73', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Provides functions for the <a href="socket.html" target="topic">socket</a> related operations.</p></div>
+</div>
+</div>
+<a name="496E74726F64756374696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('496E74726F64756374696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img496E74726F64756374696F6E">Introduction</a></div>
+<div id="div496E74726F64756374696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+This module provides the <a href="socket.html" target="topic">socket</a> related functions, such as open a <a href="socket.html" target="topic">socket</a>, close a <a href="socket.html" target="topic">socket</a>, <a href="bind.html" target="topic">bind</a> a <a href="socket.html" target="topic">socket</a> to an internet address, <a href="connect.html" target="topic">connect</a> to the peer node, <a href="send.html" target="topic">send</a> and receive data from a peer node, etc.&nbsp;</p>
+<p class="Element10">
+The functions in this module provide similar capabilities as provided by BSD or POSIX <a href="socket.html" target="topic">socket</a> API.&nbsp;</p>
+<p class="Element10">
+Refer to the documentation of each function for details.</p></div>
+</div>
+</div>
+<a name="4C696D69746174696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696D69746174696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696D69746174696F6E">Limitation</a></div>
+<div id="div4C696D69746174696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The parameter of flags in all the functions provided in this module is not used. The parameter of flags is a reserved parameter. </p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_NET.html" target="topic">Network Protocol</a></p></div>
+</div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_accept%40int%40SOCKADDR_%40int_.html" target="topic">vm_soc_accept</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Accepts a connection on a <a href="socket.html" target="topic">socket</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_bind%40int%40SOCKADDR_%40int%40int.html" target="topic">vm_soc_bind</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Binds a local address with a <a href="socket.html" target="topic">socket</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_close_socket%40int.html" target="topic">vm_soc_close_socket</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Closes the <a href="socket.html" target="topic">socket</a> and release the resource.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_connect%40int%40SOCKADDR_%40int.html" target="topic">vm_soc_connect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Connects a <a href="socket.html" target="topic">socket</a> to a remote host.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_get_account_localip%40VMINT8%40VMUINT8_.html" target="topic">vm_soc_get_account_localip</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the local IP held by the <a href="socket.html" target="topic">socket</a> as specified.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_getpeername%40int%40SOCKADDR_%40int_.html" target="topic">vm_soc_getpeername</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Retrieves the IP address and port number of the endpoint node.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_getsockname%40int%40SOCKADDR_%40int_.html" target="topic">vm_soc_getsockname</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Retrieves the local IP address and port number.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_getsockopt%40int%40unsigned_int%40void_%40unsigned_int.html" target="topic">vm_soc_getsockopt</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the <a href="socket.html" target="topic">socket</a> options.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_htonl%40unsigned_int.html" target="topic">vm_soc_htonl</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Converts long integer (32 bits) from host byte order to network byte order.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_htons%40unsigned_short.html" target="topic">vm_soc_htons</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Converts short integer (16 bits) from host byte order to network byte order&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_inet_addr%40char_.html" target="topic">vm_soc_inet_addr</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Converts the internet address in a dotted-decimal string notation into an internet network address in the <a href="IN_ADDR1.html" target="topic">IN_ADDR</a> structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_inet_ntoa%40IN_ADDR.html" target="topic">vm_soc_inet_ntoa</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Converts an internet network address into a dotted-decimal string format.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_inet_ntop%40int%40void_%40char_%40unsigned_int.html" target="topic">vm_soc_inet_ntop</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Converts an IPv4 or IPv6 address in its numeric binary form in network byte order into its standard text representation form. The format of 'x:x:x:x:x:x:d.d.d.d' is not supported.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_inet_pton%40int%40char_%40void_.html" target="topic">vm_soc_inet_pton</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Converts an IPv4 or IPv6 address in its standard text presentation form into its numeric binary form in network byte order. The format of 'x:x:x:x:x:x:d.d.d.d' is not supported.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_listen%40int%40int.html" target="topic">vm_soc_listen</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Makes the specified <a href="socket.html" target="topic">socket</a> <a href="listen.html" target="topic">listen</a> to the incoming connections.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_recv%40int%40char_%40int%40int.html" target="topic">vm_soc_recv</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Receives data on a connected <a href="socket.html" target="topic">socket</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_recvfrom%40int%40char_%40int%40int%40SOCKADDR_%40int_.html" target="topic">vm_soc_recvfrom</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Receives data from the endpoint node.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_select%40int%40fd_set_%40fd_set_%40fd_set_%40timeval_.html" target="topic">vm_soc_select</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Allows the application to query the status of multiple sockets. If timeout is null, vm_soc_select() will wait indefinitely until the first <a href="socket.html" target="topic">socket</a> is ready. If both tv_sec and tv_msec are zero, vm_soc_select() will timeout immediately for polling the sockets in the set. in:</p>
+<ol class="Element630">
+<li value="1" class="Element600">If <a href="listen.html" target="topic">listen</a> has been called and a connection is pending, <a href="accept.html" target="topic">accept</a> will succeed.</li>
+<li value="2" class="Element600">Data is available for reading (includes OOB data if VM_SOC_OOBINLINE is enabled).</li>
+<li value="3" class="Element600">Connection has been closed/reset/terminated</li>
+</ol><p class="Element207">
+out:</p>
+<ol class="Element630">
+<li value="1" class="Element600">If processing a <a href="connect.html" target="topic">connect</a> request (non-blocking mode), connection has succeeded.</li>
+<li value="2" class="Element600">Data can be sent.</li>
+</ol><p class="Element207">
+ex: If processing a <a href="connect.html" target="topic">connect</a> request (non-blocking mode), connection attempt failed. OOB data... <a href="vm_soc_select%40int%40fd_set_%40fd_set_%40fd_set_%40timeval_.html" target="topic">more</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_send%40int%40char_%40int%40int.html" target="topic">vm_soc_send</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sends data on a connected <a href="socket.html" target="topic">socket</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_sendto%40int%40char_%40int%40int%40SOCKADDR_%40int.html" target="topic">vm_soc_sendto</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sends data to the endpoint node.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_setsockopt%40int%40unsigned_int%40void_%40unsigned_int.html" target="topic">vm_soc_setsockopt</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function sets the <a href="socket.html" target="topic">socket</a> options.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_shutdown%40int%40int.html" target="topic">vm_soc_shutdown</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Shutdowns the connection in specific side, such as reading side, writing side, or both. In a half read situation, vm_soc_shutdown() discards the received data that the application has not yet read and any further incoming data. In a half write situation of TCP, the remaining data will be sent first, then the FIN will be sent to close the connection.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_socket%40int%40int%40int.html" target="topic">vm_soc_socket</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Creates a <a href="socket.html" target="topic">socket</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_soc_socket_ex%40int%40int%40int%40unsigned_int.html" target="topic">vm_soc_socket_ex</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Creates a <a href="socket.html" target="topic">socket</a> with a particular bearer, as specified by the data_account_id. In contrast, the <a href="vm_soc_socket%40int%40int%40int.html" target="topic">vm_soc_socket</a>() creates a <a href="socket.html" target="topic">socket</a> with the latest opened bearer.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4D6163726F73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D6163726F73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D6163726F73">Macros</a></div>
+<div id="div4D6163726F73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Macro&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="accept.html" target="topic">accept</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_accept.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="AF_INET.html" target="topic">AF_INET</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+IPv4.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="bind.html" target="topic">bind</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_bind.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="closesocket.html" target="topic">closesocket</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_closesocket.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="connect.html" target="topic">connect</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_connect.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="fd_set.html" target="topic">fd_set</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the <a href="socket.html" target="topic">socket</a> ID that you want to <a href="select.html" target="topic">select</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="FD_SET1.html" target="topic">FD_SET</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the <a href="socket.html" target="topic">socket</a> ID that you want to <a href="select.html" target="topic">select</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="getpeername.html" target="topic">getpeername</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_getpeername.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="getsockname.html" target="topic">getsockname</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_getsockname.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="getsockopt.html" target="topic">getsockopt</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_getsockopt.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="htonl.html" target="topic">htonl</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_htonl.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="htons.html" target="topic">htons</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_htons.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="inet_addr.html" target="topic">inet_addr</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_inet_addr.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="inet_ntoa.html" target="topic">inet_ntoa</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_inet_ntoa.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="inet_ntop.html" target="topic">inet_ntop</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_inet_ntop.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="inet_pton.html" target="topic">inet_pton</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_inet_pton.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="IPPROTO_HOPOPTS.html" target="topic">IPPROTO_HOPOPTS</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+IPv6 hop-by-hop options.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="IPPROTO_ICMP.html" target="topic">IPPROTO_ICMP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Internet Control Message Protocol. Currently, applications are only allowed to set this type when RAW_SOCKET is used&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="IPPROTO_IGMP.html" target="topic">IPPROTO_IGMP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Internet Group Management Protocol.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="IPPROTO_IP.html" target="topic">IPPROTO_IP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Dummy for IP.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="IPPROTO_IPIP.html" target="topic">IPPROTO_IPIP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+For compatibility.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="IPPROTO_IPV4.html" target="topic">IPPROTO_IPV4</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+IPv4 encapsulation.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="IPPROTO_RAW.html" target="topic">IPPROTO_RAW</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Raw IP packet.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="IPPROTO_TCP.html" target="topic">IPPROTO_TCP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+TCP protocol.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="IPPROTO_UDP.html" target="topic">IPPROTO_UDP</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+User Datagram Protocol.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="listen.html" target="topic">listen</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_listen.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="ntohl.html" target="topic">ntohl</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_htonl.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="ntohs.html" target="topic">ntohs</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_htons.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="PF_INET.html" target="topic">PF_INET</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+IPv4.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="PF_INET6.html" target="topic">PF_INET6</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+IPv6.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="recv.html" target="topic">recv</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_recv.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="recvfrom.html" target="topic">recvfrom</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_recvfrom.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="select.html" target="topic">select</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_select.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="send.html" target="topic">send</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_send.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="sendto.html" target="topic">sendto</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_sendto.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="setsockopt.html" target="topic">setsockopt</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_setsockopt.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="shutdowns.html" target="topic">shutdowns</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_shutdown.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SOCK_DGRAM.html" target="topic">SOCK_DGRAM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Datagram <a href="socket.html" target="topic">socket</a>, UDP.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="SOCK_STREAM.html" target="topic">SOCK_STREAM</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Stream <a href="socket.html" target="topic">socket</a>, TCP.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="socket.html" target="topic">socket</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_socket.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="socket_ex.html" target="topic">socket_ex</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Refer to vm_socket_ex.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_FD_SETSIZE.html" target="topic">VM_FD_SETSIZE</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+FD SET SIZE&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<a href="VM_SOC_ADDRESS_MAX_LENGTH.html" target="topic">VM_SOC_ADDRESS_MAX_LENGTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+The maximum length of the network <a href="socket.html" target="topic">socket</a> address.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="537472756374732C205265636F7264732C20456E756D73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('537472756374732C205265636F7264732C20456E756D73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img537472756374732C205265636F7264732C20456E756D73">Structs, Records, Enums</a></div>
+<div id="div537472756374732C205265636F7264732C20456E756D73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Struct, Record, Enum&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_structure.gif" border="0" alt="" title=""> <a href="IN_ADDR1.html" target="topic">in_addr</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Generic IPv4 Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_structure.gif" border="0" alt="" title=""> <a href="IN6_ADDR1.html" target="topic">in6_addr</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Generic IPv6 Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_structure.gif" border="0" alt="" title=""> <a href="SOCKADDR1.html" target="topic">sockaddr</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Generic Socket Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_structure.gif" border="0" alt="" title=""> <a href="SOCKADDR_IN1.html" target="topic">sockaddr_in</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+IPv4 Socket Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_structure.gif" border="0" alt="" title=""> <a href="SOCKADDR_IN61.html" target="topic">sockaddr_in6</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+IPv6 Socket Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="IN_ADDR1.html" target="topic">IN_ADDR</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Generic IPv4 Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="IN6_ADDR1.html" target="topic">IN6_ADDR</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Generic IPv6 Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="SOCKADDR1.html" target="topic">SOCKADDR</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Generic Socket Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="SOCKADDR_IN1.html" target="topic">SOCKADDR_IN</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+IPv4 Socket Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="SOCKADDR_IN61.html" target="topic">SOCKADDR_IN6</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+IPv6 Socket Address structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="timeval.html" target="topic">timeval</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Selects timeout structure.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="vm_fd_set.html" target="topic">vm_fd_set</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Macros for SOC_SELECT&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="vm_soc_address_t.html" target="topic">vm_soc_address_t</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Socket address struct.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="VM_SOC_OPTION.html" target="topic">VM_SOC_OPTION</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Socket Options&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="VM_SOC_RESULT.html" target="topic">VM_SOC_RESULT</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Socket return codes. The negative values stand for errors.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+ <a href="vm_soc_shutdown_enum.html" target="topic">vm_soc_shutdown_enum</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Shutdown(2), specified by Posix.1g.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4C696E6B73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4C696E6B73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4C696E6B73">Links</a></div>
+<div id="div4C696E6B73">
+<div class="Element11">
+<div class="Element10">
+<a href="_C_NET_SOC_BSD_14_Topics.html" target="topic">Topics</a>, <a href="_C_NET_SOC_BSD_14_Functions_(AutoDoc_Folder).html" target="topic">Functions</a>, <a href="_C_NET_SOC_BSD_14_Macros_(AutoDoc_Folder).html" target="topic">Macros</a>, <a href="_C_NET_SOC_BSD_14_Structs%2c_Records%2c_Enums_(AutoDoc_Folder).html" target="topic">Structs, Records, Enums</a></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/C_NET_SOC_BSD.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:59:22 GMT -->
+</html>

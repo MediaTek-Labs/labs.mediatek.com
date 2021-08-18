@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_tag_get_tag@VMCWSTR@VM_TAG_ID@void_@VMUINT_.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:57:07 GMT -->
+<head>
+<title>vm_tag_get_tag</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'vm_tag_get_tag@VMCWSTR@VM_TAG_ID@void_@VMUINT_.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00184">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="VM_RESULT.html" target="topic">VM_RESULT</a> <strong><span style="color: #660000">vm_tag_get_tag</span></strong>(
+    <a href="VMCWSTR.html" target="topic">VMCWSTR</a> <strong><span style="color: #660000">filename</span></strong>, 
+    <a href="VM_TAG_ID.html" target="topic">VM_TAG_ID</a> <strong><span style="color: #660000">tag_id</span></strong>, 
+    <strong><span style="color: #871F78">void</span></strong>* <strong><span style="color: #660000">buffer</span></strong>, 
+    <a href="VMUINT.html" target="topic">VMUINT</a>* <strong><span style="color: #660000">buffer_size</span></strong>
+);</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="%21%21FUNCTIONS_C_FW_TAG.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_FW_TAG.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="%21%21RECORDS_C_FW_TAG.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+vm_tag_get_tag</div>
+<div class="Element7">
+<a href="_vm_tag_get_tag%40VMCWSTR%40VM_TAG_ID%40void_%40VMUINT__3_Example.html" target="topic">Example</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,4578616D706C65,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,4578616D706C65,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="VM_RESULT.html" target="topic">VM_RESULT</a> <strong><span style="color: #660000">vm_tag_get_tag</span></strong>(
+    <a href="VMCWSTR.html" target="topic">VMCWSTR</a> <strong><span style="color: #660000">filename</span></strong>, 
+    <a href="VM_TAG_ID.html" target="topic">VM_TAG_ID</a> <strong><span style="color: #660000">tag_id</span></strong>, 
+    <strong><span style="color: #871F78">void</span></strong>* <strong><span style="color: #660000">buffer</span></strong>, 
+    <a href="VMUINT.html" target="topic">VMUINT</a>* <strong><span style="color: #660000">buffer_size</span></strong>
+);</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Get one tag from a given LinkIt application. This API gets information from VXP files on disk, or the current running VXP application.</p></div>
+</div>
+</div>
+<a name="506172616D6574657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('506172616D6574657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img506172616D6574657273">Parameters</a></div>
+<div id="div506172616D6574657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element240" valign="top" width="30%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="70%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMCWSTR filename&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] Path to a VXP file to retrieve tag from; Pass <a href="NULL.html" target="topic">NULL</a> for current application.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VM_TAG_ID tag_id&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] Refer to <a href="VM_TAG_ID.html" target="topic">VM_TAG_ID</a> for tag information to retrieve.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+void* buffer&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[OUT] Value of the tag assigned by tag_id. Pass <a href="NULL.html" target="topic">NULL</a> to retrieve required buffer size from buffer_size. Refer to <a href="VM_TAG_ID.html" target="topic">VM_TAG_ID</a> for data type of the tag.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMUINT* buffer_size&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[OUT] Required buffer size for the tag information.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="52657475726E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('52657475726E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img52657475726E73">Returns</a></div>
+<div id="div52657475726E73">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ <a href="VM_RESULT.html" target="topic">VM_RESULT</a>. Refer to <a href="VM_TAG_RESULT.html" target="topic">VM_TAG_RESULT</a> for detailed error codes.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p></div>
+</div>
+</div>
+<a name="4578616D706C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4578616D706C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4578616D706C65">Example</a></div>
+<div id="div4578616D706C65">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"><a href="VMINT.html" target="topic">VMINT</a> appVersion = 0;     <i><span style="color: #0000FF">// Version is VMINT</span></i>
+<a href="VMWSTR.html" target="topic">VMWSTR</a> appName = <a href="NULL.html" target="topic">NULL</a>;    <i><span style="color: #0000FF">// Application Name is VMWSTR</span></i>
+<a href="VMINT.html" target="topic">VMINT</a> reqSize = 0;
+
+<i><span style="color: #0000FF">// Application version is VMINT, always 4 bytes.</span></i>
+<strong><span style="color: #871F78">if</span></strong>(<a href="VM_IS_SUCCEEDED.html" target="topic">VM_IS_SUCCEEDED</a>(vm_tag_get_tag(<a href="NULL.html" target="topic">NULL</a>,
+                                  VM_TAG_ID_VERSION,
+                                  &amp;appVersion,
+                                  <strong><span style="color: #871F78">sizeof</span></strong>(appVersion))))
+{
+  <a href="vm_log_info.html" target="topic">vm_log_info</a>(&quot;version=%d.%d.%d&quot;, (appVersion &gt;&gt; 1) &amp; 0xFF,
+                                  (appVersion &gt;&gt; 2) &amp; 0xFF,
+                                  (appVersion &gt;&gt; 3) &amp; 0xFF);
+}
+
+<i><span style="color: #0000FF">// Get required buffer size for Application Name information.</span></i>
+<strong><span style="color: #871F78">if</span></strong> (<a href="VM_IS_SUCCEEDED.html" target="topic">VM_IS_SUCCEEDED</a>(vm_tag_get_tag(<a href="NULL.html" target="topic">NULL</a>,
+                                   VM_TAG_ID_APP_NAME,
+                                   <a href="NULL.html" target="topic">NULL</a>,
+                                   &amp;reqSize)))
+{
+  appName = (<a href="VMWSTR.html" target="topic">VMWSTR</a>*)<a href="vm_calloc%40VMUINT.html" target="topic">vm_calloc</a>(reqSize);
+  <strong><span style="color: #871F78">if</span></strong>(appName)
+  {
+      <strong><span style="color: #871F78">if</span></strong>(<a href="VM_IS_SUCCEEDED.html" target="topic">VM_IS_SUCCEEDED</a>(vm_tag_get_tag(<a href="NULL.html" target="topic">NULL</a>,
+                                        VM_TAG_ID_APP_NAME,
+                                        appName,
+                                        &amp;reqSize)))
+      {
+          <i><span style="color: #0000FF">// You can then proceeed to</span></i>
+      }
+  }
+}
+<i><span style="color: #0000FF">// free it when reserved</span></i>
+<a href="vm_free%40void_.html" target="topic">vm_free</a>(tagName);</pre></div></div>
+</div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+vmtag.h</p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="%21%21FUNCTIONS_C_FW_TAG.html" target="topic">Functions</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_tag_get_tag@VMCWSTR@VM_TAG_ID@void_@VMUINT_.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:57:08 GMT -->
+</html>

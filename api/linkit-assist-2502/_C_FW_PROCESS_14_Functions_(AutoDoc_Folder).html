@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_C_FW_PROCESS_14_Functions_(AutoDoc_Folder).html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:35 GMT -->
+<head>
+<title>Process Functions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_C_FW_PROCESS_14_Functions_(AutoDoc_Folder).html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+Process Functions</div>
+<div class="Element28">
+<a href="C_FW_PROCESS.html" target="topic">Process</a> | <a href="_C_FW_PROCESS_14_Functions_(AutoDoc_Folder)_Functions_(AutoDoc_Folder).html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Functions</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_pmng_exit_and_update_application%40VMCWSTR%40VMCHAR_%40VMINT%40VM_PMNG_ENCRYPTION.html" target="topic">vm_pmng_exit_and_update_application</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+For application update. A LinkIt application may call this function to quit and update itself by assiging path to the new VXP executable. The framework would verify the integrity of the new VXP executable, and update the executable.<br>While the SDK does not provide facility to encrypt the VXP binary, 3rd party software may be used to encrypt the binary with supported encryption method. This method is defined by the <a href="VM_PMNG_ENCRYPTION.html" target="topic">VM_PMNG_ENCRYPTION</a>. In this version of SDK only DES encryption is supported.<br>If update succeeded, the new VXP executable replaces the original executable and launches.<br>If update failed, the original... <a href="vm_pmng_exit_and_update_application%40VMCWSTR%40VMCHAR_%40VMINT%40VM_PMNG_ENCRYPTION.html" target="topic">more</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_pmng_get_current_application_handle.html" target="topic">vm_pmng_get_current_application_handle</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get process handle of current application. For LinkIt SDK 2.0, this function is the same as <a href="vm_pmng_get_current_process_handle.html" target="topic">vm_pmng_get_current_process_handle</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_pmng_get_current_process_handle.html" target="topic">vm_pmng_get_current_process_handle</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get the process handle of the current process.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_pmng_get_process_handle%40VMCWSTR.html" target="topic">vm_pmng_get_process_handle</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get the process handle of the specified executable.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_pmng_get_process_list%40VM_PROCESS_HANDLE_%40VMUINT_.html" target="topic">vm_pmng_get_process_list</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get a list all process.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_pmng_get_process_property%40VM_PROCESS_HANDLE%40vm_process_property_t_.html" target="topic">vm_pmng_get_process_property</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get property of a process, e.g. status and executable file path.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_pmng_get_running_application_path%40VMWSTR.html" target="topic">vm_pmng_get_running_application_path</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Get full path to the VXP executable file of current application.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_pmng_register_system_event_callback%40vm_pmng_system_event_callback.html" target="topic">vm_pmng_register_system_event_callback</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Registers an application-defined system event callback function that processes vital system events like VM_EVENT_CREATE and VM_EVENT_PAINT. This function must be called in vm_main() of the LinkIt application.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_pmng_restart_application.html" target="topic">vm_pmng_restart_application</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Quit the current running application and launch it again.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_C_FW_PROCESS_14_Functions_(AutoDoc_Folder).html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:14:36 GMT -->
+</html>

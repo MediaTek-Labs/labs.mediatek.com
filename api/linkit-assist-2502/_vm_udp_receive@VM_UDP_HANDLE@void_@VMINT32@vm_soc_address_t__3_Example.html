@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_udp_receive@VM_UDP_HANDLE@void_@VMINT32@vm_soc_address_t__3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:03 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_vm_udp_receive@VM_UDP_HANDLE@void_@VMINT32@vm_soc_address_t__3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="vm_udp_receive%40VM_UDP_HANDLE%40void_%40VMINT32%40vm_soc_address_t_.html" target="topic">vm_udp_receive</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"> <strong><span style="color: #871F78">static</span></strong> <strong><span style="color: #871F78">void</span></strong> udp_callback(<a href="VMINT.html" target="topic">VMINT</a> hdl, <a href="VMINT.html" target="topic">VMINT</a> evt)
+ {
+     <a href="VMCHAR.html" target="topic">VMCHAR</a> buf[1024] = {0};
+     <strong><span style="color: #871F78">switch</span></strong> (evt)
+     {
+     <strong><span style="color: #871F78">case</span></strong> VM_UDP_EVENT_READ:
+         {
+             <a href="VMINT.html" target="topic">VMINT</a> ret = 0;
+             <a href="vm_soc_address_t.html" target="topic">vm_soc_address_t</a> <a href="recvfrom.html" target="topic">recvfrom</a> = {0};
+             ret = vm_udp_receive(hdl, buf, 1024, &amp;<a href="recvfrom.html" target="topic">recvfrom</a>);
+         }<strong><span style="color: #871F78">break</span></strong>;
+     <strong><span style="color: #871F78">default</span></strong>:
+         {
+
+         }<strong><span style="color: #871F78">break</span></strong>;
+     }
+ }</pre></div></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/_vm_udp_receive@VM_UDP_HANDLE@void_@VMINT32@vm_soc_address_t__3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:15:03 GMT -->
+</html>

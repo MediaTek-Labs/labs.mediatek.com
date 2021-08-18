@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_timer_create_non_precise@VMUINT32@vm_timer_non_precise_callback@void_.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:55:48 GMT -->
+<head>
+<title>vm_timer_create_non_precise</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'vm_timer_create_non_precise@VMUINT32@vm_timer_non_precise_callback@void_.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00043">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="VM_TIMER_ID_NON_PRECISE.html" target="topic">VM_TIMER_ID_NON_PRECISE</a> <strong><span style="color: #660000">vm_timer_create_non_precise</span></strong>(
+    <a href="VMUINT32.html" target="topic">VMUINT32</a> <strong><span style="color: #660000">milliseconds</span></strong>, 
+    <a href="vm_timer_non_precise_callback.html" target="topic">vm_timer_non_precise_callback</a> <strong><span style="color: #660000">timer_procedure</span></strong>, 
+    <strong><span style="color: #871F78">void</span></strong>* <strong><span style="color: #660000">user_data</span></strong>
+);</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="vm_timer_create_hisr%40VMINT8_.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="%21%21FUNCTIONS_C_STD_TIMER.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="vm_timer_create_precise%40VMUINT32%40vm_timer_precise_callback%40void_.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+vm_timer_create_non_precise</div>
+<div class="Element7">
+<a href="_vm_timer_create_non_precise%40VMUINT32%40vm_timer_non_precise_callback%40void__3_Example.html" target="topic">Example</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,4578616D706C65,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,4578616D706C65,46696C65,47726F7570', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><a href="VM_TIMER_ID_NON_PRECISE.html" target="topic">VM_TIMER_ID_NON_PRECISE</a> <strong><span style="color: #660000">vm_timer_create_non_precise</span></strong>(
+    <a href="VMUINT32.html" target="topic">VMUINT32</a> <strong><span style="color: #660000">milliseconds</span></strong>, 
+    <a href="vm_timer_non_precise_callback.html" target="topic">vm_timer_non_precise_callback</a> <strong><span style="color: #660000">timer_procedure</span></strong>, 
+    <strong><span style="color: #871F78">void</span></strong>* <strong><span style="color: #660000">user_data</span></strong>
+);</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Creates a non-precise timer. Once the timer is created, it will fire repeatedly at the interval until the timer is deleted. A non-precise timer will not stop when the system gets into the power saving mode. The non-precise timer can be used to wake the system up. An application is allowed to have up to 10 non-precise timers.&nbsp;</p>
+<p class="Element10">
+The callback functions of both precise and non-precise timers are executed by the same thread. A callback will not be executed until the execution of the previous callback completes.</p></div>
+</div>
+</div>
+<a name="506172616D6574657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('506172616D6574657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img506172616D6574657273">Parameters</a></div>
+<div id="div506172616D6574657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element240" valign="top" width="30%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="70%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+VMUINT32 milliseconds&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The timer interval in millisecond.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+vm_timer_non_precise_callback timer_procedure&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The callback function that is to be invoked when the timer fires.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+void* user_data&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+[IN] The data to be consumed by the callback function.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="52657475726E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('52657475726E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img52657475726E73">Returns</a></div>
+<div id="div52657475726E73">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+   A timer handle. If the timer handle is a positive integer, it means the&nbsp;</p>
+<p class="Element10">
+   timer is created successfully. Otherwise, a negative integer is returned.&nbsp;</p>
+<p class="Element10">
+   Refer to <a href="VM_TIMER_RESULT.html" target="topic">VM_TIMER_RESULT</a> for error code, if fails.</p></div>
+</div>
+</div>
+<a name="4578616D706C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4578616D706C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4578616D706C65">Example</a></div>
+<div id="div4578616D706C65">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"><strong><span style="color: #871F78">void</span></strong> customer_non_precise_timer_example_proc(<a href="VM_TIMER_ID_NON_PRECISE.html" target="topic">VM_TIMER_ID_NON_PRECISE</a> tid, <strong><span style="color: #871F78">void</span></strong>* user_data)
+{
+    <strong><span style="color: #871F78">static</span></strong> <a href="VMINT.html" target="topic">VMINT</a> s_restore_num = 0;
+    s_restore_num++;
+    <strong><span style="color: #871F78">if</span></strong>(s_restore_num &gt; 10)
+    {
+        <a href="vm_timer_delete_non_precise%40VM_TIMER_ID_NON_PRECISE.html" target="topic">vm_timer_delete_non_precise</a>(tid);
+    }
+}
+
+<strong><span style="color: #871F78">void</span></strong> customer_run_non_precise_timer(<strong><span style="color: #871F78">void</span></strong>)
+{
+     <a href="VM_TIMER_ID_NON_PRECISE.html" target="topic">VM_TIMER_ID_NON_PRECISE</a> timer_id = 0;
+     timer_id = vm_timer_create_non_precise(1000, (<a href="vm_timer_non_precise_callback.html" target="topic">vm_timer_non_precise_callback</a>)customer_non_precise_timer_example_proc, <a href="NULL.html" target="topic">NULL</a>);
+     <strong><span style="color: #871F78">if</span></strong>(timer_id &lt; 0)
+     {
+        <a href="vm_log_debug.html" target="topic">vm_log_debug</a>(&quot;customer_run_time create non-precise timer fail!&quot;);
+     }
+}</pre></div></div>
+</div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+vmtimer.h</p></div>
+</div>
+</div>
+<a name="47726F7570"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('47726F7570');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img47726F7570">Group</a></div>
+<div id="div47726F7570">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="%21%21FUNCTIONS_C_STD_TIMER.html" target="topic">Functions</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/vm_timer_create_non_precise@VMUINT32@vm_timer_non_precise_callback@void_.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:55:49 GMT -->
+</html>

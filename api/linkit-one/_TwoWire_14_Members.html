@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_TwoWire_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:29 GMT -->
+<head>
+<title>TwoWire Class Members</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_TwoWire_14_Members.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element27">
+TwoWire Class Members</div>
+<div class="Element28">
+<a href="TwoWire.html" target="topic">TwoWire Class</a> | <a href="_TwoWire_14_Members_Members.html" target="topic">Legend</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element14">
+Members</div>
+<div class="Element11">
+<div class="Element10">
+<div class="Element215">
+Methods</div>
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Method&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="TwoWire__available.html" target="topic">available</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Returns the number of bytes the <a href="TwoWire__read.html" target="topic">read</a>() function can <a href="TwoWire__read.html" target="topic">read</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="TwoWire__begin.html" target="topic">begin</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets up the host address for I2C communication. LinkIt ONE supports void TwoWire:begin(void), which means the I2C bus is joined as a host. To use the <a href="Wire.html" target="topic">Wire</a> library, under normal conditions, this function must be called and called only once.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="TwoWire__beginTransmission%40int.html" target="topic">beginTransmission</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Enables the communication with the slave at an assigned address. After that, the data are written by using <a href="TwoWire__write%40uint8_t.html" target="topic">write</a>()and transmitted by using <a href="TwoWire__endTransmission.html" target="topic">endTransmission</a>().&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="TwoWire__beginTransmission%40uint8_t.html" target="topic">beginTransmission</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Enables the communication with the slave at an assigned address. After that, the data are written by using <a href="TwoWire__write%40uint8_t.html" target="topic">write</a>() and transmitted by using <a href="TwoWire__endTransmission.html" target="topic">endTransmission</a>().&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="TwoWire__endTransmission.html" target="topic">endTransmission</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Ends the communication with the slave assigned by <a href="TwoWire__beginTransmission%40int.html" target="topic">beginTransmission</a>() and transmits the data buffered by <a href="TwoWire__write%40uint8_t.html" target="topic">write</a>() to the slave.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="TwoWire__read.html" target="topic">read</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads a byte of data which are sent from master to slave or from slave to master. The master makes requests by using <a href="TwoWire__requestFrom%40int%40int.html" target="topic">requestFrom</a>().&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="TwoWire__requestFrom%40int%40int.html" target="topic">requestFrom</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Enables a master to request data from a slave and get data by using <a href="TwoWire__available.html" target="topic">available</a>() and <a href="TwoWire__read.html" target="topic">read</a>()functions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="TwoWire__requestFrom%40uint8_t%40uint8_t.html" target="topic">requestFrom</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Enables a master to request data from a slave and get data by using <a href="TwoWire__available.html" target="topic">available</a>() and <a href="TwoWire__read.html" target="topic">read</a>()functions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="TwoWire__write%40uint8_t.html" target="topic">write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+This function writes data into the queue and is called between functions <a href="TwoWire__beginTransmission%40int.html" target="topic">beginTransmission</a>()and <a href="TwoWire__endTransmission.html" target="topic">endTransmission</a>().&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""><img src="indicator_virtual.gif" border="0" alt="" title=""> <a href="TwoWire__write%40uint8_t__%40size_t.html" target="topic">write</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_TwoWire_14_Members.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:30 GMT -->
+</html>

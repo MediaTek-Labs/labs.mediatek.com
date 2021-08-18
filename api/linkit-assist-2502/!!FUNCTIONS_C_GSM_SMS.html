@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/!!FUNCTIONS_C_GSM_SMS.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:00:54 GMT -->
+<head>
+<title>Functions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '%21%21FUNCTIONS_C_GSM_SMS.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="C_GSM_SMS.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="C_GSM_SMS.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="vm_gsm_sms_add_message%40vm_gsm_sms_add_message_t_%40vm_gsm_sms_callback%40void_.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Functions</div>
+<div class="Element7">
+<a href="_%21%21FUNCTIONS_C_GSM_SMS_14_Functions.html" target="topic">Functions</a> | <a href="C_GSM_SMS.html" target="topic">SMS</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('46756E6374696F6E73,4D6F64756C65', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('46756E6374696F6E73,4D6F64756C65', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53756D6D617279"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+The following table lists functions in this documentation.</p></div>
+</div>
+<a name="46756E6374696F6E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46756E6374696F6E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46756E6374696F6E73">Functions</a></div>
+<div id="div46756E6374696F6E73">
+<div class="Element11">
+<div class="Element10">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="30%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="70%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_add_message%40vm_gsm_sms_add_message_t_%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_add_message</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Saves a new message to SMS Storage. If the caller specifies those parameters (Status, Address, Content, SIM Card, Storage Type, Profile element), they will be used. Otherwise, it will use the default values (If the parameters are in the SMS setting, it will use them as default). The Callback Action Data Struct is <a href="vm_gsm_sms_save_message_callback_t.html" target="topic">vm_gsm_sms_save_message_callback_t</a>.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_cancel_send.html" target="topic">vm_gsm_sms_cancel_send</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Cancels sending SMS. The function can be used only after <a href="vm_gsm_sms_send%40VMWSTR%40VMWSTR%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_send</a>() has been invoked and it returns <a href="TRUE.html" target="topic">TRUE</a>, and before the corresponding callback is invoked. Otherwise, calling this function is invalid.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_clear_interrupt_event_handler%40VM_GSM_SMS_EVENT_ID%40vm_gsm_sms_event_callback%40void_.html" target="topic">vm_gsm_sms_clear_interrupt_event_handler</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Clears the interrupt handler for the specified event type.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_delete_message%40VMUINT16%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_delete_message</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Deletes an existing message as specified by message ID. The Callback Action Data Structure is <a href="vm_gsm_sms_delete_message_callback_t.html" target="topic">vm_gsm_sms_delete_message_callback_t</a>;&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_delete_message_list%40VM_GSM_SMS_BOX%40VM_GSM_SMS_SIM%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_delete_message_list</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Deletes all the existing messages in the specified message box, e.g. Inbox, Outbox, etc. The Callback Action Data Structure is <a href="vm_gsm_sms_delete_message_list_callback_t.html" target="topic">vm_gsm_sms_delete_message_list_callback_t</a>;&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_get_box_size%40VM_GSM_SMS_BOX.html" target="topic">vm_gsm_sms_get_box_size</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets number of the messages in a box list&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_get_center_address%40VM_GSM_SMS_SIM%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_get_center_address</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Asynchronously gets center address of the SIM for SMS, which is a phone number.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_get_center_address_sync%40vm_gsm_sms_get_center_address_callback_t_%40VM_GSM_SMS_SIM.html" target="topic">vm_gsm_sms_get_center_address_sync</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Synchronously gets center address of the SIM for SMS, which is a phone number.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_get_message_id%40VM_GSM_SMS_BOX%40VMUINT16.html" target="topic">vm_gsm_sms_get_message_id</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the message ID of the message in the box, as specified by message_index.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_get_message_id_list%40vm_gsm_sms_query_t_%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_get_message_id_list</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Gets the message ID list of the messages on the device through the query. The query attributes are specified in query_data. The message ID list is obtained through the callback, <a href="vm_gsm_sms_callback.html" target="topic">vm_gsm_sms_callback</a>(), which takes <a href="vm_gsm_sms_callback_t.html" target="topic">vm_gsm_sms_callback_t</a> with <a href="vm_gsm_sms_query_message_callback_t.html" target="topic">vm_gsm_sms_query_message_callback_t</a> as action_data that contains the result of the query.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_is_sms_ready.html" target="topic">vm_gsm_sms_is_sms_ready</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Checks if the SMS message is ready.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_read_message%40VMUINT16%40VMBOOL%40vm_gsm_sms_read_message_data_t_%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_read_message</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Reads message data, including message status, number, content and other attributes (Storage Type, SIM Card, Profile element, etc.) specified by the flag. The buffer to save the content should be provided by the caller. The Callback Action Data Structure is <a href="vm_gsm_sms_read_message_data_callback_t.html" target="topic">vm_gsm_sms_read_message_data_callback_t</a>;&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_send%40VMWSTR%40VMWSTR%40vm_gsm_sms_callback%40void_.html" target="topic">vm_gsm_sms_send</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sends SMS&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="30%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="vm_gsm_sms_set_interrupt_event_handler%40VM_GSM_SMS_EVENT_ID%40vm_gsm_sms_event_callback%40void_.html" target="topic">vm_gsm_sms_set_interrupt_event_handler</a>&nbsp;</div></td><td class="Element206" valign="top" width="70%">
+<div class="Element207">
+Sets the interrupt handler for the specified event type.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="4D6F64756C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4D6F64756C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4D6F64756C65">Module</a></div>
+<div id="div4D6F64756C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="C_GSM_SMS.html" target="topic">SMS</a></p></div>
+</div>
+</div>
+<div class="Element62">
+Created with a commercial version of <a href="#" onclick="openExternalLink('http://www.doc-o-matic.com/');"><img src="indicator_external_link.gif" border="0" alt="" title="">Doc-O-Matic</a>. In order to make this message disappear you need to register this software. If you have problems registering this software please contact us at <a href="#" onclick="openExternalLink('mailto:support@toolsfactory.com');"><img src="indicator_external_link.gif" border="0" alt="" title="">support@toolsfactory.com</a>.</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-assist-2502/!!FUNCTIONS_C_GSM_SMS.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:00:55 GMT -->
+</html>

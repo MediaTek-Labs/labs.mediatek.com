@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LBTServerClass__accept@size_t@char___3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:54 GMT -->
+<head>
+<title>Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', '_LBTServerClass__accept@size_t@char___3_Example.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+</td></tr></table><div class="Element34">
+Example</div>
+<div class="Element35">
+<a href="LBTServerClass__accept%40size_t%40char__.html" target="topic">LBTServerClass::accept Method (size_t, char *)</a></div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12"><strong><span style="color: #871F78">#include</span></strong> &lt;LBT.h&gt;
+<strong><span style="color: #871F78">#include</span></strong> &lt;<a href="LBTServer.html" target="topic">LBTServer</a>.h&gt;
+  
+<strong><span style="color: #871F78">void</span></strong> setup()
+{
+  <a href="Serial.html" target="topic">Serial</a>.<a href="LBTServerClass__begin%40uint8_t_%40uint8_t_.html" target="topic">begin</a>(9600);
+  <strong><span style="color: #871F78">bool</span></strong> success = <a href="LBTServer.html" target="topic">LBTServer</a>.<a href="LBTServerClass__begin%40uint8_t_%40uint8_t_.html" target="topic">begin</a>();
+  <strong><span style="color: #871F78">if</span></strong>( !success )
+  {
+      <a href="Serial.html" target="topic">Serial</a>.println(&quot;Cannot begin Bluetooth Server successfully&quot;);
+      <i><span style="color: #0000FF">// Do nothing.</span></i>
+      <strong><span style="color: #871F78">while</span></strong>(<strong><span style="color: #871F78">true</span></strong>);
+  }
+  <strong><span style="color: #871F78">else</span></strong>
+  {
+      <a href="Serial.html" target="topic">Serial</a>.println(&quot;Bluetooth Server begins successfully&quot;);
+  }
+ 
+  <i><span style="color: #0000FF">// Waiting for a Bluetooth SPP Client to connect.</span></i>
+  <strong><span style="color: #871F78">bool</span></strong> <a href="LBTServerClass__connected.html" target="topic">connected</a> = <a href="LBTServer.html" target="topic">LBTServer</a>.accept(20, &quot;12:34:56:ab:cd:ef&quot;);
+ 
+  <strong><span style="color: #871F78">if</span></strong>( !<a href="LBTServerClass__connected.html" target="topic">connected</a> )
+  {
+      <a href="Serial.html" target="topic">Serial</a>.println(&quot;No connection request yet&quot;);
+      <i><span style="color: #0000FF">// Do nothing.</span></i>
+      <strong><span style="color: #871F78">while</span></strong>(<strong><span style="color: #871F78">true</span></strong>);
+  }
+  <strong><span style="color: #871F78">else</span></strong>
+  {
+      <a href="Serial.html" target="topic">Serial</a>.println(&quot;Connected&quot;);
+  }
+}
+ 
+<strong><span style="color: #871F78">void</span></strong> loop()
+{
+ 
+}</pre></div></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/_LBTServerClass__accept@size_t@char___3_Example.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 07:03:54 GMT -->
+</html>

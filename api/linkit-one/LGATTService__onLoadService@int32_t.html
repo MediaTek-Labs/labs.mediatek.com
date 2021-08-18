@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/LGATTService__onLoadService@int32_t.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:44:34 GMT -->
+<head>
+<title>LGATTService::onLoadService Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element57" onload="onBodyLoadEx('frames.html', 'topic', 'LGATTService__onLoadService@int32_t.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+<div class="Element801" id="popup00219">
+<div class="Element800">
+<div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">virtual</span></strong> <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a> * <strong><span style="color: #660000">onLoadService</span></strong>(
+    int32_t <strong><span style="color: #660000">index</span></strong>
+) = 0;</pre></div></div>
+</div>
+</div>
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="LGATTService__onDescriptorAdded%40LGATTAttributeData__.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="LGATTService.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="LGATTService__onRead%40LGATTReadRequest__.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+LGATTService::onLoadService Method</div>
+<div class="Element7">
+<a href="LGATTService.html" target="topic">LGATTService Class</a> | <a href="_LGATTService__onLoadService%40int32_t_3_Example.html" target="topic">Example</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,4578616D706C65,46696C65,436C617373', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('4465736372697074696F6E,506172616D6574657273,52657475726E73,4578616D706C65,46696C65,436C617373', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+
+<!-- Begin Page Content -->
+<div class="Element58">
+<a name="53796E746178"></a><div class="Element99">
+Syntax</div>
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong><span style="color: #871F78">virtual</span></strong> <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a> * <strong><span style="color: #660000">onLoadService</span></strong>(
+    int32_t <strong><span style="color: #660000">index</span></strong>
+) = 0;</pre></div></div>
+<a name="4465736372697074696F6E"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4465736372697074696F6E');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4465736372697074696F6E">Description</a></div>
+<div id="div4465736372697074696F6E">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+You need to override this method in order to define a Bluetooth GATT service. This function is called immediately upon calling LGATTServer.begin(), and it must return an array of <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a> beginning with the type TYPE_SERVICE, followed by elements of TYPE_CHARACTERISTIC or TYPE_DESCRIPTOR. Also, it must be terminated with an element of TYPE_END.</p></div>
+</div>
+</div>
+<a name="506172616D6574657273"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('506172616D6574657273');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img506172616D6574657273">Parameters</a></div>
+<div id="div506172616D6574657273">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="30%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="70%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="30%">
+<div class="Element243">
+int32_t index&nbsp;</div></td><td class="Element246" valign="top" width="70%">
+<div class="Element247">
+The index of this object in LGATTServer.begin(). For example, <br>          LGATTServer.begin(2, &amp;serviceA, &amp;serviceB)<br>          the loadService() of serviceA will receive 0 as index, while serviceB receives 1 as index.<br>     &nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="52657475726E73"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('52657475726E73');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img52657475726E73">Returns</a></div>
+<div id="div52657475726E73">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+   Pointer pointing to the beginning of an array of <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a>. This array must be valid until LGATTServerClass.end() is called.&nbsp;</p>
+<p class="Element10">
+   Returning NULL will fail LGATTServer.begin().</p></div>
+</div>
+</div>
+<a name="4578616D706C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('4578616D706C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img4578616D706C65">Example</a></div>
+<div id="div4578616D706C65">
+<div class="Element11">
+<div class="Element10">
+<div class="Element13"><div class="Element12"><pre class="Element12">    <strong><span style="color: #871F78">static</span></strong> <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a> g_my_gatt_service[] =
+    {
+        {TYPE_SERVICE, &quot;6e400001-b5a3-f393-e0a9-e50e24dcca9e&quot;, TRUE, 0, 0, 0},
+        {TYPE_CHARACTERISTIC, &quot;6e400002-b5a3-f393-e0a9-e50e24dcca9e&quot;, FALSE, VM_GATT_CHAR_PROP_WRITE, VM_GATT_PERM_WRITE, 0},
+        {TYPE_CHARACTERISTIC, &quot;6e400003-b5a3-f393-e0a9-e50e24dcca9e&quot;, FALSE, VM_GATT_CHAR_PROP_NOTIFY | VM_GATT_CHAR_PROP_INDICATE, VM_GATT_PERM_READ, 0},
+        {TYPE_DESCRIPTOR, &quot;00002902-0000-1000-8000-00805f9b34fb&quot;, FALSE, VM_GATT_CHAR_PROP_NOTIFY, VM_GATT_PERM_READ | VM_GATT_PERM_WRITE, 0},
+        {TYPE_END, 0, 0, 0, 0, 0}
+    };
+
+    <a href="LGATTServiceInfo.html" target="topic">LGATTServiceInfo</a> *LGATTUT::loadService(int32_t index)
+    {
+        <strong><span style="color: #871F78">return</span></strong> g_my_gatt_service;
+    }</pre></div></div>
+<p class="Element10">
+This defines a service of UUID 6e400001-b5a3-f393-e0a9-e50e24dcca9e with two characteristics and one descriptor.&nbsp;</p>
+<p class="Element10">
+   This array must be valid until LGATTServerClass.end() is called, therefore you should avoid getting a return of an array declared in the local scope.&nbsp;</p>
+<p class="Element10">
+   It is recommended to return a globally, statically defined array like the example above.</p></div>
+</div>
+</div>
+<a name="46696C65"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('46696C65');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img46696C65">File</a></div>
+<div id="div46696C65">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+LGATTServer.h</p></div>
+</div>
+</div>
+<a name="436C617373"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('436C617373');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="img436C617373">Class</a></div>
+<div id="div436C617373">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="LGATTService.html" target="topic">LGATTService Class</a></p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+
+<!-- End Page Footer -->
+
+<!-- End Client Area -->
+</body>
+<!-- Mirrored from labs.mediatek.com/api/linkit-one/LGATTService__onLoadService@int32_t.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Aug 2021 06:44:35 GMT -->
+</html>
